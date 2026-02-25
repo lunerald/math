@@ -1,0 +1,164 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{colortbl}
+\usepackage{mdwlist}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+{\bf Der Tangens}
+
+\begin{enumerate}[1.]
+{\bf \item Berechne die fehlenden Größen}
+
+\begin{minipage}{0.65\textwidth}
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|>{\columncolor[gray]{.8}}p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+		\hline
+		\rowcolor[gray]{.8}	&a) &b) &c) & d) & e) \\
+		\hline
+		$a$ & $\SI{4,2}{\centi\meter}$ &$\SI{2,8}{\meter}$ &$\SI{36}{\centi\meter}$ && $a$\\
+		\hline
+		$b$ & & &$\SI{3,5}{\deci\meter}$ &$\SI{1,2}{\kilo\meter}$  &$\sqrt{3}\cdot a$ \\
+		\hline
+		$\alpha$ & & $6^\circ$& & & \\
+		\hline
+		$\beta$ &$71^\circ$ &  & &$8 \cdot \alpha$ & \\
+		\hline
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.35\textwidth}
+	\includegraphics[width=6 cm]{tan100}		
+\end{minipage}
+
+\begin{minipage}{0.7\textwidth}
+{\bf \item Ein Rechteck hat die Seitenlängen $a=\SI{8,0}{\centi\meter}$ und $b=\SI{5}{\centi\meter}$.}
+	\begin{enumerate}[a)]
+		\item Berechne die Winkel, die die Diagonalen mit den Seiten einschließen.
+		\item Berechne den Winkel, den beide Diagonalen miteinander einschließen.
+	\end{enumerate} 
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	\includegraphics[width=4 cm]{rech100}		
+\end{minipage}
+
+\begin{minipage}{0.7\textwidth}
+{\bf \item Das Bild rechts zeigt eine Ausschnitt aus der \rule{3 cm}{0.5 pt} Flagge}.\\ Zeichne die Diagonalen in die Raute ein, miss ihre Längen und \underbar{berechne}\\ damit ihre Innenwinkel.
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	\includegraphics[width=4 cm]{flag100}		
+\end{minipage}
+
+{\bf \item Der Erdmond } hat einen Durchmesser von etwa 3500 Kilometern. Am Nachthimmel erscheint er in einer Größe von $0,5^\circ$. 
+\begin{enumerate*}
+	\item Welche Entfernung von der Erde hat er dann?
+	\item Bei einer Sonnenfinsternis sind Mond und Sonne am Himmel deckungsgleich. Welchen Durchmesser hat die Sonne, wenn man weiß, dass ihr Abstand zur Erde $\SI{150e6}{\kilo\meter}$ beträgt ?
+\suspend{enumerate*}
+
+{\bf Eine Parallaxensekunde oder ein Parsec (1 pc )} ist in der Astronomie die Entfernung, aus welcher ein\\ kosmischer Beobachter den Radius der Erdbahn um die Sonne unter einem Blickwinkel von einer Bogensekunde sieht.\\  (1 Bogensekunde oder 1" = ${1\over 3600}^\circ$ )
+
+
+\resume{enumerate*}
+    \item Wie groß ist diese Entfernung in Kilometern?
+    \item Wie viele Lichtjahre sind dies, wenn ein Lichtjahr $\SI{9,5e12}{\kilo\meter}$ sind?
+\end{enumerate*}  
+
+
+\begin{minipage}{0.8\textwidth}
+	{\bf \item Lunerald macht eine Radtour zu den Alpen.} Am Horizont sieht er schon sein Ziel.\\ Er streckt die Hand aus und kann damit genau den $\SI{1731}{\meter}$ hohen Herzogstand verdecken.
+\begin{enumerate}[a)]
+	\item Wie weit ist er vom Gebirge entfernt, wenn eine Handbreit einen Sichtwinkel von $8^\circ$ bedeutet?
+	\item Endlich ist er am Fuß der Berge. Die Straße steigt an. Wie groß ist nun der Steigungswinkel, den er hochradeln muss?
+\end{enumerate} 	
+	
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\textwidth}
+	\includegraphics[width=3 cm]{vstg100}		
+\end{minipage}
+
+
+\begin{minipage}{0.5\textwidth}
+{\bf \item Försterdreieck:} Die Höhe von Bäumen lässt sich indirekt bestimmen. Hierzu misst man den horizontalen Abstand zum Baum und hält sich folgende Anordnung vor die Augen:
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+	\includegraphics[width=8 cm]{forst100}		
+\end{minipage}
+\begin{enumerate}[a)]
+	\item Unter welchem Winkel sieht man den Baum, wenn $x=\SI{70}{\centi\meter}$ und $y=\SI{28}{\centi\meter}$ ist ?
+	\item Wie hoch ist der Baum dann, wenn er $\SI{30}{\meter}$ vom Betrachter entfernt ist ?
+	\item Löse die Aufgabe b) ohne Tangens mit dem Vierstreckensatz.
+\end{enumerate} 
+
+{\bf(Bitte wenden $\longrightarrow$)}
+\newpage
+
+\begin{minipage}{0.7\textwidth}
+	{\bf \item Geradensteigungen $m$ und Schnittwinkel} von Geraden mit der x-Achse haben einen einfachen Zusammenhang. Es gilt: 
+	$$ m = \tan \alpha$$
+	Gegeben sind die Geraden\\ $g: y=0,5x \qquad h: y=-3x+5 \qquad \rm{und} \qquad f: y=-0,4x+5$
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	\includegraphics[width=5 cm]{stei100}		
+\end{minipage}
+\begin{enumerate}[a)]
+	\item Zeichne die Geraden in ein Koordinatensystem
+	\item Berechne den jeweiligen Winkel, mit dem die Geraden die x-Achse schneiden.
+	\item Berechne die Innenwinkel des gebildeten Dreiecks.  
+\end{enumerate} 
+
+\begin{minipage}{0.5\textwidth}
+	{\bf \item Gegeben sind rechtwinklige Dreiecke $A_nB_nC$ (siehe Abbildung). }
+	Die  Punkte $A_n(x|-0,5x+3)$ liegen auf der Ge\-raden $g$ mit $y= -0,5x+3$.
+	Weiterhin gilt: $B_n(4|y_A); ~C(4|4)$
+\begin{enumerate}[a)]
+	\item Berechne die Koordinaten von $A_1$ und $B_1$ für $x_1=2$
+	\item Berechne das Maß $\alpha_1$ des Winkels $\angle B_1A_1C$.
+	\item Zeige, dass für das Maß $\alpha$ des Winkels  $\angle B_nA_nC$ gilt:
+	$$ \tan \alpha = {1+ 0,5x \over 4-x}$$
+	\item Im Dreieck $A_2B_2C$ gilt: $\alpha_2=14,04^\circ$. \\
+	Berechne die Koordinaten der Punkte $A_2$ und $B_2$.
+\end{enumerate}	
+	
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\includegraphics[width=6 cm]{dreieck100}
+\end{minipage}
+
+
+
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		Zur Lösung bitte \href{https://www.okuyakl.de/math/m10tanL100/ll100.pdf}{hier klicken} oder den QR-Code scannen.\\
+	Weitere Arbeitsblätter gibt es unter 
+	
+	\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=3 cm]{qr100}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+\end{minipage}}
+
+\end{enumerate}
+\end{document}
+

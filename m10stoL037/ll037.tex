@@ -1,0 +1,223 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent {\bf Aufgabe 1. a)}\\
+Der Ergebnisraum ist (Euro zurück = E; Getränk erhalten = G):
+$$\Omega= \{ E \cap G ; E \cap \bar{G}; \bar{E} \cap G ; \bar{E} \cap \bar{G} \}$$
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{c|c|c|c}
+       &   E        & \bar{E}   & \\
+\hline
+G      & {1\over 3} & {1\over 6}& {1\over 2} \\
+\hline
+\bar{G}& {1\over 6} & {1\over 3}& {1\over 2} \\
+\hline
+       & {1\over 2} & {1\over 2}& 1 
+\end{array}
+$$
+\noindent {\bf Aufgabe 1. b)}\\
+Die gesuchte Wahrscheinlichkeit ist 
+$$P(G\cap \bar{E})= {1 \over 6}$$
+\noindent {\bf Aufgabe 1. c)}\\
+Die gesuchte Wahrscheinlichkeit ist für dieses ausschließende ,,Oder":
+$$P( G \cap \bar{E})+ P(\bar{G} \cap E) = {1 \over 6 } + {1 \over 6} = { 1\over 3}$$
+\noindent{\bf Aufgabe 1. d)}\\
+Die gesuchte bedingte Wahrscheinlichkeit ist nach dem Satz von Bayes:
+$$P_{\bar{E}}(G)={ P(\bar{E}\cap G) \over P(\bar{E})}= { {1 \over 6} \over {1 \over 2}}= {1 \over 3} $$
+\noindent{\bf Aufgabe 1. e)}\\
+Analog zu d) gilt:
+$$P_G(E)={ P(G \cap E) \over P(G)}= { {1 \over 3} \over {1 \over 2}}= {2 \over 3} $$
+
+
+\noindent {\bf Aufgabe 2.}\\
+B: Bildstörung;  T: Tonstörung. \\
+$P(B)=0,1$ \\ $P_B(T)=0,7$\\ $P_{\overline{B}}(\overline{T})=0,95$ \\
+Dies ist ein Umkehrproblem, wir berechnen es mit der Formel von Bayes für die bedingte Wahrscheinlichkeit:
+
+$$ P_T(\overline{B})={ P(T \cap \overline{B}) \over P(T)} \qquad(*) $$
+
+Für die gesuchten Wahrscheinlichkeiten erstellen wir eine Vierfeldertafel:
+$$ 
+\begin{array}{cccc}
+P(\overline{T} \cap \overline{B}) &= P(\overline{B}) \cdot P_{\overline{B}}(\overline{T})
+&= 0,9 \cdot 0,95&=0,855 \\
+ P(T \cap B)&= P(B) \cdot P_B(T)&= 0,1 \cdot 0,7 &= 0,07 
+\end{array} 
+$$
+
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{c|c|c|c}
+              & B    & \overline{B} & \\
+\hline
+          T   & 0,07 & 0,045 & 0,115 \\
+\hline
+\overline{T}  & 0,03 & 0,855 & 0,885 \\
+\hline
+              & 0,1  & 0,9  & 1,00
+\end{array}
+$$
+
+Also ist (*), die gesuchte Wahrscheinlichkeit:
+$$ P_T(\overline{B})= {0,045 \over 0,115} = 0,3913 \approx 39\%$$ 
+
+\noindent {\bf Aufgabe 3. a)}\\
+$$h(H)={8\over 50}=0,16 \qquad h(K)={5\over 50}=0,10$$
+
+\noindent {\bf Aufgabe 3. b)}\\
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{c|c|c|c}
+&   H  & \overline{H} & \\
+\hline
+K            & 0,04 & 0,06 & 0,10 \\
+\hline
+\overline{K} & 0,12 & 0,78 & 0,90 \\
+\hline
+             & 0,16 & 0,84  & 1,00
+\end{array}
+$$
+Wir lesen ab:
+$$h(\overline{K}\cap \overline{H} )= 0,78 \qquad h(K \cap \overline{H})=0,06 \qquad 
+h(K \cup H)= 0,12+0,04+0,06=0,22$$
+
+
+\noindent {\bf Aufgabe 4. a)}\\
+\begin{minipage}{0.4\textwidth}
+Absolute Häufigkeiten:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{c|c|c|c}
+&   E  & \overline{E} & \\
+\hline
+F            & 17 & 11 & 28 \\
+\hline
+\overline{F} & 20 & 12 & 32 \\
+\hline
+             & 37 & 23  & 60
+\end{array}
+$$
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+Relative Häufigkeiten:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{c|c|c|c}
+&   E  & \overline{E} & \\
+\hline
+F            & 0,28 & 0,18 & 0,46 \\
+\hline
+\overline{F} & 0,34 & 0,20 & 0,54 \\
+\hline
+             & 0,62 & 0,38 & 1
+\end{array}
+$$
+\end{minipage}
+
+\noindent {\bf Aufgabe 4. b)}\\
+$$ h(A)= 1-h(\overline{E}\cap \overline{F})=0,80$$
+
+\noindent {\bf Aufgabe 5}
+
+\begin{center}
+	\begin{tabular}{lcc|c}
+		& \textbf{Etikett: Erdbeere} & \textbf{Etikett: Himbeere} & \textbf{Summe} \\
+		\midrule
+		\textbf{Füllung: Erdbeere} & 0{,}80 $\cdot$ 0{,}90 = 0{,}72 & 0{,}80 $\cdot$ 0{,}10 = 0{,}08 & 0{,}80 \\
+		\textbf{Füllung: Himbeere} & 0{,}20 $\cdot$ 0{,}05 = 0{,}01 & 0{,}20 $\cdot$ 0{,}95 = 0{,}19 & 0{,}20 \\
+		\midrule
+		\textbf{Summe} & 0{,}73 & 0{,}27 & 1{,}00
+	\end{tabular}
+\end{center}
+
+\begin{itemize}
+	\item Falsch etikettierte Gläser: $0{,}08 + 0{,}01 = 0{,}09 = \boxed{9\,\%}$
+	\item Bedingte Wahrscheinlichkeit:  
+	\[
+	P(\text{Himbeermarmelade} \mid \text{Etikett Himbeere}) = \frac{0{,}19}{0{,}27} \approx \boxed{70{,}37\,\%}
+	\]
+\end{itemize}
+
+\noindent {\bf Aufgabe 6}
+
+\begin{center}
+	\begin{tabular}{lcc|c}
+		& \textbf{Mag Mathe} & \textbf{Mag kein Mathe} & \textbf{Summe} \\
+		\midrule
+		\textbf{Bunte Socken} & 30 & 60$-$30 = 30 & 60 \\
+		\textbf{Keine bunten Socken} & 45$-$30 = 15 & 100$-$30$-$30$-$15 = 25 & 40 \\
+		\midrule
+		\textbf{Summe} & 45 & 55 & 100
+	\end{tabular}
+\end{center}
+
+\begin{itemize}
+	\item Gäste ohne bunte Socken und ohne Matheliebe: $\boxed{25}$
+	\item Unabhängigkeit: Prüfe $P(\text{Mag Mathe} \mid \text{Bunte Socken}) = \frac{30}{60} = 0{,}5$  
+	und $P(\text{Mag Mathe}) = \frac{45}{100} = 0{,}45$  
+	$\Rightarrow$ Nicht gleich $\Rightarrow$ \textbf{nicht unabhängig}
+\end{itemize}
+
+
+\noindent {\bf Aufgabe 7}
+
+Da die Ereignisse unabhängig sind:
+\[
+P(A\text{ gerade} \cap B\text{ gerade}) = P(A\text{ gerade}) \cdot P(B\text{ gerade}) = 0{,}70 \cdot 0{,}40 = \boxed{0{,}28}
+\]
+
+{\bf Vierfeldertafel:}
+
+\begin{center}
+	\begin{tabular}{lcc|c}
+		& \textbf{B gerade (0{,}40)} & \textbf{B ungerade (0{,}60)} & \textbf{Summe} \\
+		\midrule
+		\textbf{A gerade (0{,}70)} & $0{,}28$ & $0{,}70 - 0{,}28 = 0{,}42$ & $0{,}70$ \\
+		\textbf{A ungerade (0{,}30)} & $0{,}40 - 0{,}28 = 0{,}12$ & $0{,}30 - 0{,}12 = 0{,}18$ & $0{,}30$ \\
+		\midrule
+		\textbf{Summe} & $0{,}40$ & $0{,}60$ & $1{,}00$
+	\end{tabular}
+\end{center}
+
+{\bf  Wahrscheinlichkeit: mindestens ein Würfel zeigt gerade:}
+
+Wir verwenden den Gegenwahrscheinlichkeitsansatz:
+
+\[
+P(\text{mindestens einer gerade}) = 1 - P(\text{beide ungerade}) = 1 - 0{,}18 = \boxed{0{,}82}
+\]
+
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m10stoL037/aa037.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+

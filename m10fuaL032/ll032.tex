@@ -1,0 +1,177 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1.}\\
+Zunächst lösen wir für den Ausdruck zwischen den Betragsstrichen folgende Ungleichung:
+
+$$
+\begin{array}{rl} 
+{4 \over 3}x-4 & \ge 0\\
+{4 \over 3}x & \ge 4\\
+           x & \ge 3
+\end{array}
+$$
+\noindent Fallunterscheidung: 
+
+\underbar{Fall 1: $x \ge 3$}\\
+$$f(x)=-{2 \over 3} x + {4 \over 3}x-4={2 \over 3}x -4 $$
+
+\underbar{Fall 2: $x < 3$}\\
+$$f(x)=-{2 \over 3} x -{4 \over 3} x + 4 = -2 x +4 $$
+
+\noindent Nun erhalten wir folgende abschnittsweise definierte Funktion:
+
+\begin{minipage}{0.4\textwidth}
+$$
+f(x)=
+\begin{cases} 
+-2x+4 & \text{für} \quad x < 3 \\
+{2 \over 3}x-4 & \text{für} \quad x \ge 3
+\end{cases}
+$$
+\end{minipage}
+\hfill
+\begin{minipage}{0.55\textwidth}
+\setlength{\unitlength}{0.5 cm}
+\begin{picture}(10,10)
+\put(0,3){\vector(1,0){10}}
+\put(1,0){\vector(0,1){10}}
+\put(4,1){\line(-1,2){4}}
+\put(4,1){\line(3,2){5}}
+\put(3.9,2.4){3}
+\put(0.4,6.8){4}
+\put(0.4,2.4){0}
+\put(0.4,9){y}
+\put(9,2.4){x}
+\put(9,4){$f(x)$}
+\end{picture}
+\end{minipage}
+
+\noindent{\bf Aufgabe 2.}\\
+$$ f_1 \Rightarrow E \quad  f_2 \Rightarrow C \quad  f_3 \Rightarrow B \quad  f_4 \Rightarrow A \quad  f_5 \Rightarrow F \quad  f_6 \Rightarrow D $$
+\vspace{0.5 cm}
+
+\noindent
+\begin{minipage}{0.5\textwidth}
+ \noindent{\bf Aufgabe 3. a) c)}\\
+  \includegraphics[width=7 cm]{xvier032}\\	
+ \setlength{\unitlength}{0.5 cm}
+ \begin{picture}(0,0)
+ \put(4,9.5){$f^{-1}(x)$}
+ \put(9,4){$f(x)$}
+ \end{picture}
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+ \noindent{\bf Aufgabe 3. b)}\\
+ Sie ist umkehrbar, denn jeder y-Wert kommt nur einmal vor, d.h. sie ist monoton.
+ 
+ \noindent{\bf Aufgabe 3. d)}\\
+ Wir lösen auf:
+$$
+ \renewcommand{\arraystretch}{2}
+ \begin{array}{rcll}
+ y &=& (x-3)^4+1 &|-1\\
+ y-1 &=& (x-3)^4 &|\sqrt[4]{\quad}\\
+\sqrt[4]{y-1} &=& x-3 &|+3 \\
+\sqrt[4]{y-1} +3 &=& x &| x \leftrightarrow y\\
+f^{-1}(x)&=& \sqrt[4]{x-1} +3 
+ \end{array}
+$$
+\end{minipage}
+$$ \mathbb{D}_{f^{-1}}=]1;\infty[ \qquad \mathbb{W}_{f^{-1}}=]3;\infty[$$
+	
+\noindent{\bf Aufgabe 4. a)}\\
+Asymptote $y=3 \Rightarrow$ $e=3$\\
+$P \in h_2 \Rightarrow$
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcl}
+a(1-1)^{-2}+3 &=& 3,5 \\
+a +3 &=& 3,5 \\
+a &=& 0,5\\
+\Rightarrow &=& y=0,5(x-1)^{-1}+3
+\end{array}
+$$
+\noindent{\bf Aufgabe 4. b)}\\
+Zu zeigen ist: $f(-x)=f(x)$
+$$(-x)^{-2}=\left((-x)^{2}\right)^{-1}=(x^{2})^{-1}= x^{-2} \quad (w)$$
+Die Funktion ist achsensymmetrisch.
+
+\noindent{\bf Aufgabe 5. a)}\\
+Wir setzen gleich:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+(x-1)^{-1} + 3 &=& -4x +3 \\
+(x-1)^{-1} &=& -4x &|\cdot (x-1) \\
+1 &=& -4x^2 + 4x \\
+-4x^2 + 4x -1 &=& 0 \\
+x_{1/2}&=& {-4 \pm \sqrt{16 - 4 \cdot 4}\over 2\cdot (-4)}\\
+x &=& {1\over 2}
+\end{array}
+$$
+Einsetzen in Geradengleichung:
+$$y= -4\cdot {1\over 2} + 3 = 1 \quad \Rightarrow \quad A(0,5|1)$$
+
+\noindent {\bf Aufgabe 5. b)}\\
+Die x-Koordinate des Punktes B erfüllt folgende Gleichung:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcl}
+{x_B + x_A \over 2} &=& x_M \\
+x_B &=& 2 x_M - x_A \\
+x_B &=& 2 \cdot 1,75 - 0,5 \\
+x_B &=& 3 \\
+B \in  g &\Rightarrow& y_B = -4 \cdot 3 +3\\
+y_B &=& -9 \quad \Rightarrow \quad B(3|-9)
+\end{array}
+$$
+
+\noindent {\bf Aufgabe 6. }\\
+\begin{tabular}{ccccccc}
+	$ f(x)$&=& achsensymmetrisch &  \parbox[20 pt][2em][c]{0 cm}{} &
+	$g(x)$&=& punktsymmetrisch\\
+	$ h(x)$&=&achsensymmetrisch &  \parbox[20 pt][2em][c]{0 cm}{} &
+	$i(x)$&=&punktsymmetrisch\\
+	$ j(x)$&=& nicht symmetrisch &  \parbox[20 pt][2em][c]{0 cm}{} &
+	$k(x)$&=& nicht symmetrisch\\
+\end{tabular}
+
+\noindent {\bf Aufgabe 7.}\\
+\begin{enumerate}[(i)]
+	\item n ungerade, a positiv
+	\item n gerade, a = 1
+\end{enumerate}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m10fuaL032/aa032.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+

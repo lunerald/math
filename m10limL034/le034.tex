@@ -1,0 +1,68 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{rlp{20 pt}rl}
+		a) & $\infty$ & & b) & $\infty$ \\
+		c) & 4 & & d) & 0 \\
+		e) & 0 & & f) & ex. not \\
+		g) & $\infty$ & & h) & 0
+	\end{tabular}
+	
+	\noindent{\bf Task 2.}\\
+	
+	$$\lim\limits_{x \to \infty} {3x-5 \over 4x+3}=
+	\lim\limits_{x \to \infty} \frac{x(3 - {5 \over x})}{x(4 - {3\over x})}=
+	{3 -0 \over 4 -0}={3 \over 4} $$
+	$$\lim\limits_{x \to -\infty} {4x+x^3 \over x^4-2}=
+	\lim\limits_{x \to -\infty} \frac{x^4({4\over x^3} + {1 \over x})}{x^4(1 - {2\over x^4 })}=
+	{0 +0\over 1+0} =0$$
+	
+	\noindent{\bf Task 3. a)}\\
+	Insert 0 directly:
+	$$= -{5 \over 2} $$
+	\noindent{\bf Task 3. b)}\\
+	Exclude and reduce $x$ in the denominator, then insert 0:
+	$$=\lim\limits_{x \to 0}{5x^2 \over x-1} = {0 \over -1} = 0 $$
+	\noindent{\bf Task 3. c)}\\
+	Insert 2 in the numerator, note the sign in the denominator for approximation:
+	$$ "{1+4 \over 2 \cdot (+0)}"= + \infty$$
+	\noindent{\bf Task 3. d)}\\
+	numerator degree=denominator degree; Consider factors:
+	$$= {-3 \over 2}$$
+	\noindent{\bf Task 3. e)}\\
+	Factor, reduce and insert:
+	$$=\lim\limits_{x \to 4}{3(x-4)\over (x+5)(x-4)}=\lim\limits_{x \to 4} {3 \over x+ 5} = {1 \over 3}$$
+	\noindent{\bf Task 3. f)}\\
+	numerator degree $>$ denominator degree; Exclude, shorten, insert:
+	$$= \lim\limits_{x \to -\infty}{x(7x-{2\over x})\over x(2+{3\over x})}= \lim\limits_{x \to -\infty}{7x-{2\over x}\over 2+{3\over x}}={-\infty \over 2}=-\infty $$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m10limL034/ae034.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

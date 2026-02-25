@@ -1,0 +1,298 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1.}\\
+Wir stellen um und logarithmieren:
+$$ 
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll} 
+{2\over 5} &=& \left({2 \over 1,2^2}\right)^x &| \lg()\\
+\lg {2\over 5} &=& x\cdot \lg {2 \over 1,2^2} & | : \lg {2 \over 1,2^2} \\
+{\lg {2\over 5}\over \lg {2 \over 1,2^2} }&=& x \\
+x &=& -2,8
+\end{array}
+$$
+
+\noindent{\bf Aufgabe 2.}\\
+Es handelt sich um eine exponentielle Abnahme; der Wachstumsfaktor $a$ ist:
+$$a=\left( 1 - {1,5\over 100}\right)=0,985$$
+Die Zerfallsgleichung lautet damit:
+$$N(t)=140 \cdot 0,985^t$$
+Für die Aufgabenstellung setzen wir die Anzahl der aktiven Kerne zu Beginn auf 100\% und am Ende
+des Beobachtungszeitraums auf 42\% und erhalten:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll} 
+42\%&=&100\% \cdot 0,985^t & | : 100\% \\
+0,42 &=& 0,985^t &| \lg()\\
+\lg 0,42 &=& t \cdot \lg 0,985 &| : \lg 0,985\\
+t &=& {\lg 0,42\over \lg 0,985} &= 57,4\\
+\end{array}
+$$
+Antwort: nach $57,4~s$ beträgt die Anzahl aktiver Kerne noch $42\%$ des Anfangswertes.
+
+\noindent{\bf Aufgabe 3. a)}\\
+$$\log_5(\sqrt[4]{5ab})= {1 \over 4} \cdot (\log_5 5 + \log_5 a + \log_5 b ) 
+= \underline{{1 \over 4} + {1 \over 4} \cdot (\log_5 a + \log_5 b )}$$
+\noindent {\bf Aufgabe 3. b)}\\
+$$\log_a \left( {14 a \over b^4} \right)=\log_a 14 + \log_a a - 4 \cdot \log b=
+\underline{ 1+\log_a 14  - 4 \cdot \log b}$$
+\noindent {\bf Aufgabe 4.}\\
+$$\dots = -0,25 \log_a b - 0,5 \log_a b +0,4 \log_a b^{-1,5}=
+\underline{-1,35 \log_a b}$$
+\noindent {\bf Aufgabe 5.}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll} 
+0,25 \cdot 20000 &=& 20000 \cdot 3^{-0,3t} & | : 20000\\
+0,25 &=& 3^{-0,3t} & | \log(\dots)\\
+\log 0,25 &=& -0,3t \cdot \log 3 & | : \log 3\\
+{\log 0,25 \over \log 3} &=& -0,3t & |: (-0,3)\\ 
+{\log 0,25 \over  -0,3 \log 3} &=& t \\
+\underline{4,2} &=& t 
+\end{array}
+$$
+Nach etwa 4 Jahren beträgt der Bestand nur noch 25\% der Anfangspopulation.
+
+\noindent {\bf Aufgabe 6.}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll} 
+5^{2x+1} - 3 \cdot 5^{x+2} + 250 &=& 0 & \\
+5 \cdot 5^{2x} - 3\cdot 5^2 \cdot 5^x + 250 &=& 0 & |\textnormal{Substitution:}\quad 5^x=u\\
+5 \cdot u^2 -75 u +250 &=& 0 & |:5\\
+u^2 -15 u + 50 &=& 0 & |\textnormal{Mitternachtsformel}\\
+u_{1/2} &=& \frac{15 \pm \sqrt{225-4\cdot 50}}{2}\\
+u_1 &=& 10\\
+u_2 &=& 5 &| \textnormal{Rücksubstitution} \quad u=5^x\\
+10 &=& 5^{x_1} \quad \Rightarrow \quad \underline{x_1} &= \underline{\log_5 10} \\
+5 &=& 5^{x_2} \quad \Rightarrow \quad \underline{x_2} &= \underline{1} \\
+\end{array}
+$$
+
+\noindent {\bf Aufgabe 7.}\\
+Die Ersatzgleichung lautet:
+$$
+\begin{array}{rcl} 
+x^{2 \over 3} = & 0,5^{1 \over 3} &  | ()^3 \\
+x^2 = &  0,5 & | \sqrt{\quad} \\
+x  = & \sqrt{1 \over 2} & = {\sqrt{2} \over 2}  
+\end{array}
+$$
+
+\noindent {\bf Aufgabe 8.}\\
+Wir wenden die Logarithmengesetze an:
+$$
+\begin{array}{rl} 
+T(x)= & 5 \cdot \log_5{x} + 2x \cdot \log_5{5} + 5 \cdot \log_5{5^2}-5 \cdot \log_5{x}\\
+= & 2x \cdot 1 + 5 \cdot 2 = 2x + 10  
+\end{array}
+$$
+
+\noindent {\bf Aufgabe 9. a)}\\
+Aufstellen der Funktionsgleichung für exponentielle Abnahme:
+$$ 
+\begin{array}{rl}
+f(t)=& f(0)\cdot \left( 1 - {p \over 100} \right)^t \\
+f(t)=& 50000 \cdot 0,91^t
+\end{array}
+$$
+
+\noindent {\bf Aufgabe 9. b)}\\
+Wenn der Fischbestand um 20000 abnimmt, sind noch 30000 vorhanden:
+$$ 
+\begin{array}{rcll}
+30000&=& 50000 \cdot 0,91^t & | :50000\\
+0,6  &=& 0,91^t & | \log{} \\
+\log{0,6} &=& t \cdot \log{0,91} &| : \log{0,91}\\
+t &=& 5,4 &
+\end{array}
+$$
+Es dauert 5,4 Jahre, bis die Behörden Maßnahmen ergreifen.
+
+\noindent {\bf Aufgabe 9. c)}\\
+Exponentielles Wachstum mit Faktor $ \left( 1 + {6 \over 100} \right) $ ab Zeitpunkt $t=5,4$:
+$$ 
+\begin{array}{rcll}
+50000&=& 30000 \cdot 1,06^t & | :30000\\
+{5 \over 3}  &=& 1,06^t & | \log{} \\
+\log{5 \over 3} &=& t \cdot \log{1,06} &| : \log{1,06}\\
+t &=& 8,8 &
+\end{array}
+$$
+Es dauert insgesamt 5,4 + 8,8 = 14,2 Jahre, bis sich der Fischbestand wieder erholt hat.
+
+\noindent {\bf Aufgabe 10.}\\
+Die Funktionsgleichung $y=b\cdot a^x$ besteht aus dem Startwert b=\EUR {47900} und dem Abnahmefaktor:
+$$a=1-{p \over 100} = 0,77$$
+Beides eingesetzt ergibt:
+$$y=\textnormal{\EUR{47900}}\cdot 0,77^x$$
+Das Auto hat seinen Restwert nach $x$ Jahren: 
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcll}
+\textnormal{\EUR{4550}} &=& \textnormal{\EUR{47900}}\cdot 0,77^x & |:\textnormal{\EUR{47900}}\\
+0,095 &=& 0,77^x & |\log(\dots)\\
+\log 0,095&=& x\cdot \log 0,77 | : \log 0,77 \\
+{\log 0,095 \over \log 0,77}&=& x \\
+x &=& \underline{9}  
+\end{array}
+$$
+Das Fahrzeug ist 9 Jahre alt.
+
+\noindent {\bf Aufgabe 11.}\\
+Das Kapital wächst exponentiell bis zur Ver-n-fachung mit folgender Gleichung:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcll}
+n \cdot K_0 &=& K_0 \cdot \left(1+{p \over 100}\right)^x & | : K_0 \\
+n &=& \left(1+{p \over 100}\right)^x & | \log(\dots) \\
+\log n &=& x \cdot \log \left(1+{p \over 100}\right) &|: \log \left(1+{p \over 100}\right) \\
+{\log n \over \log \left(1+{p \over 100}\right)} &=& x 
+\end{array}
+$$
+In der nach $x$ aufgelösten Beziehung kommen nur die Variablen $n$ und $p$ vor,  nicht aber das Kapital $K_0$.
+
+\noindent {\bf Aufgabe 12. a)}
+$$-2 \cdot \log_a{a} \cdot (- \log_c{c})-(-3 \cdot \log_x{x} \cdot 0)=-2 \cdot (-1) - 0 = 2$$
+\noindent {\bf Aufgabe 12. b)}
+$$5 \lg{a} - 4 \lg{a} - \lg{b}+ \lg{b}-\lg{a}+2,5\lg{b}=2,5\lg{b}$$
+
+\noindent {\bf Aufgabe 13.}
+Es liegt exponentielles Wachstum vor mit dem Faktor 
+$$a=1+{p \over 100}= 1,05$$
+Nach zehn Jahren hat sich ein Anfangskapital um den Faktor 
+$$ k = 1,05^{10}=1,629 $$
+vermehrt.
+Der gleiche Faktor soll auch für das 7-jährige Kapital gelten; also ist der Wachstumsfaktor für ein Jahr dann:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+1,629 &=& a^7  & |\sqrt[7]{\qquad}\\
+\sqrt[7]{1,629} &=& a & = 1,0722
+\end{array}
+$$
+Hieraus errechnet sich ein Jahreszins von:
+$$ p = (a-1) \cdot 100 = 7,2 \% $$
+
+\noindent {\bf Aufgabe 14. a)}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+{5 \cdot 5^x \over 2^x } &=& 78,125 \\
+5 \cdot \left({5 \over 2} \right)^x &=& 78,125 &| :5 \\
+\left( {5 \over 2} \right)^x &=& 15,625 &| \log \\
+x \cdot \log{5\over 2} &=& \log 15,625 & | : \log{5\over 2} \\
+x &=& \frac{ \log 15,625}{\log {5\over 2}} & = 3 
+\end{array}
+$$
+\noindent {\bf Aufgabe 14. b)}
+Die Ersatzgleichung lautet:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+\sqrt{x}^{-3} &=& {1\over 27} \\
+\sqrt{x}^{-3} &=& 3^{-3} & | (\qquad)^{-{1\over 3}} \\
+\sqrt{x} &=& 3 &|(\qquad)^2\\
+x &=& 9 
+\end{array}
+$$
+\noindent {\bf Aufgabe 14. c)}
+Die Ersatzgleichung lautet:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+x^{1\over 3} &=& 7 &|(\qquad)^3 \\
+x &=& 7^{3} &= 343 
+\end{array}
+$$
+
+\noindent {\bf Aufgabe 15.}\\
+Der Funktionsterm für die Bakterien vom Typ A lautet (t = Stunden):
+$$y_A=14000 \cdot 2^t$$
+Die Bakterien vom Typ B vermehren sich um den Faktor 
+$$a=1+{p\over 100} = 2,3$$
+halbstündlich, also lautet der Funktionsterm: 
+$$y_B=5000 \cdot 2,3^{2t}$$
+Beide Terme setzen wir gleich und lösen nach t auf:
+$$
+\begin{array}{rcll}
+14000 \cdot 2^t &=& 5000 \cdot 2,3^{2t} &| : 5000 \qquad :2^t \\
+{14000 \over 5000} &=& \frac{2,3^{2t}}{2^t} \\
+2,8 &=& \left( \frac{2,3^2}{2} \right)^t &| \log \\
+\log 2,8 &=& t\cdot \log{2,645} &| : \log{2,645} \\
+t&=& 1,06 
+\end{array}
+$$
+Nach etwa einer Stunde sind beide Bakterienkulturen gleichauf.
+ 
+\noindent {\bf Aufgabe 16.}
+
+Von 2016 ($t=0$) bis 2028 sind es 12 Jahre. Schadstoffausstoß $S(t=0)=100\%$. Es ergibt sich folgende exponentielle Abnahme um jährlich $p=1,25$ \% :
+$$ S(t)= 100\% \cdot (1-0,0125)^t$$
+Zum Zeitpunkt ($t=12$) gilt mit eingesetzten Werten:
+$$ S(12)= 100\% \cdot 0,9875^{12}= 85,9895\%$$
+Insgesamt hat sich der Schadstoffausstoß dann also um $(100-86)\% = 14 \%$ verringert. Das Ziel kann auf diese Weise also erreicht werden. 
+
+\begin{minipage}{0.5\textwidth}
+\vspace{0.5 cm}
+\noindent {\bf Aufgabe 17.}
+
+a) $$5^x={1 \over 25}= 5^{-2}$$
+Exponentenvergleich liefert:$$x=-2$$
+
+b)$$ 7^c= {1\over 7^{4 \over 3}} = 7^{-{4 \over 3}}$$
+Exponentenvergleich liefert: $$c=-{4 \over 3}$$
+
+\noindent {\bf Aufgabe 18. a)}
+Die Ersatzgleichung lautet:
+  $$ \sqrt{a}^x=a^{2,5}$$
+ $$ a^{0,5x}=a^{2,5}$$
+ Daraus folgt: $$0,5x=2,5$$ und $$x=5$$.
+
+
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+	
+ \noindent {\bf Aufgabe 18. b)}
+ 
+ Ersatzgleichung:
+ $$ a^x = a^{-{1 \over 3}}$$
+ $$\Rightarrow x= -{1 \over 3}$$ 
+ 
+\noindent {\bf Aufgabe 19.}
+$$x=\log_6{216}$$
+$$x=3$$
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m10logaL031/aa031.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{minipage}
+
+
+\end{document}
+

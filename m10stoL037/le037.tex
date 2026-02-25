@@ -1,0 +1,224 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{https://www.okuyakl.de}{www.okuyakl.de}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent {\bf Task 1. a)}\\
+	The result space is (Euro returned = E; Drink received = G):
+	$$\Omega= \{ E \cap G ; E \cap \bar{G}; \bar{E} \cap G ; \bar{E} \cap \bar{G} \}$$
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{c|c|c|c}
+		& E & \bar{E} & \\
+		\hline
+		G & {1\over 3} & {1\over 6}& {1\over 2} \\
+		\hline
+		\bar{G}& {1\over 6} & {1\over 3}& {1\over 2} \\
+		\hline
+		& {1\over 2} & {1\over 2}& 1
+	\end{array}
+	$$
+	\noindent {\bf Exercise 1. b)}\\
+	The desired probability is
+	$$P(G\cap \bar{E})= {1 \over 6}$$
+	\noindent {\bf Exercise 1. c)}\\
+	The desired probability for this exclusive "or" is:
+	$$P( G \cap \bar{E})+ P(\bar{G} \cap E) = {1 \over 6 } + {1 \over 6} = { 1 \over 3}$$
+	\noindent{\bf Exercise 1. d)}\\
+	The desired conditional probability according to Bayes' theorem is:
+	$$P_{\bar{E}}(G)={ P(\bar{E}\cap G) \over P(\bar{E})}= { {1 \over 6} \over {1 \over 2}}= {1 \over 3} $$
+	\noindent{\bf Exercise 1. e)}\\
+	Analogous to d):
+	$$P_G(E)={ P(G \cap E) \over P(G)}= { {1 \over 3} \over {1 \over 2}}= {2 \over 3} $$
+	
+	\noindent {\bf Task 2.}\\
+	B: Image noise; T: Sound noise. \\
+	$P(B)=0.1$ \\ $P_B(T)=0.7$\\ $P_{\overline{B}}(\overline{T})=0.95$ \\
+	This is an inverse problem; we calculate it using Bayes' formula for conditional probability:
+	
+	$$ P_T(\overline{B})={ P(T \cap \overline{B}) \over P(T)} \qquad(*) $$
+	
+	We create a four-field table for the desired probabilities:
+	$$
+	\begin{array}{cccc}
+		P(\overline{T} \cap \overline{B}) &= P(\overline{B}) \cdot P_{\overline{B}}(\overline{T})
+		&= 0.9 \cdot 0.95&=0.855 \\
+		P(T \cap B)&= P(B) \cdot P_B(T)&= 0.1 \cdot 0.7 &= 0.07
+	\end{array}
+	$$
+	
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{c|c|c|c}
+		& B & \overline{B} & \\
+		\hline
+		T & 0.07 & 0.045 & 0.115 \\
+		\hline
+		\overline{T} & 0.03 & 0.855 & 0.885 \\
+		\hline
+		& 0,1 & 0.9 & 1.00
+	\end{array}
+	$$
+	
+	So, (*), the desired probability is:
+	$$ P_T(\overline{B}) = {0.045 \over 0.115} = 0.3913 \approx 39\%$$
+	
+	\noindent {\bf Exercise 3. a)}\\
+	$$h(H) = {8\over 50} = 0.16 \qquad h(K) = {5\over 50} = 0.10$$
+	
+	\noindent {\bf Exercise 3. b)}\\
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{c|c|c|c}
+		& H & \overline{H} & \\
+		\hline
+		K & 0.04 & 0.06 & 0.10 \\
+		\hline
+		\overline{K} & 0.12 & 0.78 & 0.90 \\
+		\hline
+		& 0.16 & 0.84 & 1.00
+	\end{array}
+	$$
+	We read:
+	$$h(\overline{K}\cap \overline{H} )= 0.78 \qquad h(K \cap \overline{H})=0.06 \qquad
+	h(K \cup H)= 0.12+0.04+0.06=0.22$$
+	
+	\noindent {\bf Exercise 4. a)}\\
+	\begin{minipage}{0.4\textwidth}
+		Absolute Frequencies:
+		$$
+		\renewcommand{\arraystretch}{1.5}
+		\begin{array}{c|c|c|c}
+			& E & \overline{E} & \\
+			\hline
+			F & 17 & 11 & 28 \\
+			\hline
+			\overline{F} & 20 & 12 & 32 \\
+			\hline
+			& 37 & 23 & 60
+		\end{array}
+		$$
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+		Relative Frequencies:
+		$$
+		\renewcommand{\arraystretch}{1.5}
+		\begin{array}{c|c|c|c}
+			& E & \overline{E} & \\
+			\hline
+			F & 0.28 & 0.18 & 0.46 \\
+			\hline
+			\overline{F} & 0.34 & 0.20 & 0.54 \\
+			\hline
+			& 0.62 & 0.38 & 1
+		\end{array}
+		$$
+	\end{minipage}
+	
+	\noindent {\bf Exercise 4. b)}\\
+	$$ h(A) = 1-h(\overline{E}\cap \overline{F}) = 0.80$$
+	
+	\noindent {\bf Exercise 5}
+	
+	\begin{center}
+		\begin{tabular}{lcc|c}
+			& \textbf{Label: Strawberry} & \textbf{Label: Raspberry} & \textbf{Sum} \\
+			\midrule
+			\textbf{Filling: Strawberry} & 0.80 $\cdot$ 0.90 = 0.72 & 0.80 0.10 = 0.08 & 0.80\\
+			
+			Filling: Raspberry & 0.20 0.05 = 0.01 & 0.20 0.95 = 0.19 & 0.20\\
+			
+			\midrule
+			
+			Sum & 0.73 & 0.27 & 1.00\\
+			
+		\end{tabular}
+		\end{center}
+			
+			\begin{itemize}
+			
+			\item Mislabeled jars: 0.08 + 0.01 = 0.09 = 9%
+			
+			\item Conditional Probability:
+			$$
+			P(\text{raspberry jam} \mid \text{raspberry label}) = \frac{0.19}{0.27} \approx \boxed{70.37\,\%}
+			$$
+		\end{itemize}
+		
+	\noindent {\bf Task 6}
+	
+	\begin{center}
+		\begin{tabular}{lcc|c}
+			& \textbf{Likes math} & \textbf{Dislikes math} & \textbf{Sum} \\
+			\midrule
+			\textbf{Colored socks} & 30 & 60$-$30 = 30 & 60 \\
+			\textbf{No colorful socks} & 45$-$30 = 15 & 100$-$30$-$30$-$15 = 25 & 40 \\
+			\midrule
+			\textbf{Sum} & 45 & 55 & 100
+		\end{tabular}
+	\end{center}
+	
+	\begin{itemize}
+		\item Guests without colorful socks and without a love of math: $\boxed{25}$
+		\item Independence: Check $P(\text{Loves Math} \mid \text{Colorful Socks}) = \frac{30}{60} = 0.5$
+		and $P(\text{Loves Math}) = \frac{45}{100} = 0.45$
+		$\Rightarrow$ Not equal to $\Rightarrow$ \textbf{not independent}
+	\end{itemize}
+	
+	\noindent {\bf Exercise 7}
+	
+	Since the events are independent:
+	\[
+	P(A\text{ even} \cap B\text{ even}) = P(A\text{ even}) \cdot P(B\text{ even}) = 0{.}70 \cdot 0{.}40 = \boxed{0{.}28}
+	\]
+	
+	{\bf Four-field table:}
+	
+	\begin{center}
+		\begin{tabular}{lcc|c}
+			& \textbf{B even (0{.}40)} & \textbf{B odd (0{.}60)} & \textbf{sum} \\
+			\midrule
+			\textbf{A even (0{.}70)} & $0{.}28$ & $0{.}70 - 0{.}28 = 0{.}42$ & $0.70$ \\
+			\textbf{A odd (0.30)} & $0.40 - 0.28 = 0.12$ & $0.30 - 0.12 = 0.18$ & $0.30$ \\
+			\midrule
+			\textbf{Sum} & $0.40$ & $0.60$ & $1.00$
+		\end{tabular}
+	\end{center}
+	
+	{\bf Probability: at least one die is even:}
+	
+	We use the opposite probability approach:
+	
+	\[
+	P(\text{at least one even}) = 1 - P(\text{both odd}) = 1 - 0.18 = \boxed{0.82}
+	\]
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+		
+		Click here to return to the \href{https://www.okuyakl.de/math/m10stoL037/aa037.pdf}{worksheet}
+	\end{center}
+	
+	\end{document}

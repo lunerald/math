@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+% Start the document
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf L Ö S U N G}\\
+\renewcommand{\arraystretch}{3}
+\begin{tabular}{|p{40 pt}|p{100 pt}|p{100 pt}|p{100 pt}|}
+\hline
+Funktion & Y-Achsenabschnitt $b$ &Wachstumsfaktor $a$  & Funktionsterm $y=$ \\
+\hline
+$f_1(x):$ &  4    & $\sqrt{2}$      &  $y=4\cdot(\sqrt{2})^x$ \\
+\hline
+$f_2(x):$ & 1     & $2$                &  $y=2^x$\\
+\hline
+$f_3(x):$ & 0,5 &  ${1\over 3}$ &  $y=0,5\cdot \left({1\over 3}\right)^x $\\
+\hline
+$f_4(x):$ & -1   & $4$                &  $y=-4^x$\\
+\hline
+$f_5(x):$ & -2   &  $\sqrt{1\over 2}$ &  $y=-2\cdot \left(\sqrt{1\over 2}\right)^x$\\
+\hline
+$f_6(x):$ & -4   &  $\sqrt[3]{2}$  & $y=-4 \cdot (\sqrt[3]{2})^x $ \\
+\hline
+\end{tabular}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m10efuL018/aa018.pdf}{Aufgabenblatt}
+\end{center}
+
+
+%Ende
+\end{document}

@@ -1,0 +1,191 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{colortbl}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+% Start the document
+\begin{document}
+%Titel
+{\bf Sinus und Kosinus im Einheitskreis }\\
+\begin{enumerate}[1.]
+%Aufgabe 1
+{\bf \item Trage den Winkel $\varphi$ am Einheitskreis ein. Ermittle dann durch geeignete Messungen Näherungswerte für $\sin{\varphi}$ und 
+$\cos{\varphi}$. Überprüfe die Ergebnisse mit dem Taschenrechner}\\
+
+
+\begin{enumerate}[a)]
+
+\begin{minipage}{0.5\textwidth}
+\item $\varphi=61^\circ$\\
+\includegraphics[width=7 cm]{eikrei238}\\
+$\sin{\varphi}=$ \rule{40 pt}{0.5 pt}\\
+\vspace{5 pt}\\
+$\cos{\varphi}=$ \rule{40 pt}{0.5 pt}\\
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\item $\varphi=197^\circ$\\
+\includegraphics[width=7 cm]{eikrei238}\\
+$\sin{\varphi}=$ \rule{40 pt}{0.5 pt}\\
+\vspace{5 pt}\\
+$\cos{\varphi}=$ \rule{40 pt}{0.5 pt}\\
+\end{minipage}\\
+\hrule
+\vspace{0.5 cm}
+\begin{minipage}{0.5\textwidth}
+\item $\varphi=322^\circ$\\
+\includegraphics[width=7 cm]{eikrei238}\\
+$\sin{\varphi}=$ \rule{40 pt}{0.5 pt}\\
+\vspace{5 pt}\\
+$\cos{\varphi}=$ \rule{40 pt}{0.5 pt}\\
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\item $\varphi=137^\circ$\\
+\includegraphics[width=7 cm]{eikrei238}\\
+$\sin{\varphi}=$ \rule{40 pt}{0.5 pt}\\
+\vspace{5 pt}\\
+$\cos{\varphi}=$ \rule{40 pt}{0.5 pt}\\
+\end{minipage}
+\end{enumerate}
+
+%Aufgabe 2
+{\bf \item Berechne mit dem Taschenrechner die fehlenden Werte}\\
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{3.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+	\hline
+Winkel Gradmaß	& $1^\circ$ &$7230^\circ$ & & &$225^\circ$ & \\
+	\hline
+Winkel Bogenmaß	& & &$1$ &${1\over 6}\pi$ & & $3,142$\\
+	\hline
+$\sin{\varphi}$	& & & & & &\\
+	\hline
+$\cos{\varphi}$	& & & & & &\\
+	\hline
+\end{tabular}
+
+\newpage
+
+%Aufgabe 4
+{\bf \item Markiere die Quadranten im Einheitskreis mit "+" oder "-", in denen...}\\
+\vspace{0.5 cm}
+\begin{enumerate}[a)]
+\begin{minipage}{0.5\textwidth}
+	\item ... der Sinus positiv oder negativ ist.
+	
+	\includegraphics[width=7 cm]{eikrei238}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+	\item ... der Kosinus positiv oder negativ ist.
+	
+	\includegraphics[width=7 cm]{eikrei238}
+\end{minipage}
+\end{enumerate}
+
+{\bf \item Bestimme Intervalle von Winkeln, für die die folgenden Bedingungen gelten und markiere die\\ jeweiligen Bereiche im Einheitskreis:}\\
+
+\begin{enumerate}[a)]
+\begin{minipage}{0.5\textwidth}
+\item $\sin{\varphi} > 0 $ und  $\cos{\varphi} >0 $:\qquad $\varphi \in$ \rule{50 pt}{0.5 pt}\\
+
+\includegraphics[width=7 cm]{eikrei238}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\item $\sin{\varphi} < 0$ und $\cos{\varphi} <0 $:\qquad $\varphi \in$ \rule{50 pt}{0.5 pt}\\
+
+\includegraphics[width=7 cm]{eikrei238}
+\end{minipage}
+\hrule
+\vspace{0.5 cm}
+\begin{minipage}{0.5\textwidth}
+\item $\sin{\varphi} > \cos{\varphi}$ :\qquad $\varphi \in$ \rule{50 pt}{0.5 pt}\\
+
+\includegraphics[width=7 cm]{eikrei238}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\item $\sin{\varphi} \le \cos{\varphi}$ :\qquad $\varphi \in$ \rule{50 pt}{0.5 pt}\\
+
+\includegraphics[width=7 cm]{eikrei238}
+\end{minipage}
+\end{enumerate}
+
+\newpage
+%Aufgabe 3
+{\bf \item Bestimme mit dem Taschenrechner und mithilfe geeigneter Eintragungen im Einheitskreis alle Winkel im Gradmaß, für die gilt:}
+\vspace{0.5 cm}
+
+\begin{enumerate}[a)]
+	
+	\begin{minipage}{0.5\textwidth}
+		\item $\sin{\alpha}=0,422$\\
+		\begin{tabular}{ccc}
+			$\Rightarrow$ & $\alpha_1$ &= \rule{50 pt}{0.5 pt}\\
+			
+			& $ \alpha_2$ &= \rule{50 pt}{0.5 pt}
+			
+		\end{tabular} 
+		
+		\includegraphics[width=7 cm]{eikrei238}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\item $\sin{\beta}=-0,887$\\
+		\begin{tabular}{ccc}
+			$\Rightarrow$ & $\beta_1$ &= \rule{50 pt}{0.5 pt}\\
+			& $ \beta_2$ &= \rule{50 pt}{0.5 pt}
+		\end{tabular}
+		
+		\includegraphics[width=7 cm]{eikrei238}
+	\end{minipage}\\
+	\hrule
+	\vspace{0.5 cm}
+	\begin{minipage}{0.5\textwidth}
+		\item $\cos{\gamma}=-0,310$\\
+		\begin{tabular}{ccc}
+			$\Rightarrow$ & $\gamma_1$ &= \rule{50 pt}{0.5 pt}\\
+			& $ \gamma_2$ &= \rule{50 pt}{0.5 pt}
+		\end{tabular} 
+		
+		\includegraphics[width=7 cm]{eikrei238}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\item $\cos{\delta}=0,724$\\
+		\begin{tabular}{ccc}
+			$\Rightarrow$ & $\delta_1$ &= \rule{50 pt}{0.5 pt}\\
+			& $ \delta_2$ &= \rule{50 pt}{0.5 pt}
+		\end{tabular} 
+		
+		\includegraphics[width=7 cm]{eikrei238}
+	\end{minipage}
+\end{enumerate}
+\end{enumerate} 
+
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		Weitere Arbeitsblätter gibt es unter 
+		
+		\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+\end{minipage}}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+
+{\bf Jahresgang der Tageslänge für Ingolstadt} - Modellierung mit der allgemeinen Sinusfunktion
+
+$$f(x)=A \cdot \sin(b(x+c))+d$$
+\begin{itemize}
+\item $A$ ist die Amplitude. Hier ist x die Zeit in Tagen und A die halbe Differenz der maximalen und der minimalen Tageslänge $f$ in Stunden.
+Der längste Tag ist zur Sommersonnenwende am 21 Juni. Sonnenaufgang ist dann um 4h11m, Sonnenuntergang um 20h33m Mitteleuropäische Normalzeit MEZ.
+Der kürzeste Tag ist zur Wintersonnenwende am 21 Dezember. Sonnenaufgang ist dann um 8h16m, Sonnenuntergang um 16h20m MEZ.
+
+\item $b$ ist die Wellenzahl. In ihr steckt die Periodenlänge P: $$b ={2 \pi \over P}$$
+Wir nehmen zur Vereinfachung an, dass jeder Monat 30 Tage hat und das Jahr P=360 Tage.
+
+\item $c$ ist die Verschiebung der Funktion in x-Richtung. Die Funktion ist verschoben um die negative Anzahl der Tage von Neujahr bis zum Frühlingsanfang am 21. März.
+
+
+\item $d=12h$ ist die durchschnittliche Tageslänge.
+
+\end{itemize}
+
+\noindent
+Stelle aus diesen Angaben einen Funktionsterm für die Tageslänge in Abhängigkeit von der Zeit im Jahresverlauf dar. 
+Erstelle dann eine Wertetabelle, überlege eine sinnvolle Skalierung der Achsen und zeichne die Funktion hier ein:
+\vspace{0.5 cm}
+
+\includegraphics[width=15 cm]{plot127}
+
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		Zur Lösung bitte \href{https://www.okuyakl.de/math/m10jasL127/ll127.pdf}{hier klicken} oder den QR-Code scannen.\\
+		Weitere Arbeitsblätter gibt es unter 
+		
+		\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=3 cm]{qr127}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+\end{minipage}}
+
+\end{document}
+

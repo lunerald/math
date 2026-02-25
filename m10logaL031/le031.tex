@@ -1,0 +1,297 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1.}\\
+	We rearrange and logarithmize:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		{2\over 5} &=& \left({2 \over 1,2^2}\right)^x &| \lg()\\
+		\lg {2\over 5} &=& x\cdot \lg {2 \over 1,2^2} & | : \lg {2 \over 1,2^2} \\
+		{\lg {2\over 5}\over \lg {2 \over 1,2^2} }&=& x \\
+		x &=& -2.8
+	\end{array}
+	$$
+	
+	\noindent{\bf Task 2.}\\
+	It is an exponential decrease; the growth factor $a$ is:
+	$$a=\left( 1 - {1.5\over 100}\right)=0.985$$
+	The decay equation is therefore:
+	$$N(t)=140 \cdot 0.985^t$$
+	For the task, we set the number of active cores to 100% at the beginning and at the end
+	of the observation period to 42% and get:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		42\%&=&100\% \cdot 0.985^t & | : 100\%\\
+		0.42 &=& 0.985^t &| \lg()\\
+		\lg 0.42 &=& t \cdot \lg 0.985 &| : \lg 0.985\\
+		t &=& {\lg 0.42\over \lg 0.985} &= 57.4\\
+	\end{array}
+	$$
+	Answer: after $57.4~s$ the number of active cores is still $42\%$ of the initial value.
+	
+	\noindent{\bf Task 3. a)}\\
+	$$\log_5(\sqrt[4]{5ab})= {1 \over 4} \cdot (\log_5 5 + \log_5 a + \log_5 b )
+	= \underline{{1 \over 4} + {1 \over 4} \cdot (\log_5 a + \log_5 b )}$$
+	\noindent {\bf task 3. b)}\\
+	$$\log_a \left( {14 a \over b^4} \right)=\log_a 14 + \log_a a - 4 \cdot \log b=
+	\underline{ 1+\log_a 14 - 4 \cdot \log b}$$
+	\noindent {\bf task 4.}\\
+	$$\dots = -0.25 \log_a b - 0.5 \log_a b +0.4 \log_a b^{-1.5}=
+	\underline{-1.35 \log_a b}$$
+	\noindent {\bf task 5.}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		0.25 \cdot 20000 &=& 20000 \cdot 3^{-0.3t} & | : 20000\\
+		0.25 &=& 3^{-0.3t} & | \log(\dots)\\
+		\log 0.25 &=& -0.3t \cdot \log 3 & | :\log 3\\
+		{\log 0.25 \over \log 3} &=& -0.3t & |: (-0.3)\\
+		{\log 0.25 \over -0.3 \log 3} &=& t \\
+		\underline{4,2} &=& t
+	\end{array}
+	$$
+	After about 4 years the population is only 25% of the initial population.
+	
+	\noindent {\bf Task 6.}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		5^{2x+1} - 3 \cdot 5^{x+2} + 250 &=& 0 & \\
+		5 \cdot 5^{2x} - 3\cdot 5^2 \cdot 5^x + 250 &=& 0 & |\textnormal{Substitution:}\quad 5^x=u\\
+		5 \cdot u^2 -75 u +250 &=& 0 & |:5\\
+		u^2 -15 u + 50 &=& 0 & |\textnormal{midnight formula}\\
+		u_{1/2} &=& \frac{15 \pm \sqrt{225-4\cdot 50}}{2}\\
+		u_1 &=& 10\\
+		u_2 &=& 5 &| \textnormal{back substitution} \quad u=5^x\\
+		10 &=& 5^{x_1} \quad \Rightarrow \quad \underline{x_1} &= \underline{\log_5 10} \\
+		5 &=& 5^{x_2} \quad \Rightarrow \quad \underline{x_2} &= \underline{1} \\
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 7.}\\
+	The replacement equation is:
+	$$
+	\begin{array}{rcl}
+		x^{2 \over 3} = & 0.5^{1 \over 3} & | ()^3 \\
+		x^2 = & 0.5 & | \sqrt{\quad} \\
+		x = & \sqrt{1 \over 2} & = {\sqrt{2} \over 2}
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 8.}\\
+	We apply the logarithm laws:
+	$$
+	\begin{array}{rl}
+		T(x)= & 5 \cdot \log_5{x} + 2x \cdot \log_5{5} + 5 \cdot \log_5{5^2}-5 \cdot \log_5{x}\\
+		= & 2x \cdot 1 + 5 \cdot 2 = 2x + 10
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 9. a)}\\
+	Setting up the functional equation for exponential decrease:
+	$$
+	\begin{array}{rl}
+		f(t)=& f(0)\cdot \left( 1 - {p \over 100} \right)^t \\
+		f(t)=& 50000 \cdot 0.91^t
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 9. b)}\\
+	If the fish population decreases by 20,000, there are still 30,000 left:
+	$$
+	\begin{array}{rcll}
+		30000&=& 50000 \cdot 0.91^t & | :50000\\
+		0.6 &=& 0.91^t & | \log{} \\
+		\log{0.6} &=& t \cdot \log{0.91} &| : \log{0.91}\\
+		t &=& 5.4 &
+	\end{array}
+	$$
+	It takes 5.4 years for authorities to take action.
+	
+	\noindent {\bf Exercise 9. c)}\\
+	Exponential growth with factor $ \left( 1 + {6 \over 100} \right) $ from time $t=5.4$:
+	$$
+	\begin{array}{rcll}
+		50000&=& 30000 \cdot 1.06^t & | :30000\\
+		{5 \over 3} &=& 1.06^t & | \log{} \\
+		\log{5 \over 3} &=& t \cdot \log{1.06} &| : \log{1.06}\\
+		t &=& 8.8 &
+	\end{array}
+	$$
+	It takes a total of 5.4 + 8.8 = 14.2 years for the fish population to recover.
+	
+	\noindent {\bf Task 10.}\\
+	The functional equation $y=b\cdot a^x$ consists of the starting value b=\EUR {47900} and the decrease factor:
+	$$a=1-{p \over 100} = 0.77$$
+	Using both results in:
+	$$y=\textnormal{\EUR{47900}}\cdot 0.77^x$$
+	The car has its residual value after $x$ years:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		\textnormal{\EUR{4550}} &=& \textnormal{\EUR{47900}}\cdot 0.77^x & |:\textnormal{\EUR{47900}}\\
+		0.095 &=& 0.77^x & |\log(\dots)\\
+		\log 0.095&=& x\cdot \log 0.77 | : \log 0.77 \\
+		{\log 0.095 \over \log 0.77}&=& x \\
+		x &=& \underline{9}
+	\end{array}
+	$$
+	The vehicle is 9 years old.
+	
+	\noindent {\bf Task 11.}\\
+	Capital grows exponentially up to n-fold with the following equation:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		n \cdot K_0 &=& K_0 \cdot \left(1+{p \over 100}\right)^x & | : K_0 \\
+		n &=& \left(1+{p \over 100}\right)^x & | \log(\dots) \\
+		\log n &=& x \cdot \log \left(1+{p \over 100}\right) &|: \log \left(1+{p \over 100}\right) \\
+		{\log n \over \log \left(1+{p \over 100}\right)} &=& x
+	\end{array}
+	$$
+	In the relationship solved for $x$ only the variables $n$ and $p$ appear, but not the capital $K_0$.
+	
+	\noindent {\bf Exercise 12. a)}
+	$$-2 \cdot \log_a{a} \cdot (- \log_c{c})-(-3 \cdot \log_x{x} \cdot 0)=-2 \cdot (-1) - 0 = 2$$
+	\noindent {\bf Exercise 12. b)}
+	$$5 \lg{a} - 4 \lg{a} - \lg{b}+ \lg{b}-\lg{a}+2.5\lg{b}=2.5\lg{b} $$
+	
+	\noindent {\bf Exercise 13.}
+	There is exponential growth with the factor
+	$$a=1+{p \over 100}= 1.05$$
+	After ten years, the initial capital has increased by a factor
+	$$ k = 1.05^{10}=1.629 $$
+	increased.
+	The same factor should also apply to the 7-year capital; So the growth factor for one year is then:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		1,629 &=& a^7 & |\sqrt[7]{\qquad}\\
+		\sqrt[7]{1.629} &=& a & = 1.0722
+	\end{array}
+	$$
+	This calculates an annual interest rate of:
+	$$ p = (a-1) \cdot 100 = 7.2 \% $$
+	
+	\noindent {\bf Exercise 14. a)}
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		{5 \cdot 5^x \over 2^x } &=& 78.125 \\
+		5 \cdot \left({5 \over 2} \right)^x &=& 78,125 &| :5\\
+		\left( {5 \over 2} \right)^x &=& 15,625 &| \log \\
+		x \cdot \log{5\over 2} &=& \log 15.625 & | : \log{5\over 2} \\
+		x &=& \frac{ \log 15.625}{\log {5\over 2}} & = 3
+	\end{array}
+	$$
+	\noindent {\bf Exercise 14. b)}
+	The replacement equation is:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		\sqrt{x}^{-3} &=& {1\over 27} \\
+		\sqrt{x}^{-3} &=& 3^{-3} & | (\qquad)^{-{1\over 3}} \\
+		\sqrt{x} &=& 3 &|(\qquad)^2\\
+		x &=& 9
+	\end{array}
+	$$
+	\noindent {\bf Exercise 14. c)}
+	The replacement equation is:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		x^{1\over 3} &=& 7 &|(\qquad)^3 \\
+		x &=& 7^{3} &= 343
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 15.}\\
+	The functional term for type A bacteria is (t = hours):
+	$$y_A=14000 \cdot 2^t$$
+	Type B bacteria multiply by this factor
+	$$a=1+{p\over 100} = 2.3$$
+	half hourly, so the function term is:
+	$$y_B=5000 \cdot 2.3^{2t}$$
+	We equate both terms and solve for t:
+	$$
+	\begin{array}{rcll}
+		14000 \cdot 2^t &=& 5000 \cdot 2.3^{2t} &| : 5000 \qquad :2^t \\
+		{14000 \over 5000} &=& \frac{2.3^{2t}}{2^t} \\
+		2.8 &=& \left( \frac{2.3^2}{2} \right)^t &| \log \\
+		\log 2.8 &=& t\cdot \log{2.645} &| : \log{2,645} \\
+		t&=& 1.06
+	\end{array}
+	$$
+	After about an hour, both bacterial cultures are equal.
+	
+	\noindent {\bf Exercise 16.}
+	
+	From 2016 ($t=0$) to 2028 there are 12 years. Pollutant emissions $S(t=0)=100\%$. The following exponential decrease occurs annually $p=1.25$ \%:
+	$$ S(t)= 100\% \cdot (1-0.0125)^t$$
+	At the time ($t=12$) the following applies with the values inserted:
+	$$ S(12)= 100\% \cdot 0.9875^{12}= 85.9895\%$$
+	Overall, pollutant emissions have then been reduced by $(100-86)\% = 14\%$. So the goal can be achieved in this way.
+	
+	\begin{minipage}{0.5\textwidth}
+		\vspace{0.5 cm}
+		\noindent {\bf Exercise 17.}
+		
+		a) $$5^x={1 \over 25}= 5^{-2}$$
+		Exponent comparison yields:$$x=-2$$
+		
+		b)$$ 7^c= {1\over 7^{4 \over 3}} = 7^{-{4 \over 3}}$$
+		Exponent comparison yields: $$c=-{4 \over 3}$$
+		
+		\noindent {\bf Exercise 18. a)}
+		The replacement equation is:
+		$$ \sqrt{a}^x=a^{2.5}$$
+		$$ a^{0.5x}=a^{2.5}$$
+		This results in: $$0.5x=2.5$$ and $$x=5$$.
+		
+		
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		
+		\noindent {\bf Exercise 18. b)}
+		
+		Replacement equation:
+		$$ a^x = a^{-{1 \over 3}}$$
+		$$\Rightarrow x= -{1 \over 3}$$
+		
+		\noindent {\bf Exercise 19.}
+		$$x=\log_6{216}$$
+		$$x=3$$
+		\begin{center}
+			\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+			
+			Here you can go back to the \href{https://www.okuyakl.de/math/m10logaL031/ae031.pdf}{task sheet}
+		\end{center}
+		
+	\end{minipage}
+	
+	
+	\end{document}

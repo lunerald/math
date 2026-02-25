@@ -1,0 +1,167 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	
+	\noindent{\bf Task 1.a)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		\tan^2 x &=& {1 \over 4(1-\sin^2 x)} \\
+		\tan^2 x &=& {1 \over 4\cos^2 x} \\
+		{\sin^2 x \over \cos^2 x} &=& {1 \over 4\cos^2 x} &| \cdot \cos^2x\\
+		\sin^2 x &=& { 1 \over 4} &|\sqrt{\quad}\\
+		\sin x &=& \pm { 1 \over 2} \\
+		x_1 &=& {\pi \over 6}\\
+		x_2 &=& -{\pi \over 6} \\
+		x_2 &=& -{\pi \over 6} + 2\pi &={11 \pi \over 6} \\
+		x_3 &=&\pi-{\pi \over 6} &= {5\pi \over 6}\\
+		x_4 &=& \pi -\left(-{\pi \over 6}\right) &= {7 \pi \over 6}\\
+		
+	\end{array}
+	$$
+	
+	\noindent{\bf Task 1.b)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		\sin x \cos x &=& \sqrt{1-\sin^2 x}\\
+		\sin x \cos x &=& \sqrt{\cos^2 x} \\
+		\sin x \cos x &=& \cos x \\
+		\sin x &=& 1 \quad \lor \quad \cos x =0\\
+		x_1 &=& {\pi \over 2} \\
+		x_2 &=& {3 \pi \over 2}
+	\end{array}
+	$$
+	
+	\noindent{\bf Task 1.c)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		{\cos^2 x \over \sin^2 x} &=& {3 \over 4 \sin^2 x}\\
+		\cos^2 x &=& {3 \over 4} &|\sqrt{\quad}\\
+		\cos x &=& \pm \sqrt{3 \over 4} \\
+		x_1 &=& {\pi \over 6} \\
+		x_2 &=& \pi-{\pi \over 6} \\
+		x_2 &=& {5\pi \over 6} \\
+		2\pi - x_3 &=& {\pi \over 6} \\
+		x_3 &=& { 11 \pi \over 6} \\
+		2\pi - x_4 &=& {5\pi \over 6} \\
+		x_4 &=& { 7 \pi \over 6}
+	\end{array}
+	$$
+	
+	\vspace{2cm}
+	
+	\noindent{\bf task 1.d)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		\sin x + {1 \over 2} &=& { 1 \over 2 \sin x} &|\cdot \sin x\\
+		\sin^2 x + {1 \over 2}\sin x &=& { 1 \over 2} & | - {1 \over 2}\\
+		\sin^2 x + {1 \over 2}\sin x - { 1 \over 2} &=& 0 &| \sin x = u \\
+		u^2 + {1 \over 2} u - {1 \over 2} &=& 0 &\textnormal{midnight formula}\\
+		\Rightarrow u_1 &=& -1 \\
+		u_2 &=& {1 \over 2} \\
+		\sin x &=& -1 \\
+		x_1 &=& {3 \pi \over 2}\\
+		\sin x &=& {1 \over 2} \\
+		x_2 &=& {\pi \over 6} \\
+		x_3 &=& {5 \pi \over 6}
+	\end{array}
+	$$
+	
+	\noindent{\bf task 1.e)}\\
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		\sin^2 x + {1 \over 2}\sqrt{2}\sin x + \cos x &=& \cos x &|-\cos x\\
+		\sin^2 x + {1 \over 2}\sqrt{2}\sin x &=& 0\\
+		\sin x \left(\sin x +{1 \over 2}\sqrt{2}\right) &=&0\\
+		\sin x &=& 0 \\
+		x_1 &=& 0 \\
+		x_2 &=& \pi \\
+		x_3 &=&2 \pi \\
+		\sin x +{1 \over 2}\sqrt{2}&=&0\\
+		\sin x&=& - {1 \over 2}\sqrt{2} \\
+		x_4 &=& -{\pi \over 4} + 2 \pi &= {7 \pi \over 4}\\
+		x_5 &=& \pi - \left( -{\pi \over 4}\right) &= {5\pi \over 4}
+	\end{array}
+	$$
+	
+	\noindent{\bf Task 2.}\\
+	a) $$-\sin x+ \sin x =0$$
+	b) $$2\cos x - \cos x =\cos x$$
+	c) $$\cos x + \cos x = 2 \cos x$$
+	d) $$ \sin x - \sin x =0$$
+	e)$$\cos x - \cos x=0$$
+	f) $$\sin x + \sin x = 2 \sin x$$
+	g)$$-\sin x + \sin x =0$$
+	
+	
+	\onecolumn
+	\noindent{\bf Task 3.}\\
+	a) $$ (\sin^2 x + \cos^2 x)^2 = 1^2 =1$$
+	b)$${{ \sin x \over \cos x}\over \sqrt{1+ { \sin^2 x \over \cos^2 x}}}={\sin x \over \sqrt{\cos ^2 x (1+ { \sin^2 x \over \cos^2 x})}}={\sin x \over \sqrt{\cos^2 x + \sin^2 x}}= {\sin x \over 1}=\sin x$$
+	
+	\noindent{\bf Task 4.}\\
+	Further results in the interval [$- \pi ; 5 \pi$] we get by illustrating the sine function:
+	
+	\includegraphics[width=12 cm]{sin144}
+	
+	\noindent
+	Due to the symmetry of the sine function:
+	$$\sin{x}= \sin{(\pi - x)}$$
+	So another solution to the above equation is:
+	$$x_m= \pi + {\pi \over 5}= 1.2 \pi$$
+	For integers $k \in \mathbb{Z}$ the following applies due to the periodicity of the sine function:
+	$$ \sin{x}= \sin{(x+2k\pi)}$$
+	So now there are all solutions
+	$$
+	\begin{array}{c|c|c|c|c}
+		k & -1 & 0 & 1 & 2 \\
+		\hline
+		x_n & - & -0.2 \pi & 1.8 \pi & 3.8 \pi \\
+		x_m & -0.8\pi & 1.2 \pi & 3.2 \pi & - \\
+	\end{array}
+	$$
+	\noindent {\bf task 5.}\\
+	
+	\begin{minipage}{0.5\textwidth}
+		We first transform the expression in sine so that the shift in the x direction can be seen
+		becomes:
+		$$ f(x)=2\sin{\left({1 \over 2} \left( x - {\pi \over 2}\right)\right)}$$
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=7 cm]{f2sin144}
+	\end{minipage}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m10gozL025/ae025.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

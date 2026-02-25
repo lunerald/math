@@ -1,0 +1,102 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{colortbl}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1.}\\
+Beide Koordinaten müssen den Satz des Pythagoras, hier: $x^2+y^2=1$ erfüllen.
+$$a)\, P(-1|0) \qquad b) \, P\left({1\over 2}|{1\over 2}\sqrt{3}\right) \qquad 
+c)\, P\left({1 \over 2}\sqrt{2}|{1 \over 2}\sqrt{2}\right) \qquad d)\, P\left(-{1 \over 2} \sqrt{3}|{1\over 2}\right)
+\qquad e) \, P(-0,6|0,8)$$
+
+\noindent{\bf Aufgabe 2.}\\
+$$a) \, \sin 30^\circ={1\over 2} \quad b)\, \cos 60^\circ= {1 \over 2} \quad c)\, \tan 45^\circ =1 
+\quad d)\, \sin 45^\circ = {1\over 2} \sqrt{2} \quad e)\, \tan 60^\circ = \sqrt{3}$$
+
+\noindent{\bf Aufgabe 3.}\\
+Der Winkel $\gamma$ beträgt:
+$$\gamma=180^\circ-60^\circ-75^\circ=45^\circ$$
+Dieser Winkel wird gedrittelt, also ist jeder Teilwinkel beim Punkt C gleich 
+$\gamma_{1/2/3}=15^\circ$.
+Im ersten Teildreieck von links beträgt der fehlende Winkel 
+$\varepsilon_1= 180^\circ- 60^\circ -15^\circ = 105^\circ$.
+Mit dem Sinussatz erhalten wir hier:
+$${c_1 \over \sin \gamma_1} = {b \over \sin \varepsilon_1} \qquad \Leftrightarrow 
+\qquad c_1 = {b \over \sin \varepsilon_1} \cdot \sin \gamma_1 = {8\, \SI{}{\centi\meter} \over \sin 105^\circ} \cdot
+\sin 15^\circ = 2,14 \, \SI{}{\centi\meter}$$
+Der Flächeninhalt dieses ersten Teildreiecks ist: 
+$$A_1={1\over 2} \cdot c_1 \cdot b \cdot \sin \alpha = 0,5 \cdot 2,14 \cdot 8 \cdot \sin 60^\circ =
+7,41\,\SI{}{\centi\meter}^3$$
+Die Seite $x$ benötigen wir zum Weiterrechnen; wir bekommen sie mit dem Sinussatz:
+$${x \over \sin \alpha} = {b \over \sin \varepsilon_1} \qquad \Leftrightarrow 
+\qquad x = {b \over \sin \varepsilon_1} \cdot \sin \alpha = {8\, \SI{}{\centi\meter} \over \sin 105^\circ} \cdot
+\sin 60^\circ = 7,17 \, \SI{}{\centi\meter}$$
+Im zweiten Teildreieck beträgt der fehlende Winkel 
+$\varepsilon_2= 180^\circ -15^\circ-(180^\circ-105^\circ)=90^\circ$.
+Das Dreieck ist also rechtwinklig. 
+ Mit dem Sinus erhalten wir hier:
+$${c_2 \over x}=  \sin \gamma_2 \qquad \Leftrightarrow 
+\qquad c_2 = x \cdot \sin \gamma_2  = 7,17\, \SI{}{\centi\meter} \cdot \sin 15^\circ = 1,86 \, \SI{}{\centi\meter}$$
+Der Flächeninhalt dieses zweiten Teildreiecks ist: 
+$$A_2={1\over 2} \cdot c_2 \cdot x \cdot \sin (180^\circ-105^\circ) = 0,5 \cdot 1,86 \cdot 7,17 \cdot \sin 75^\circ =6,44\,\SI{}{\centi\meter}^3$$
+Die Seite $y$ ist nach Pythagoras:
+$$y^2=x^2-c_2^2 \qquad \Leftrightarrow \qquad y=\sqrt{x^2-c_2^2-}=\sqrt{47,95\,\SI{}{\centi\meter}^2}=6,92\,\SI{}{\centi\meter}$$
+$A_3$ erhalten wir durch die Überlegung, dass das mittlere und das rechte Dreieck kongruent sind,
+sie bilden zusammen ein gleichschenkliges Dreieck mit der Höhe $y$ und der Basis $c_2 + c_3 =2 c_2$
+also ist $$A_3=A_2=6,44\,\SI{}{\centi\meter}^3$$
+   
+ \renewcommand{\arraystretch}{3}
+
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|}
+	\hline
+	\rowcolor[gray]{.8}
+&	\bf {a}&\bf  b&\bf  c& $ \alpha$ & $ \beta$ &$ \gamma$\\
+	\hline
+a)&	7 & 5  & 5,8 &$80^\circ$ & $45^\circ$ & $55^\circ$\\
+	\hline
+b)&	3,6 & 8&6 &$25^\circ$ & $111^\circ$ & $44^\circ$\\
+	\hline
+c)&	10&10,1  & 7,2 & $68^\circ$& $70^\circ$& $42^\circ$ \\
+	\hline
+d)&	6,1 &5,3 &6,5 &$61^\circ$ &$50^\circ$ & $69^\circ$\\
+	\hline
+e)&	1,1 & 12 &11,8 &$5^\circ$ & $100^\circ$ & $75^\circ$\\
+	\hline
+f)&	4,8&2,9 &3,5 &$98^\circ$ &$36^\circ$ &$46^\circ$ \\
+	\hline
+g)&	4,8 & 9,1 & & $103^\circ$ & &\\
+	\hline
+h)&	14 & & &$95^\circ$ & $100^\circ$ &\\
+	\hline
+\end{tabular}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m10trigL035/aa035.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+

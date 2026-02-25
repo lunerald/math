@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+	\begin{enumerate}[1.]
+		{\bf \item Given are the points $O(0|0)$, $A(2|0)$, $B(6|-1)$. A square should be constructed mathematically.}
+		
+		\begin{enumerate}[a)]
+			
+			\item Calculate the vector $\overrightarrow{AB}$
+			\item Construct a vector that is orthogonal to $\overrightarrow{AB}$ and has the same length
+			\item Use this to calculate a possible point $C$
+			\item Add a point $D$ so that square ABCD becomes complete.
+			\item Draw the square in the diagram and compare your results.
+			
+			\begin{minipage}{0.4\textwidth}
+				\item Write a function term for the line $AB$ in parameter form
+				\item Convert the parameter form to normal form
+				\item What angle does the line $AB$ make with the x-axis?
+				\item Create an auxiliary line perpendicular to $AB$ through the origin.
+				\item Determine the plumb point L of the origin on the line $AB$
+				\item Determine the distance $|\overrightarrow{OL}|$of the origin from the line $AB$
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.5\textwidth}
+				
+				\includegraphics[width=8 cm]{core128}
+				
+			\end{minipage}
+		\end{enumerate}
+		
+		\item Let M be the center of the square ABCD. Create the following vectors:
+		
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{p{5 cm}p{5 cm}p{5 cm}}
+			
+			$\overrightarrow{AC}$ & $\overrightarrow{AD}$ & $\overrightarrow{AM}$ \\
+			$\overrightarrow{OA}$ & $\overrightarrow{BM}$ & $\overrightarrow{BD}$
+			
+		\end{tabular}
+		
+		\item Create the following dot products and interpret the result:
+		
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{p{5 cm}p{5 cm}p{5 cm}}
+			
+			$\overrightarrow{AC} \odot \overrightarrow{AD}$ & $\overrightarrow{AC}\odot \overrightarrow{AM}$ & $\overrightarrow{AC} \odot \overrightarrow{OA}$ \\
+			$\overrightarrow{AB} \odot \overrightarrow{AD}$ & $\overrightarrow{AM}\odot \overrightarrow{BM}$ & $\overrightarrow{AC} \odot \overrightarrow{BD}$ \\
+		\end{tabular}
+		
+		\item Solve the following equations:
+		
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{p{5 cm}p{5 cm}p{5 cm}}
+			
+			${2 \choose -1} \odot {1 \choose c}=0$ & ${4\choose 2.5}\odot { c \choose 4}=0$&$ {0.1 \choose c} \odot {5 \choose 0.2}=0$\\
+			
+		\end{tabular}
+		
+	\end{enumerate}
+	
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			Additional worksheets are available at
+			
+			\href{http://www.okuyakl.com}{www.okuyakl.com}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			%\includegraphics[width=3 cm]{qr128}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+	
+\end{document}

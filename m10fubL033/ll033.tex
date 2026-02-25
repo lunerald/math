@@ -1,0 +1,157 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{polynom}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. a)}\\
+
+Wir setzen $x=3$ in den Funktionsterm ein und setzen gleich Null:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcl} 
+0,2 \cdot 3^3 -1,4 \cdot 3^2 - 1,8 \cdot 3 +12,6&=0 \\
+5,4 - 12,6 -5,4 +12,6 &=0 & (w)
+\end{array}
+$$
+Wir erhalten eine wahre Aussage.
+
+\noindent {\bf Aufgabe 1. b)}\\
+Weitere Nullstellen erhalten wir mittels Polynomdivision durch den bereits bekann\-ten Faktor 
+$(x-3)$:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rrrrcl} 
+ 0,2 x^3 &-1,4 x^2 &- 1,8 x &+12,6 & :(x-3)=& 0,2x^2-0,8x -4,2 \\
+\underline{-(0,2x^3}& \underline{-0,6 x^2)}\\
+        & -0,8 x^2 & -1,8 x \\
+&\underline{-(-0,8x^2}& \underline{+2,4 x)}\\
+        &          & -4,2 x &+12,6 \\
+        &  & \underline{-(-4,2x}& \underline{+12,6)}\\
+        & & & 0 \\
+\end{array}
+$$
+Die gewonnene quadratische Gleichung untersuchen wir mit der Mitternachtsformel:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcl} 
+x_{2/3}&=&\frac{0,8 \pm \sqrt{0,64 -4\cdot 0,2 \cdot (-4,2)}}{2\cdot 0,2}\\
+   \underline{x_2} &=& \underline{7} \\
+\underline{x_3} &=& \underline{-3} 
+\end{array}
+$$
+Weitere Nullstellen der Funktion sind $N_2(-3|0)$ und $N_3(7|0)$.
+
+\noindent {\bf Aufgabe 1. c)}\\
+Den Schnittpunkt mit der y-Achse erhält man, wenn man $x=0$ in den Funktionsterm einsetzt:
+$$g(0)=0-0-0+12,6 =12,6 \quad \Rightarrow  \quad S_y(0|12,6)$$
+
+\noindent {\bf Aufgabe 1. d)}\\
+Die höchste vorkommende Potenz, hier $x^3$ entscheidet mit dem Vorzeichen ihres Vorfaktors, wohin die Funktion für große $|x|$ geht. Der Vorfaktor ist positiv, und die Potenz ist ungerade. Aus diesem Grund gilt:
+$$\lim\limits_{x \to \infty} 0,2 x^3 -1,4 x^2 - 1,8 x +12,6 = \infty$$
+$$\lim\limits_{x \to -\infty} 0,2 x^3 -1,4 x^2 - 1,8 x +12,6 = -\infty$$
+
+\noindent{\bf Aufgabe 2.}\\
+\begin{itemize}
+	\item Die y-Achse ist Polstelle ohne Vorzeichenwechsel $\Rightarrow \quad x^2 $ im Nenner.
+	\item Doppelte Nullstelle bei $x=1 \quad \Rightarrow \quad (x-1)^2$ im Zähler
+	\item Zählergrad = Nennergrad; waagrechte Asymptote bei $y=0,5 \quad \Rightarrow $ Faktor $ {1 \over 2}$ 
+\end{itemize}
+Funktionsterm:
+$$f(x)= {(x-1)^2 \over 2 x^2}$$
+
+\newpage
+\noindent{\bf Aufgabe 3. a)}\\
+Definitionslücken sind Nullstellen des Nenners. Mit dem Satz von Vieta erhalten wir:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+x^2+2x-3 & = & 0 & = (x+a)(x+b)\\
+a + b & = & 2 \\
+a \cdot b & = & -3 \\
+\Rightarrow a & = & 3 \\
+            b & = & -1 \\
+x^2+2x-3 & = & 0 & = (x+3)(x-1)
+\end{array}
+$$ 
+Die Nullstellen von diesem Term sind also $x_1=-3$ und $x_2=1$.
+
+\noindent{\bf Aufgabe 3. b)}\\
+Wir raten die erste Nullstelle des Zählers, sie ist $x=1$. Anschließend führen wir die Polynomdivision aus:
+$$
+\polyset{style=C,div=:,vars=x}
+\polylongdiv{2x^3-2x^2-8x+8}{x-1}
+$$
+Wir faktorisieren weiter:
+$$2x^2-8 = 2(x^2-4) = 2(x+2)(x-2)$$
+
+Damit erhalten wir:
+$$f(x)={2(x+2)(x-2)(x-1) \over (x+3)(x-1)}$$
+
+\noindent{\bf Aufgabe 3. c)}\\
+Den Term $(x-1)$ kürzen wir aus Zähler und Nenner und betrachten das Verhalten der Funktion in der Umgebung von $x=1$:
+$$\lim\limits_{x\to 1^+}  {2x^2-8 \over x+3} = -{6 \over 4} = -1,5 $$
+$$\lim\limits_{x\to 1^-}  {2x^2-8 \over x+3} = -{6 \over 4} = -1,5 $$
+Der Grenzwert existiert und die Funktion nähert sich von beiden Seiten derselben Stelle $y=-1,5$, die Funktion $f$ ist also an ihrer Definitionslücke $x=1$ stetig fortsetzbar.
+
+\noindent{\bf Aufgabe 3. d)}\\
+Als Polstelle kommt die Stelle $x=-3$ infrage. Wir wenden auch hier den Limes an:
+$$\lim\limits_{x\to -3^+}  {2x^2-8 \over x+3} = "{10 \over +0}" = + \infty $$ 
+$$\lim\limits_{x\to -3^-}  {2x^2-8 \over x+3} = "{10 \over -0}" = - \infty $$ 
+\noindent{\bf Aufgabe 3. e)}\\
+Die gefundene Polstelle bei $x=-3$ ist auch gleichzeitig senkrechte Asymptote. Der Zählergrad ist um eins größer als der Nennergrad, daher finden wir noch eine schräge Asymptote:
+$$
+\polyset{style=C,div=:,vars=x}
+\polylongdiv{2x^3-2x^2-8x+8}{x^2+2x-3}
+$$
+Die schräge Asymptote ist der Term vor dem Rest: 
+$$y=2x-6$$.
+
+\noindent{\bf Aufgabe 4. a)}\\
+Die Definitionsmenge ist:
+$$D_f =\mathbb{R} \setminus \{-2\}$$
+Waagrechte Asymptote: $y=5$ \\
+Senkrechte Asymptote: $x=2$
+
+\noindent{\bf Aufgabe 4. b)}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+{1 \over x+2} +5 &=& 7 &| -5\\
+{1 \over x+2} &=& 2 &| \cdot (x+2)\\
+1 &=& 2x +4 & \Rightarrow \quad x= -1,5
+\end{array}
+$$
+
+\noindent{\bf Aufgabe 4. c)}\\
+$$g(x)= { 1 \over {0,5\cdot x +2}}+6 $$
+Waagrechte Asymptote: $y=6$ \\
+Senkrechte Asymptote: $x=4$
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m10fubL033/aa033.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+

@@ -1,0 +1,120 @@
+\documentclass[a4paper]{article}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+{\bf Vierfeldertafel und Baumdiagramm}
+\begin{enumerate}[1.]
+
+%Aufgabe 4
+{\bf \item Ein Getränkeautomat ist defekt. Wirft man einen Euro ein, so ist die Wahrscheinlichkeit, dass man ein Getränk erhält,} 0,5. Die Wahrscheinlichkeit, dass der Automat ein Getränk und den Euro auswirft, ist ${1 \over 3}$. Die Wahrscheinlichkeit, dass man kein Getränk bekommt und den Euro zurückerhält, ist ${1\over 6}$
+\begin{enumerate}[a)]
+\item Gib einen Ergebnisraum an und erstelle eine Vierfeldertafel.
+\item Wie groß ist die Wahrscheinlichkeit, dass man ein Getränk bekommt und es bezahlt hat?
+\item Wie groß ist die Wahrscheinlichkeit, dass man entweder ein Getränk erhält oder seinen Euro zurückbekommt?(Nur eines von beiden)
+\item Wie groß ist die Wahrscheinlichkeit, dass man ein Getränk bekommt, wenn der Automat den Euro einbehalten hat?
+\item Wie groß ist die Wahrscheinlichkeit, dass der Automat den Euro wieder herausgibt, wenn man ein Getränk erhalten hat?
+\end{enumerate}
+
+{\bf \item Bei einem Fernsehsender treten Bildstörungen mit 10 \% Wahrscheinlichkeit auf. In diesem Fall kommt es dann mit 70 \% Wahrscheinlichkeit zu Tonstörungen.} Ist das Bild einwandfrei, so ist mit 95  \% Wahrscheinlichkeit auch der Ton in Ordnung. Berechne die Wahrscheinlichkeit für ein einwandfreies Bild, falls der Ton gestört ist.
+
+{\bf \item Von 50 ärztlich untersuchten Grundschülern haben acht Kinder Haltungsschäden, fünf Kinder Karies und zwei Kinder sowohl Haltungsschäden als auch Karies.}
+
+\begin{enumerate}[a)]
+\item Berechnen Sie die relativen Häufigkeiten von \\ 
+H: ,,Haltungsschäden" \\ K: ,,Karies"
+\item Bestimmen Sie anhand der Vierfeldertafel die relativen Häufigkeiten\\
+ $h(\overline{K} \cap \overline{H}),  h( K \cap \overline{H})$ und $ h(K \cup H)$.
+\end{enumerate}
+
+{\bf \item Von 60 Studenten einer Sprachschule haben 37 Englisch belegt, 28 Französisch und 17 beide Sprachen.}
+\begin{enumerate}[a)]
+\item Erstellen Sie je eine Vierfeldertafel für die absoluten und die relativen Häufigkeiten.
+\item Bestimmen Sie die relativen Häufigkeiten für das Ereignis\\
+ A = ,,Englisch oder Französisch belegt".
+\end{enumerate}
+
+
+
+	{\bf \item Die Marmeladenmanufaktur}
+
+In einer kleinen Manufaktur werden Marmeladengläser produziert. Die Etikettiermaschine ist ein wenig unzuverlässig.
+
+\begin{itemize}
+	\item 80\,\% der Gläser enthalten \textbf{Erdbeermarmelade}, 20\,\% \textbf{Himbeermarmelade}.
+	\item Bei Erdbeergläsern wird in 90\,\% der Fälle korrekt „Erdbeere“ etikettiert.
+	\item Bei Himbeergläsern ist die Etikettierung in 95\,\% der Fälle korrekt.
+\end{itemize}
+
+\begin{enumerate}
+	\item Erstelle eine Vierfeldertafel mit den Merkmalen: \textbf{Füllung} (Erdbeere / Himbeere) und \textbf{Etikett} (Erdbeere / Himbeere).
+	\item Mit welcher Wahrscheinlichkeit greift jemand zu einem falsch etikettierten Glas?
+	\item Wie wahrscheinlich ist es, dass ein Glas mit dem Etikett „Himbeere“ tatsächlich Himbeermarmelade enthält?
+\end{enumerate}
+
+	{\bf \item Die Party mit den Socken}
+
+Auf einer WG-Party werden 100 Gäste gefragt, ob sie bunte Socken tragen und ob sie Mathe mögen. Die Ergebnisse:
+
+\begin{itemize}
+	\item 60 Personen tragen bunte Socken.
+	\item 45 Personen mögen Mathe.
+	\item 30 Personen tragen bunte Socken und mögen Mathe.
+\end{itemize}
+
+\begin{enumerate}
+	\item Erstelle eine Vierfeldertafel mit den Merkmalen: \textbf{Socken} (bunt / nicht bunt) und \textbf{Mathe} (mag / mag nicht).
+	\item Wie viele Gäste tragen keine bunten Socken und mögen Mathe nicht?
+	\item Sind die Merkmale unabhängig?
+\end{enumerate}
+
+\newpage
+{\bf \item Die Verschwörung der Würfel – oder doch nicht?}
+
+Zwei Würfel, A und B, werden gleichzeitig geworfen. Man vermutet eine Verschwörung, doch die Wahrscheinlichkeiten sprechen (vielleicht) eine andere Sprache:
+
+\begin{itemize}
+	\item Würfel A zeigt in 70\,\% der Fälle eine gerade Zahl.
+	\item Würfel B zeigt in 40\,\% der Fälle eine gerade Zahl.
+\end{itemize}
+
+Angenommen, die beiden Würfel verhalten sich \textbf{unabhängig} voneinander.
+
+\begin{enumerate}
+	\item Berechne die Wahrscheinlichkeit, dass beide Würfel gleichzeitig eine gerade Zahl zeigen.
+	\item Erstelle eine Vierfeldertafel mit den Merkmalen: „Würfel A gerade / ungerade“ und „Würfel B gerade / ungerade“.
+	\item Wie groß ist die Wahrscheinlichkeit, dass mindestens ein Würfel eine gerade Zahl zeigt?
+\end{enumerate}
+
+
+\end{enumerate} 
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+	Zur Lösung bitte \href{https://www.okuyakl.de/math/m10stoL037/ll037.pdf}{hier klicken} oder den QR-Code scannen.\\
+Weitere Arbeitsblätter gibt es unter 
+
+\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=3 cm]{qr037}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+	\end{minipage}}
+
+\end{document}

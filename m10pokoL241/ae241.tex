@@ -1,0 +1,99 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+	%Title
+	\noindent{\bf Cartesian coordinates and polar coordinates}\\
+	
+	\noindent
+	\begin{minipage}{0.75\textwidth}
+		Each point $P(x|y)$ of a Cartesian coordinate system can also be represented as a pair of values $P(r|\varphi)$ with the distance from the origin $r$ and the angle $\varphi$. \\
+		It applies to $P(r|\varphi) \Rightarrow P(x|y)$:
+		$$ x = r \cdot \cos \varphi \qquad ; \qquad y =r \cdot \sin \varphi$$
+		and for $P(x|y) \Rightarrow P(r|\varphi)$:
+		$$ r = \sqrt{x^2 + y^2} \qquad ; \qquad \varphi = \arctan{y \over x}$$
+		
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.25\textwidth}
+		\includegraphics[width=5 cm]{poko241}
+	\end{minipage}
+	\vspace{0.3 cm}
+	
+	\noindent{\bf Convert the following coordinates:}\\ Represent as an exact number if possible and otherwise round to three valid digits:
+	\vspace{0.3 cm}
+	
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|p{5cm}|p{5 cm}|p{5 cm}|}
+		\hline
+		\rowcolor[gray]{.8} Cartesian coordinates & polar coordinates degrees & polar coordinates radians \\
+		\hline
+		$A(4|3)$ & & \\
+		\hline
+		& $B(2|30^\circ)$ & \\
+		\hline
+		$C(1.5|0)$ & & \\
+		\hline
+		& & $D(2| {\pi \over 4})$ \\
+		\hline
+		& $E(8|90^\circ)$ & \\
+		\hline
+		& & $F(4|3,14)$ \\
+		\hline
+		$G(-5|-12)$ & & \\
+		\hline
+		& & $H(12|{3 \over 2}\pi)$ \\
+		\hline
+		& $I(4,2|330^\circ)$ & \\
+		\hline
+		& $J(3,2|275^\circ)$ & \\
+		\hline
+		$K(0|2)$ & & \\
+		\hline
+		& & $L(12|{\pi \over 12})$\\
+		\hline
+		$M(6|-8)$ & & \\
+		\hline
+		& $N(4|135^\circ)$ &\\
+		\hline
+		$O(0|0)$ & & \\
+		\hline
+		& $P(1|200^\circ)$ &\\
+		\hline
+		& & $Q(1|1)$\\
+		\hline
+		$R(1|1)$ & & \\
+		\hline
+		& $S(1|1^\circ)$ & \\
+		\hline
+	\end{tabular}
+	
+	
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			For the solution, please \href{https://www.okuyakl.de/math/m10pokoL241/le241.pdf}{click here} or scan the QR code.\\
+			Additional worksheets are available at
+			
+			\href{http://www.okuyakl.com}{www.okuyakl.com}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			\includegraphics[width=3 cm]{qre241}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+	%End
+\end{document}

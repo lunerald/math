@@ -1,0 +1,91 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+\begin{enumerate}[1.]
+{\bf \item Gegeben sind die Punkte $O(0|0)$, $A(2|0)$, $B(6|-1)$. Es soll ein Quadrat rechnerisch konstruiert werden.}
+
+\begin{enumerate}[a)]
+
+\item Berechne den Vektor $\overrightarrow{AB}$ 
+\item Stelle einen Vektor auf, der orthogonal zu $\overrightarrow{AB}$ ist und die gleiche Länge hat
+\item Berechne damit einen möglichen Punkt $C$
+\item Ergänze einen Punkt $D$ sodass das Quadrat ABCD vollständig wird.
+\item Zeichne das Quadrat in das Schaubild und vergleiche Deine Ergebnisse.
+
+\begin{minipage}{0.4\textwidth}
+\item Stelle einen Funktionsterm für die Gerade $AB$ in Parameterform auf
+\item Wandle die Parameterform in die Normalenform um
+\item Welchen Winkel bildet die Gerade $AB$ mit der x-Achse? 
+\item Bilde eine zu $AB$ senkrechte Hilfsgerade durch den Ursprung.
+\item Bestimme den Lotfußpukt L des Ursprungs auf der Geraden $AB$
+\item Bestimme den Abstand $|\overrightarrow{OL}|$des Ursprungs von der Geraden $AB$
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+
+   \includegraphics[width=8 cm]{core128}
+
+\end{minipage}
+\end{enumerate} 
+
+\item Es sei M der Mittelpunkt des Quadrates ABCD. Bilde folgende Vektoren: 
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{5 cm}p{5 cm}p{5 cm}}
+	
+	$\overrightarrow{AC}$	&	$\overrightarrow{AD}$	&	$\overrightarrow{AM}$	\\
+	$\overrightarrow{OA}$	&	$\overrightarrow{BM}$	&	$\overrightarrow{BD}$	
+	
+\end{tabular}
+
+\item Bilde folgende Skalarprodukte und interpretiere das Ergebnis:
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{5 cm}p{5 cm}p{5 cm}}
+	
+$\overrightarrow{AC} \odot \overrightarrow{AD}$ & $\overrightarrow{AC}\odot \overrightarrow{AM}$ & $\overrightarrow{AC} \odot \overrightarrow{OA}$  \\
+$\overrightarrow{AB} \odot \overrightarrow{AD}$ & $\overrightarrow{AM}\odot \overrightarrow{BM}$ & $\overrightarrow{AC} \odot \overrightarrow{BD}$  \\
+\end{tabular}
+
+\item Löse folgende Gleichungen: 
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{5 cm}p{5 cm}p{5 cm}}
+	
+	${2 \choose -1} \odot {1 \choose c}=0$	& ${4\choose 2,5}\odot { c \choose 4}=0$&$ {0,1 \choose c}\odot {5 \choose 0.2}=0$\\
+	
+\end{tabular}
+
+\end{enumerate} 
+
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		Weitere Arbeitsblätter gibt es unter 
+		
+		\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		%\includegraphics[width=3 cm]{qr128}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+\end{minipage}}
+
+\end{document}
+

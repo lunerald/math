@@ -1,0 +1,83 @@
+
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+{\bf Kartesische Koordinaten und Polarkoordinaten}\\
+
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{5cm}|p{5 cm}|p{5 cm}|}
+	\hline
+	\rowcolor[gray]{.8} Kartesische Koordinaten	& Polarkoordinaten Gradmaß & Polarkoordinaten Bogenmaß \\
+	\hline
+$A(4|3)$ & $A(5|36,9^\circ)$ &  $A(5|0,644)$ \\
+	\hline
+$B(\sqrt{3}|1)$	& $B(2|30^\circ)$ &  $B(2|{\pi \over 6})$ \\
+	\hline
+$C(1,5|0)$	& $C(1,5|0)$ &  $C(1,5|0)$ \\
+	\hline
+$D(\sqrt{2}|\sqrt{2})$	&  $D(2|45^\circ)$& $D(2| {\pi \over 4})$ \\
+	\hline
+$E(0|8)$	& $E(8|90^\circ)$ &  $E(8|{\pi \over 2})$ \\
+	\hline
+$F(-4|0)$	& $F(4|180)$ & $F(4|3,14)$ \\
+	\hline
+$G(-5|-12)$ & $G(13|247^\circ)$ &  $G(13|4,32)$ \\
+	\hline
+$H(0|-12)$	& $H(12|270^\circ)$ & $H(12|{3 \over 2}\pi)$ \\
+	\hline
+$I(3,64|-2,1)$	& $I(4,2|330^\circ)$ & $I(4,2|{11\over 6}\pi)$ \\
+	\hline
+$J(0,279|-3,19)$	& $J(3,2|275^\circ)$ & $J(3,2|4,80)$ \\
+	\hline
+$K(0|2)$	& $K(2|90^\circ)$&  $K(|{\pi \over 2})$\\
+	\hline
+$L(11,6|3,11)$	& $L(12|15^\circ)$& $L(12|{\pi \over 12})$\\
+	\hline
+$M(6|-8)$ &$M(10|307^\circ)$ & $M(10|5,36)$\\
+	\hline
+$N(-2\sqrt{2}|2\sqrt{2})$	& $N(4|135^\circ)$ &$N(4|{3\over 4}\pi)$\\
+	\hline
+$O(0|0)$	&$O(0|0)$ & $O(0|0)$\\
+	\hline
+$P(-0,940|-0,342)$	& $P(1|200^\circ)$ &$P(1|{10\over 9}\pi)$\\
+	\hline
+$Q(0,540|0,841)$	& $Q(1|57,3^\circ)$& $Q(1|1)$\\
+	\hline
+	$R(1|1)$	&$R(\sqrt{2}|45^\circ)$ & $R(\sqrt{2}|{\pi \over 4})$ \\
+	\hline
+$S(1,00|0,02)$ & $S(1|1^\circ)$ & $S(1|0,02)$\\
+	\hline
+\end{tabular}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m10pokoL241/aa241.pdf}{Aufgabenblatt}
+\end{center}
+
+%Ende
+\end{document}

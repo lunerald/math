@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+	
+	{\bf Annual cycle of day length for Ingolstadt} - Modelling with the general sine function
+	
+	$$f(x)=A \cdot \sin(b(x+c))+d$$
+	\begin{itemize}
+		\item $A$ is the amplitude. Here x is the time in days and A is half the difference between the maximum and minimum day length $f$ in hours.
+		The longest day is the summer solstice on June 21st. Sunrise is then at 4h11m, sunset at 20h33m Central European Standard Time CET.
+		The shortest day is the winter solstice on December 21st. Sunrise is then at 8h16m, sunset at 16h20m CET.
+		
+		\item $b$ is the wave number. It contains the period length P: $$b ={2 \pi \over P}$$
+		For simplicity, we assume that each month has 30 days and the year P=360 days.
+		
+		\item $c$ is the shift of the function in the x direction. The function is shifted by the negative number of days from New Year's Day to the beginning of spring on March 21st.
+		
+		
+		\item $d=12h$ is the average day length.
+		
+	\end{itemize}
+	
+	\noindent
+	From this information, represent a functional term for the length of the day as a function of time over the course of the year.
+	Then create a table of values, think about a sensible scaling of the axes and draw the function here:
+	\vspace{0.5 cm}
+	
+	\includegraphics[width=15 cm]{plot127}
+	
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			For the solution, please \href{https://www.okuyakl.de/math/m10jasL127/le127.pdf}{click here} or scan the QR code.\\
+			Additional worksheets are available at
+			
+			\href{http://www.okuyakl.com}{www.okuyakl.com}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			\includegraphics[width=3 cm]{qre127}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+	
+\end{document}
