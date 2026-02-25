@@ -1,0 +1,186 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+	{\bf Mathematik -- Geraden im $\mathbb{R}^3$}\\
+	\begin{enumerate}[1.]
+		{\bf \item Aufgabe}\\ 
+		\vspace{0.25 cm}\\
+		Wir prüfen, ob folgende Vektoren linear abhängig sind: 
+		\begin{enumerate}[a)] 
+			\item $$\vec{AB} = k \cdot \vec{AC}$$
+				$$\left(
+				\begin{array}{c}
+					2 \\ 5 \\ -2\\
+				\end{array}
+				\right) 
+				= k \cdot
+				\left(
+				\begin{array}{c}
+					-4 \\ -10 \\ 4\\
+				\end{array}
+				\right) $$
+				Lösbar für $ k=-0,5 \Rightarrow C \in g_{AB}$ 
+				\vspace{0.25 cm}\\
+				
+			\item $\vec{AD} \neq k \cdot \vec{AB} \Rightarrow D \notin  g_{AB}$
+		\end{enumerate}
+		\vspace{0.25 cm}		
+		
+		{\bf \item Aufgabe}\\
+		$$g_{AB}: \vec{x}=\left(
+		\begin{array}{c}
+			3 \\ 6 \\ 9\\
+		\end{array}
+		\right)+ \lambda \cdot \left(
+		\begin{array}{c}
+			2 \\ 1 \\ -3\\
+		\end{array}
+		\right)\stackrel{!}{=}\left(
+		\begin{array}{c}
+			x \\ y \\ 4,5\\
+		\end{array}
+		\right)$$
+		$$\begin{array}{rrcl}
+			\rm I & 3 + 2 \lambda &=& x \\
+			\rm	II & 6 + 1 \lambda &=& y \\
+			\rm	III & 9 -3 \lambda &=& 4,5 \Rightarrow \lambda =1,5\\
+			\end{array}$$
+		in II: $y =7,5$\\
+		in I: $x= 6$\\
+		$$\Rightarrow C(6|-7,5|4,5)$$
+		\vspace{0.25 cm}\\
+	
+		{\bf \item Aufgabe}\\
+		$$h: \vec{x}=\left(
+		\begin{array}{c}
+			4 \\ 3 \\ 0\\
+		\end{array}
+		\right)+ \lambda \cdot \left(
+		\begin{array}{c}
+			3 \\ -2 \\ 2\\
+		\end{array}
+		\right)\stackrel{!}{=}\left(
+		\begin{array}{c}
+			-2 \\ 7 \\ -4\\
+		\end{array}
+		\right)$$
+		Lösbar für $\lambda = -2$
+		\vspace{0.25 cm}\\
+	
+
+		{\bf \item Aufgabe}\\
+		$$\overrightarrow{AB}=k \cdot \overrightarrow{AC}$$
+		$$\left(
+		\begin{array}{c}
+			3 \\ b-2 \\ 1\\
+		\end{array}
+		\right)=k \cdot \left(
+		\begin{array}{c}
+			6 \\ 4 \\ c-4\\
+		\end{array}
+		\right)$$
+		$k=0,5 \quad b=4 \quad c=6$
+		$$g: \vec{x}=\left(
+		\begin{array}{c}
+			1 \\ 2 \\ 3\\
+		\end{array}
+		\right)+ \lambda \cdot \left(
+		\begin{array}{c}
+			3 \\ 2 \\ 1\\
+		\end{array}
+		\right)\stackrel{!}{\neq}\left(
+		\begin{array}{c}
+			-2 \\ 0 \\ 1\\
+		\end{array}
+		\right)$$
+		$\Rightarrow$ nicht lösbar, $P \notin g$
+		\vspace{0.25 cm}\\
+	
+		{\bf \item Aufgabe}\\
+		$$g: \vec{x}=\left(
+		 \begin{array}{c}
+		 	1 \\ 3 \\ 2\\
+		 \end{array}
+		 \right)+ \lambda \cdot \left(
+		 \begin{array}{c}
+		 	0 \\ 1 \\ 0\\
+		 \end{array}
+		 \right)\stackrel{!}{=}\left(
+		 \begin{array}{c}
+		 	a \\ 5 \\ c\\
+		 \end{array}
+		 \right)$$
+		 $a=1 \quad c=2$
+		\vspace{0.25 cm}\\
+	
+		{\bf \item Aufgabe}\\
+		\vspace{0.25 cm}\\ 
+	
+		\begin{enumerate}[a)]
+			\item $$g: \vec{x}=\left(
+			\begin{array}{c}
+				6 \\ 4 \\ 2\\
+			\end{array}
+			\right)+ \lambda \cdot \left(
+			\begin{array}{c}
+				2 \\ 4 \\ 6\\
+			\end{array}
+			\right)\stackrel{!}{\neq}\left(
+			\begin{array}{c}
+				3 \\ 2 \\ c\\
+			\end{array}
+			\right)$$
+			nicht lösbar, $ C \notin g \quad \forall \,  c \in \mathbb{R}$
+			\item $$g: \vec{x}=\left(
+			\begin{array}{c}
+				6 \\ 4 \\ 2\\
+			\end{array}
+			\right)+ \lambda \cdot \left(
+			\begin{array}{c}
+				2 \\ 4 \\ 6\\
+			\end{array}
+			\right)\stackrel{!}{=}\left(
+			\begin{array}{c}
+				3 \\ -2 \\ c\\
+			\end{array}
+			\right)$$ 
+			Gleichung lösbar für $\lambda = -1,5 \quad c=-7$
+			\item $$\left(
+			\begin{array}{c}
+				e \\ -3 \\ -4,5\\
+			\end{array}
+			\right)= k\cdot  \left(
+			\begin{array}{c}
+				2 \\ 4 \\ 6\\
+			\end{array}
+			\right)$$
+			$\Rightarrow$ lösbar für $k=-{4\over 3} \quad e=-1,5$
+		\end{enumerate}
+	\end{enumerate}
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m12gagL124/aa124.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}

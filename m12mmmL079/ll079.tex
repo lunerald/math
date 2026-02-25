@@ -1,0 +1,129 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+	
+	\noindent{\bf Aufgabe 1.}\\
+	Aufgabe Typ 1: Stichprobenlänge n ist gesucht.
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+
+P_{1\over 7}^n(X\ge 1)&=&1-P_{1\over 7}^n(X=0) & \\
+1-P_{1\over 7}^n(X=0) &\ge& 0,9\\
+1-(1-{1\over 7})^n &\ge& 0,9 & |-1\\
+-(1-{1\over 7})^n &\ge& -0,1 & |\cdot (-1) \\
+({6\over 7})^n &\le& 0,1 &|\ln(\dots)\\
+n\cdot \ln ({6\over 7}) &\le& \ln(0,1) &|:\ln ({6\over 7})\\
+n &\ge& {\ln(0,1) \over \ln ({6\over 7})} & \\
+n&\ge& 14,9\\
+n&=&15
+\end{array}
+$$
+Man muss mindestens 15 Überraschungseier öffnen.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 2.}\\
+Rechnung wie oben:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+
+P_{0,09}^n(X\ge 1)&=&1-P_{0,09}^n(X=0) & \\
+1-P_{0,09}^n(X=0) &\ge& 0,95\\
+1-(1-{0,09})^n &\ge& 0,95 & |-1\\
+-(1-{0,09})^n &\ge& -0,05 & |\cdot (-1) \\
+({0,91})^n &\le& 0,05 &|\ln(\dots)\\
+n\cdot \ln ({0,91}) &\le& \ln(0,05) &|:\ln ({0,91})\\
+n &\ge& {\ln(0,05) \over \ln ({0,91})} & \\
+n&\ge& 31,8\\
+n&=&32
+\end{array}
+$$
+Es müssen mindestens 32 Autos vorbeifahren.
+\newpage
+
+\noindent{\bf Aufgabe 3.}\\
+	Aufgabe Typ 2: Trefferwahrscheinlichkeit p ist gesucht.
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+
+P_{p}^{10}(X\ge 1)&=&1-P_{p}^{10}(X=0) & \\
+1-P_{p}^{10}(X=0) &\ge& 0,9\\
+1-(1-{p})^{10} &\ge& 0,9 & |-1\\
+-(1-{p})^{10} &\ge& -0,10 & |\cdot (-1) \\
+({1-p})^{10} &\le& 0,10 &|\sqrt[10]{\dots}\\
+1-p &\le& 0,794 &|-1\\
+-p &\le& -0,205 &|\cdot(-1)\\
+p &\ge& 0,205 \\
+0,205 \cdot 10 &=& 2,05
+\end{array}
+$$
+Aufrunden $\Rightarrow$ Es müssen mindestens 3 von den 10 Kugeln in der Urne rot sein.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 4.}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+P_{1\over 365}^n(X\ge 1)&=&1-P_{1\over 365}^n(X=0) & \\
+1-P_{1\over 365}^n(X=0) &\ge& 0,5\\
+1-(1-{1\over 365})^n &\ge& 0,5 & |-1\\
+-(1-{1\over 365})^n &\ge& -0,5 & |\cdot (-1) \\
+({364\over 365})^n &\le& 0,5 &|\ln(\dots)\\
+n\cdot \ln ({364\over 365}) &\le& \ln(0,5) &|:\ln ({364\over 365})\\
+n &\ge& {\ln(0,5) \over \ln ({364\over 365})} & \\
+n&\ge& 252,6\\
+n&=&253
+\end{array}
+$$
+Man muss mindestens 253 Bekannte nach ihrem Geburtsdatum fragen.
+\newpage
+
+\noindent{\bf Aufgabe 5.}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+
+P_{p}^8(X\ge 1)&=&1-P_{p}^8(X=0) & \\
+1-P_{p}^8(X=0) &\ge& 0,9\\
+1-(1-{p})^8 &\ge& 0,9 & |-1\\
+-(1-{p})^8 &\ge& -0,10 & |\cdot (-1) \\
+({1-p})^8 &\le& 0,10 &|\sqrt[8]{\dots}\\
+1-p &\le& 0,75 &|-1\\
+-p &\le& -0,25 &|\cdot(-1)\\
+p &\ge& 0,25 \\
+0,25 \cdot 360^\circ &=& 90^\circ
+\end{array}
+$$
+Sektor A muss mindestens $90^\circ$ breit sein.
+
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m12mmmL079/aa079.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+

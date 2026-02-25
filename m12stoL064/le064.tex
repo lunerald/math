@@ -1,0 +1,135 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. a)}\\
+	For $E_1$="Sum  = 2" there are the following options:
+	$$E_1=\{20;02;11\}$$
+	The probability of a die showing a 2 is $1 \over 6$, for a 1 it is $1 \over 2$, and for a 0 it is $1 \over 3$. So the probability for the sum of the points is 2:
+	$$p(E_1)= 2 \cdot {1 \over 6} \cdot {1 \over 3} + \left({1 \over 2}\right)^2={13\over 36}$$
+	
+	\noindent{\bf Task 1. b)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{c|c|c|c|c|c}
+		x_i & 0 & 1 & 2 & 3 & 4 \\
+		\hline
+		P(X=x_i) & {1\over9 } & {1\over 3} & \frac{13}{36} & {1\over 6} & {1\over 36}\\
+	\end{array}
+	$$
+	
+	\noindent{\bf Task 1. c)}\\
+	For $E_2$="3 balls of the same color" there are the following options:
+	$$E_2=\{rrr;ggg;bbb\}$$
+	The probability of this is:
+	$$p(E_2)= 3 \cdot {3 \over 9} \cdot {2\over8} \cdot {1\over 7}= {1\over 28}$$
+	
+	\noindent{\bf Task 1. d)}\\
+	For this we create a term for the expected value from the perspective of the transmission line:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		E(x)&=& (2-B) \cdot p(E_2)+ 2 \cdot (1-p(E_2))\\
+		1.25 &=& {2\over 28}- B\cdot {1\over 28} +{54\over 28}\\
+		B &=& 0.75 \cdot 28 = 21\\
+	\end{array}
+	$$
+	The profit must be \EUR{21}.
+	
+	\noindent{\bf Task 2. a)}\\
+	
+	The probability for event (i) corresponds to a Bernoulli chain of length 10:
+	
+	$$P_{1 \over 3}^{10}(X=5)=B(10;{1 \over 3}; 5)={10 \choose 5} \cdot \left( {1 \over 3} \right)^5 \cdot
+	\left( {2 \over 3} \right)^5=13.6\%$$
+	
+	For the probability of event (ii) we transform and read from the table:
+	
+	$$ P_{1 \over 3}^{10}(4\le X \le 8)= F_{1 \over 3}^{10}(8)-F_{1 \over 3}^{10}( 3)=0.999644-0.559264=44.0\%$$
+	
+	\noindent {\bf Task 2. b)}
+	
+	We create the following table of probability distribution:
+	
+	$$
+	\begin{array}{c|c|c|c}
+		X_i & -2.90 & 0.10 & 1.10 \\
+		\hline
+		P(X_i) & {1 \over 3} & {1 \over 6} & {1 \over 2}\\
+	\end{array}
+	$$
+	
+	The expected value $E(x)$ of the random variable “profit” is:
+	
+	$$E(x)= -2.90 \cdot {1 \over 3} + 0.1 \cdot {1 \over 6} + 1.1 \cdot {1 \over 2}=-0.4$$
+	
+	So you make an average loss of \EUR{0.4} per game.
+	
+	\noindent {\bf Task 3. a)}
+	
+	The probability we are looking for is again a Bernoulli chain:
+	
+	$$P_{0.03}^{12}(X=2)=B(12,0.03, 2)={12 \choose 2} \cdot 0.03^2 \cdot 0.97^{10 }=4.4\%$$
+	
+	\newpage
+	\noindent {\bf Task 3. b)}
+	
+	This is a so-called three times minimum task: We work with the counter event:
+	
+	$$
+	\begin{array}{rcl}
+		1-P_{p}^{12}(X=0) & \ge & 0.9\\
+		1-(1-p)^{12}& \ge & 0.9\\
+		(1-p)^{12} & \le & 0.1 \quad | \sqrt[12]{}\\
+		1-p & \le & 0.8254 \\
+		p & \ge & 0.18 \quad \textnormal{also} \quad p \ge 18\%
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 4.}
+	The probability distribution for $Y$
+	is:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{|c|c|c|c|}
+		\hline
+		y_i & 1450 & 1900 & 2350 \\
+		\hline
+		P(Y=y_i)& 0.6 & 0.1 & 0.3 \\
+		\hline
+	\end{array}
+	$$
+	The expected value here is:
+	$$E(Y)=1450\cdot 0.6 + 1900 \cdot 0.1 +2350 \cdot 0.3 = 1765$$
+	The variance is:
+	$$Var(Y)=(1450-1765)^2\cdot 0.6 +(1900-1765)^2\cdot 0.1+(2350-1765)^2\cdot 0.3 =164025$$
+	So the standard deviation is:
+	$$\sigma(Y)=\sqrt{164025}=405$$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m12stoL064/ae064.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

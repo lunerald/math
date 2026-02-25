@@ -1,0 +1,172 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. a)}\\
+$$\mathbb{D}_f=\mathbb{R} \qquad \lim\limits_{x\to\infty} x\cdot e^x =\infty \qquad \lim\limits_{x\to-\infty} x\cdot e^x =0 $$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. b)}\\
+$$f(-x)= -x\cdot e^{-x}\ne f(x)\ne-f(x)\quad \Rightarrow \quad \textnormal{keine Symmetrie}$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. c)}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+
+ x\cdot e^x &=&0  \\
+e^x &\ne &0  &\Rightarrow \quad x=0 \quad \textnormal{einzige, einfache Nullstelle} \\
+\end{array}
+$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. d)}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcl}
+f(x)&=& x\cdot e^x   \\
+f'(x)&=& (x+1)\cdot e^x  \\
+f''(x)&=& (x+2)\cdot e^x \\
+f'''(x)&=& (x+3)\cdot e^x 
+\end{array}
+$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. e)}\\
+Wir bestimmen die Nullstellen der Ableitung
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+f'(x)&=& (x+1)\cdot e^x &\stackrel{!}{=}0\\
+x&=&-1 
+\end{array}
+$$
+Monotonietabelle:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{c|c|c|c|c|c}
+
+& x<-1 & x=-1 &  x>-1 \\
+\hline
+(x+1) & - & 0 & + \\
+\hline
+e^x & + & + & + \\
+\hline
+f'(x) & - & 0 & + \\
+\hline
+G_f & \searrow & \rightarrow & \nearrow\\
+\hline
+  & smf & T & sms
+\end{array}
+$$
+$$f(-1)=-{1\over e} \quad \Rightarrow \quad \textnormal{Tiefpunkt} \quad T(-1|-{1\over e})$$
+$G_f$ ist streng monoton fallend für $x \in ]-\infty;-1]$\\
+$G_f$ ist streng monoton steigend für $x \in [-1;\infty[$
+\newpage
+
+\noindent{\bf Aufgabe 1. f)}\\
+Wir bestimmen die Nullstellen der zweiten Ableitung
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+
+f''(x)&=&(x+2)\cdot e^x &\stackrel{!}{=}0 \\
+0&=& (x+2) & \Rightarrow \quad x=-2 
+\end{array}
+$$
+Krümmungstabelle:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{c|c|c|c}
+
+& x<-2 & x=-2 & x>-2 \\
+\hline
+e^x & + & + & + \\
+\hline
+(x+2) & - & 0 & + \\
+\hline
+f''(x)& - & 0 & +\\
+\hline
+G_f & \curvearrowright & \rightarrow & \curvearrowleft\\
+\hline
+ & rk & W & lk
+\end{array}
+$$
+$$f(-2)=-2e^{-2} \quad \Rightarrow \quad \textnormal{Wendepunkt} \quad W(-2|-2e^{-2})$$
+$G_f$ ist rechtsgekrümmt für $x \in ]-\infty;-2] $\\
+$G_f$ ist linksgekrümmt für $x \in [-2;\infty[$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. g)}\\
+Die Tangente hat die Form $y=mx+t$ mit:
+$$x=x_w=-2 \qquad y=y_w=-{2e^{-2}}\approx -0,27 \qquad m=f'(-2)=-{e^{-2}} $$
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+
+y&=&mx+t \\
+-{2e^{-2}}&=&-{e^{-2}}\cdot -2 +t \\
+t&=&-{4e^{-2}} &\quad \Rightarrow \qquad y=-{e^{-2}}\cdot x-{4e^{-2}}
+
+\end{array}
+$$ 
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. i)}\\
+$$F'(x)=e^x + (x-1)\cdot e^x = x\cdot e^x=f(x)$$
+
+\begin{minipage}{0.65\textwidth}
+		\noindent{\bf Aufgabe 1. j)}\\
+		Wir berechnen die Nullstelle der Wendetangente:
+		$$
+		\renewcommand{\arraystretch}{2}
+		\begin{array}{rcll}
+		
+		0&=&-{e^{-2}}\cdot x-{4e^{-2}} & \\
+		x&=& -4
+		\end{array}
+		$$
+		Die Fläche setzt sich aus zwei Teilstücken $I_1$ und $I_2$ zusammen:
+		$$I_1=\int\limits_{-4}^{-2} (-{e^{-2}}\cdot x-{4e^{-2}}) \textnormal{d}x = \left[-{1\over2} e^{-2}\cdot x^2-{4e^{-2}}x\right]_{-4}^{-2}=-{2e^{-2}}$$
+		$$I_2=\int\limits_{-2}^{0} x\cdot e^x\textnormal{d}x = \left[(x-1)\cdot e^x\right]_{-2}^{0}=3e^{-2}-1$$
+		Die Fläche ist dann:
+		$$A=|I_1+I_2|=|e^{-1}-1|\approx 0,632~\textnormal{FE}$$
+\end{minipage}
+\hfill
+\begin{minipage}{0.35\textwidth}
+	\noindent{\bf Aufgabe 1. h)}\\
+	\includegraphics[width=5 cm]{effi069}		
+\end{minipage}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m12mkeL069/aa069.pdf}{Aufgabenblatt}
+\end{center}
+
+
+\end{document}
+

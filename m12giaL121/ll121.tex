@@ -1,0 +1,234 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{icomma}
+\usepackage{tikz}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+	
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+	\end{tikzpicture}
+
+	{\bf Graphisches Ableiten und integrieren}
+	
+\begin{minipage}{0.3\textwidth}
+$F(x)$
+
+\includegraphics[width=6 cm]{a00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+$f(x)$
+
+\includegraphics[width=6 cm]{a02-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+$f'(x)$
+
+\includegraphics[width=6 cm]{a03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{b00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{b01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{b03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{c00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{c01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{b03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{d00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{d01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{d03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{e00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{e01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{e03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{f00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{f01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{f03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{g00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{g01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{g03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{h00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{h01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{h03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{i00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{i01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{i03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{j00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{j01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{j03-121.pdf}
+\end{minipage}
+
+\begin{minipage}{0.3\textwidth}
+	$F(x)$
+	
+	\includegraphics[width=6 cm]{k00-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f(x)$
+	
+	\includegraphics[width=6 cm]{k01-121.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+	$f'(x)$
+	
+	\includegraphics[width=6 cm]{k03-121.pdf}
+\end{minipage}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m12giaL121/aa121.pdf}{Aufgabenblatt}
+\end{center}
+	
+\end{document}
+

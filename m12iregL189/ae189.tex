@@ -1,0 +1,120 @@
+\documentclass[landscape]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage[a4paper]{geometry}
+\usepackage{amssymb}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+
+\begin{document}
+	%Title
+	{\bf integral calculations }\\
+	\begin{enumerate}[1.]
+		%Task 1
+		{\bf \item Determine the indefinite integral using the calculation rules for integrals:}
+		
+		\begin{enumerate}[a)]
+			\begin{minipage}{0.3\textwidth}
+				\item $ \int (x-2)(x-3)~{\rm d} x =\dots$
+				\item $ \int {6 x^3 + 2x \over x^2} ~{\rm d} x =\dots$
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.3\textwidth}
+				\item $ \int x(x-3)^2~{\rm d} x =\dots$
+				\item $ \int { 1 \over 2} (1- \sin{x}) ~{\rm d} x =\dots$
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.3\textwidth}
+				\item $ \int 3 \ln{(x^2)}~{\rm d} x =\dots$
+				\item $ \int \sqrt[4]{x^3} ~{\rm d} x =\dots$
+			\end{minipage}
+		\end{enumerate}
+		
+		%Exercise 2
+		{\bf \item If possible, determine the indefinite integral using the integration rule $\int f'(x) \cdot e^{f(x)}~{\rm d} x = e^{f(x )} + C$.}
+		
+		\renewcommand{\arraystretch}{3}
+		\begin{tabular}{l|p{2 cm}|p{2 cm}|p{2 cm}|p{4 cm}|p{6 cm}}
+			\hline
+			& exponent of the e-function & derivation of the exponent & rule immediately applicable? & If necessary, transformation so that the rule becomes applicable & result \\
+			\hline
+			a) $ \int 2x\cdot e^{x^2+1} ~{\rm d} x$ & $x^2+1$ & & yes & not applicable & \\
+			\hline
+			b) $ \int \cos{x} \cdot e^{\sin{x}} ~{\rm d} x$ & & & & & \\
+			\hline
+			c) $ \int 6 \cdot e^{3x} ~{\rm d} x$ & & & & $=2 \cdot \int 3 \cdot e^{3x}~{\rm d} x$ & \\
+			\hline
+			d) $ \int x \cdot e^{x+2} ~{\rm d} x$ & & & & & \\
+			\hline
+			e) $ \int e^{-x-1} ~{\rm d} x $ & & & & & \\
+			\hline
+		\end{tabular}
+		
+		
+		\newpage
+		%Exercise 2
+		{\bf \item If possible, determine the indefinite integral using the integration rule $\int {f'(x) \over f(x)}~{\rm d} x = \ln{|f(x) |} + C$.}
+		
+		\renewcommand{\arraystretch}{3}
+		\begin{tabular}{l|p{2 cm}|p{2 cm}|p{2 cm}|p{4 cm}|p{6 cm}}
+			\hline
+			& denominator of the integrand & derivation of the denominator & rule immediately applicable? & If necessary, transformation so that the rule becomes applicable & result \\
+			\hline
+			a) $ \int {2x \over x^2+3} ~{\rm d} x$ & $x^2+3$ & & yes & not applicable & \\
+			\hline
+			b) $ \int {12x-6 \over x^2-x +3} ~{\rm d} x$ & & & & $ =6 \cdot \int {2x-1 \over x^2-x + 3} ~{\rm d} x$ & \\
+			\hline
+			c) $ \int {2x^2 \over 3 + x^2} ~{\rm d} x$ & & & & & \\
+			\hline
+			d) $ \int {\cos{x} \cdot \sin{x} \over (\sin{x})^2 + 7} ~{\rm d} x$ & & & & & \\
+			\hline
+			e) $ \int {e^x \over e^x+2} ~{\rm d} x $ & & & & & \\
+			\hline
+		\end{tabular}
+		
+		\newpage
+		%Task 3
+		{\bf\item If possible, determine the indefinite integral using the integration rule
+			$\int f(ax+b)~{\rm d} x = {1 \over a} F(ax+b)+ C $.}
+		
+		\renewcommand{\arraystretch}{3}
+		\begin{tabular}{l|p{2 cm}|p{2 cm}|p{2 cm}|p{8 cm}}
+			\hline
+			& Outer function $f$ & Antiderivative $F$ & Inner function linear? & calculation and result \\
+			\hline
+			a) $ \int 6 \cos{3x} ~{\rm d} x$ & $\cos{x}$ & $\sin{x}+C$& yes & $= 6 \left( {1 \over 3} \sin{3x} \right) + C$ \\
+			\hline
+			b) $ \int \sqrt{2+e^x} ~{\rm d} x$ & & & no & \\
+			\hline
+			c) $ \int \left( {1 \over 2} x - 1\right)^3 ~{\rm d} x$ & & & & \\
+			\hline
+			d) $ \int{\sin{(4x+{\pi\over3})}} ~{\rm d} x$ & & & & \\
+			\hline
+			e) $ \int \sqrt{2x-1}~{\rm d} x $ & & & & \\
+			\hline
+			f) $ \int \ln{(2x+3)}~{\rm d} x $ & & & & \\
+			\hline
+		\end{tabular}
+		
+	\end{enumerate}
+	
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			For the solution, please \href{https://www.okuyakl.de/math/m12iregL189/le189.pdf}{click here} or scan the QR code.\\
+			Additional worksheets are available at
+			
+			\href{http://www.okuyakl.com}{www.okuyakl.com}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			\includegraphics[width=3 cm]{qre189}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+	%End
+\end{document}

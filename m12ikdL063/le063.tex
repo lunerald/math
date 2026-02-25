@@ -1,0 +1,261 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. a)}\\
+	The function we are looking for should be of the fourth degree, so our basic form is:
+	$$f(x)=ax^4+bx^3+cx^2+dx+e$$
+	A completely rational function is axisymmetric if it only has even powers of x. This reduces our form to:
+	$$f(x)=ax^4+cx^2+e$$
+	Now we insert the zero and get:
+	$$f(0)= 0 \quad \Rightarrow \quad e=0$$
+	Next we set the high point:
+	$$f(1)=2 \quad \Rightarrow \quad a + c = 1 \quad I$$
+	At the high point the derivative is zero:
+	$$f'(x)=4ax^3 + 2cx \stackrel{!}{=}0 \quad \Rightarrow \quad f'(1)= 4a + 2c =0 \quad II$$
+	We solve I for a and substitute in II:
+	$$4(1-c) + 2c =0 \quad \Rightarrow \quad c= c=2 $$
+	This results in $a=-1$
+	So the function term is:
+	$$f(x)=-x^4+2x^2$$
+	
+	\noindent{\bf Task 1. b)}\\
+	First we need the zeros on the right and left:
+	$$f(x)=-x^4+2x^2=0 \quad \Rightarrow \quad x_{1/2}=\pm\sqrt{2}$$
+	The area is equal to the integral between:
+	$$\int\limits_{-\sqrt{2}}^{\sqrt{2}}(-x^4+2x^2) {\rm d} x =\left[-{1\over 5}x ^5+{2 \over 3}x^3\right]_{-\sqrt{2}}^{\sqrt{2}} = {16\over 15}\sqrt{2} \approx 1.51~ {\rm FE} $$
+	
+	\noindent{\bf Task 1. c)}\\
+	We subtract the function from the line $y=1$ and integrate:
+	$$\int\limits_{-1}^1 (1-(-x^4+2x^2)){\rm d} x =\left[x+{1\over 5}x^5-{2 \ over 3}x^3\right]_{-1}^1={16 \over 15}~{\rm FE} $$
+	
+	
+	\begin{minipage}{0.5\textwidth}
+		\noindent {\bf Task 2. a)}\\
+		\includegraphics[width=6 cm]{exuf063}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		The graph is shifted two down and one to the right compared to the original e-function.\\
+		\noindent {\bf Task 2. b)}\\
+		$$H(x)=e^{x-1}-2x$$
+	\end{minipage}
+	
+	\noindent {\bf Task 3. a)}\\
+	We derive with the product rule:
+	$$F'(x)= e^{-x}\cdot(x+1)-e^{-x} = x\cdot e^{-x}=f(x)$$
+	
+	\noindent {\bf Task 3. b)}\\
+	We integrate from 0 to $z$:
+	$$ A(z)=\int\limits_{0}^z f(x){\rm d} x=\left[ -e^{-x}\cdot(x+1)\right]_0^z= -e^{-z}\cdot(z+1)+1$$
+	We then form the limit:
+	$$ A = \lim\limits_{z\to \infty} -e^{-z}\cdot(z+1)+1 = 1$$
+	The area has the finite value 1 FE.
+	
+	\noindent {\bf Task 4. a)}\\
+	The integral is equal to:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcccl}
+		\left[ 4 \sin x \right]_0^a =& 4 \sin a &=& 2 &|:4\\
+		& \sin a &=& {1\over 2} \\
+		& a_1 &=& {1 \over 6}\pi \\
+		& a_2 &=& {5 \over 6}\pi
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 4. b)}\\
+	The integral is equal to:
+	$$\left[ {1\over 2} (-\cos x )\right]_0^2 = 0.827$$
+	The function $f(x)=\sin(2x)$ has a zero at ${\pi \over 2}\approx 1.5$. In the interval $[0;2]$ we have one area above the x-axis and one below, which is negatively included in the area balance.
+	
+	\noindent {\bf Task 5. a)}\\
+	The parallel to the x-axis has the functional equation $y=k^2$.
+	The value of the integral as an area balance should then become zero:
+	$$\int\limits_0^1 (x^2 - k^2) {\rm d} x =0$$
+	This means that for $k$:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		\left[{1\over3 }x^3 - k^2 x \right]_0^1 &=& 0 \\
+		{ 1\over 3} - k^2 &=& 0 \\
+		k &=& \pm \sqrt{1 \over 3} \\
+	\end{array}
+	$$
+	Only the positive solution is possible, so $k={1\over 3} \sqrt{3}$.
+	
+	\noindent{\bf Task 6. a)}\\
+	
+	Zeropoint:
+	$$
+	\begin{array}{rcl}
+		-x^2+3x&=&0 \\
+		x\cdot(-x+3)&=&0 \quad x_1=0 \\
+		x_2&=&3 \Rightarrow N_1(0|0); \quad N_2(3|0)
+	\end{array}
+	$$
+	
+	
+	\noindent
+	\begin{minipage}{0.6\textwidth}
+		To examine extreme points we form the first derivative:
+		
+		$$ f'(x)=-2x+3 \stackrel{!}{=}0 \quad -2(x-1.5)=0 \quad \Rightarrow x_0 = 1.5 $$
+		Sign table for determining the extreme point (not required here, but relevant for the following Task later):
+		$$
+		\begin{array}{cc|c|c}
+			& x<1.5 & 1.5 & x>1.5\\
+			\hline
+			-2 & - & - & - \\
+			(x-1.5) & - & 0 & + \\
+			\hline
+			f'(x) & + & 0 & - \\
+			\hline
+			f(x) & \nearrow & \rightarrow & \searrow \\
+			& & HP &
+		\end{array}
+		$$
+		
+		The y coordinate of the high point is:
+		$$ f(1.5) = -1.5^2+3 \cdot 1.5 = 2.25 \quad \Rightarrow H(1.5|2.25)$$
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=6 cm]{Diagramm140}
+	\end{minipage}
+	
+	
+	
+	
+	\noindent {\bf Task 6. b)}
+	
+	Area:
+	
+	$$A_{ges}=\int \limits_0^3 (-x^2+3x) {\rm d} x = \left[ -{1 \over 3} x^3 + {3\over 2} x^ 2 \right]_0^3= {9 \over 2} $$
+	
+	\noindent {\bf Task 6. c)}
+	
+	Schnitt point of line and parabola:
+	
+	$$
+	\begin{array}{rcl}
+		-x^2+3x & = & x \\
+		x^2 &=& 2x \Rightarrow x_1=0; \quad x_2=2
+	\end{array}
+	$$
+	
+	Area between straight line and $G_f$:
+	
+	$$A_1=\int \limits_0^2 (-x^2+3x-x) {\rm d} x = \left[ -{1 \over 3} x^3 + x^2 \right]_0^2 =
+	{4 \over 3}$$
+	
+	The ratio of the two parts is:
+	$$A_2= A_{tot}-A_1={9 \over 2}-{4\over 3}= {19 \over 6} ; \quad A_2 : A_1= 8 : 19$$
+	
+	\noindent {\bf Task 6. d)}
+	
+	The second derivative of the integral function $I(x)$ corresponds to the first derivative of $f(x)$;
+	which has already been discussed above. The following applies:
+	$$
+	\begin{array}{rll}
+		I''(x)>0 & \textnormal{for}~ x \in \left]-\infty ; 1.5\right] & I\ \textnormal{left-curved} \\
+		I''(x)<0 & \textnormal{for}~ x \in \left[ 1.5;\infty \right[ & I\ \textnormal{right-curved} \\
+		I''(x)=0 & \textnormal{for}~ x=1.5 & \Rightarrow \textnormal{turning point}
+	\end{array}
+	$$
+	
+	The integral-free representation of $I(x)$ is:
+	
+	$$I(x)=\int \limits_0^x (-t^2+3t) {\rm d} t = \left[ -{1 \over 3} t^3 + {3\over 2} t^ 2 \right]_0^x=
+	-{1 \over 3} x^3 + {3\over 2} x^2$$
+	
+	So the y-coordinate of the turning point of $I(x)$ is:
+	
+	$$I(1.5)=-{1 \over 3} 1.5^3 + {3\over 2} 1.5^2=-1.125+3.375 = 2.25 \Rightarrow
+	W(1.5|2.25)$$
+	
+	\noindent{\bf Task 7.}\\
+	$$ 3 \ln (x^2+4) \qquad e^{x^2} \qquad {1\over 2} \sin (6x) $$
+	
+	\noindent{\bf Task 8. a)}\\
+	We take the first derivative and set it equal to zero:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		f'(x)&=&{3\over 4}x^2-6x+9=0 \\
+		0&=& x^2 -8x +12 \\
+		x_1&=& 6 \\
+		x_2&=& 2
+	\end{array}
+	$$
+	The second derivative is:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rccll}
+		f''(x) &=& {3\over 2}x-6 \\
+		f''(x_1) &=& 9 -6 = 3&> 0 & \Rightarrow T (6|f(6))\\
+		f''(x_2) &=& 3 -6 = -3&< 0 & \Rightarrow H (2|f(2))\\
+	\end{array}
+	$$
+	The extreme points are: $T(6|0)$ and $H(2|8)$.
+	
+	\noindent{\bf Task 8 . b)}\\
+	For the turning point we set the second derivative equal to zero and get:
+	$$f''(x) = {3\over 2}x-6 = 0 \quad \Rightarrow x_w =4 $$
+	We test the third derivative at this point:
+	$$f'''(4)={3 \over 2} \not = 0$$
+	So we have an inflection point at $W(4|f(4))=(4|4)$
+	
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 8. c)}\\
+		Line slope $m$:
+		$$m = {\Delta y \over \Delta x} = {8-0 \over 2-6} = -2$$
+		y-intercept $t$:
+		$$ 0 = -2 \cdot 6 + t \quad \Rightarrow t = 12 $$
+		Function term straight:
+		$$ g(x) = -2 x + 12 $$
+		Point sample turning point:
+		$$ 4 = -2\cdot 4 + 12 \quad (w)$$
+		
+		
+		The area $A$ between $f(x)$ and the line is composed
+		from two parts $A_1, A_2$:
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=7 cm]{grint063}
+	\end{minipage}
+	
+	$$A = |A_1|+|A_2|= |\int\limits_2^4 (f(x)-g(x)){\rm d} x | + |\int\limits_4^6 (f(x)-g(x)){\rm d} x | $$
+	The antiderivative of $h(x)=f(x)-g(x)$ is:
+	$$H(x)={1\over 16}x^4-x^3 +5.5x^2-12x +C $$
+	$$A = |H(4)-H(2)|+|H(6)-H(4)|=|(-8)-(-9)|+|(-9)-(-8) |=2~{\rm FE} $$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m12ikdL063/ae063.pdf}{Task sheet}
+	\end{center}
+	
+	\end{document}

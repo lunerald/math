@@ -1,0 +1,136 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 1. a)} \\
+	First derivative with chain rule:
+	$$f'(x)=-2\ln{x}\cdot{1 \over x}$$
+	Second derivative with product rule:
+	$$
+	\begin{array}{rcl}
+		f''(x)&=&{2 \over x^2} \cdot \ln{x} - {2 \over x} \cdot {1\over x}\\
+		\ &=& {2 \over x^2} \cdot \left(\ln{x}-1 \right)\stackrel{!}{=}0\\
+		\ln{x_0}&=&1 \\
+		x_0&=&e
+	\end{array}
+	$$
+	
+	Tangent: $$y_T=m \cdot x+t; \qquad x=e; \qquad m=f'(e)= -{2 \over e}; \qquad y_T= f(e)=0 $$
+	$$ 0=-{2 \over e} \cdot e + t; \quad \Rightarrow t=2$$
+	$$ \Rightarrow y= -{2 \over e}\cdot x +2 $$
+	
+	\noindent {\bf task 1. b)} \\
+	Derive $F$ with the product and chain rule:
+	$$
+	\begin{array}{rcl}
+		F'(x)&=&-(\ln{x}-1)^2 - x \cdot 2 \cdot (\ln{x}-1) \cdot {1 \over x}\\
+		\ &=& -((\ln{x})^2 - 2 \ln{x}+1) - 2 \ln{x} + 2 \\
+		\ &=& 1-(\ln{x})^2
+	\end{array}
+	$$
+	
+	\noindent {\bf task 1. c)}\\
+	Zeropoint:
+	$$
+	\begin{array}{rcl}
+		1-(\ln{x})^2 &=& 0 \\
+		\ln{x} &=& \pm 1 \\
+		x_1&=&e \\
+		x_2&=&e^{-1}
+	\end{array}
+	$$
+	With this and the given antiderivative we calculate the area:
+	$$A=\int\limits_{e^{-1}}^e f(x) ~{\rm d} x =\left[ -x(\ln x -1)^2\right]_{e^ {-1}}^e = 0 -(-e^{-1}(-2)^2) = {4\over e}$$
+	
+	\noindent {\bf task 1. d)}\\
+	Every integral function has a zero point that lies where the upper limit, here the variable $x$, coincides with the lower limit, here the 0, i.e. at $x=0$. Then $I(0)=0$, here is
+	also $F(0)=0$, so $F(x)=I(x)$
+	
+	\noindent {\bf task 1. e)}\\
+	According to the mnemonic, the limit is $$\lim \limits_{x \to 0^+} x \cdot ln{x} =0 $$
+	and therefore also:
+	$$\lim \limits_{x \to 0^+} -x \cdot ( ln{x}-1)^2 =0 $$
+	This means that the area bounded by the function and the two axes in the fourth quadrant is finite.
+	
+	\noindent {\bf task 2. a)}\\
+	We have: $I'(x)=f(x)$, so we set $f(x)=0$:
+	$$
+	\begin{array}{rcl}
+		(e^x-2)^2 &=& 0\\
+		(e^x-2)&=& 0 \\
+		e^x &=& 2 \\
+		x&=& \ln{2}
+	\end{array}
+	$$
+	Monotonicity table:
+	$$
+	\begin{array}{cc|c|c}
+		& x< \ln{2} & x=\ln{2} & x> \ln{2} \\
+		\hline
+		(e^x-2)^2 & + & 0 & + \\
+		I'(x) & + & 0 & + \\
+		\hline
+		I(x) & \nearrow & \rightarrow & \nearrow \\
+		& sms & terrace point & sms
+	\end{array}
+	$$
+	The function $I(x)$ is strictly increasing monotonically throughout $\mathbb{R}$ and has a terrace point at $T(\ln2 | 0 )$.
+	
+	\noindent {\bf task 2. b)}
+	
+	$$ F'(x)= 0.5 \cdot 2 \cdot e^{2x} -4e^x+4 = (e^x-2)^2$$
+	
+	\noindent {\bf task 2. c)}
+	Determination of the upper integration limit:
+	$$
+	\begin{array}{rcl}
+		(e^x-2)^2 &=& 4 \\
+		e^x-2 &=&\pm 2 \quad \textnormal{ only positive solution possible}\\
+		e^x&=&4 \\
+		x &=& \ln{4}
+	\end{array}
+	$$
+	$$
+	\begin{array}{rcl}
+		A(u)&=&\int \limits_u^{\ln{4}}(4- (e^x-2)^2 )~{\rm d} x = \left[ 4x-0.5\cdot e^{2x}+4e^x-4x \right]_u^{\ln{4}}\\
+		A(u)&=&-0.5\cdot 16 + 4 \cdot 4 -0.5 \cdot e^{2u} - 4e^{u}\\
+		&=& 8-0.5 \cdot e^{2u} - 4e^{u}
+	\end{array}
+	$$
+	
+	
+	\noindent {\bf task 2. d)}
+	$$\lim \limits_{u \to -\infty} 8-0.5 \cdot e^{2u} - 4e^{u}=8-0-0=8$$
+	The area enclosed by the graph and the line $y=4$ has a finite area and is $8~FE$.
+	
+	\noindent {\bf task 3.}\\
+	$I(x)$ is represented by graph {\bf B}. Graph {\bf A} has two terrace points, these would correspond to two double zeros of $G_f$. However, these are not available.
+	Graph {\bf C} has 5 extrema, so it is at least 6th order, but only a function of order 3+1, i.e. 4, is possible.
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m12intapL222/ae222.pdf}{task sheet}
+	\end{center}
+	
+\end{document}
