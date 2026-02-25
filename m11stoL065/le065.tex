@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\begin{minipage}{0.7\textwidth}
+		\noindent{\bf Task 1. a)}\\
+		$E_1$ means: "First-year student is female or studying business administration."
+		
+		\noindent{\bf Task 1. b)}\\
+		$$E_2=\overline{\overline{B} \cup M}= B \cap \overline{M}$$
+		It means: "First-year student is studying business administration and is female."
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.3\textwidth}
+		\includegraphics[width=5 cm]{dmeins065}
+	\end{minipage}
+	
+	
+	\noindent
+	\begin{minipage}{0.7\textwidth}
+		\noindent{\bf Task 2. a)}\\
+		$E_3$ means: "The housing has a material defect or a shape deviation"
+		
+		\noindent{\bf Task 2. b)}\\
+		It is equivalent to: "Both errors do not occur at the same time"
+		$$E_4 = \overline{M \cap F} = \overline{M} \cup \overline{F}$$
+		
+		\noindent{\bf Task 2. c)}\\
+		$$E_5 = \overline{F \cap \overline{M}} = \overline{F} \cup M$$
+		It means: "No shape deviation or material defect occurs"
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.3\textwidth}
+		\includegraphics[width=5 cm]{dmzwei065}
+	\end{minipage}
+	
+	
+	\noindent{\bf Task 3.}\\
+	The following applies:
+	$$P(B)=1-P(\overline{B})=1-{2 \over 3}= {1 \over 3}$$
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		E_1 &=&\{ A \cup B\}\\
+		P(E_1)&=& P(A)+P(B) - P(A \cap B) &\textnormal{Sylvester's theorem}\\
+		&=&{3 \over 4} + {1 \over 3} - {1 \over 6}\\
+		&=& {11 \over 12}\\
+		{\bf b)}\quad E_2 &=&\{ \overline{A} \cup \overline{B}\}= \{ \overline{A \cap B}\}
+		&\textnormal{De Morgan's rule}\\
+		P(E_2)&=& 1-P(A \cap B) = 1-{1 \over 6}\\
+		&=& 5 \over 6
+	\end{array}
+	$$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m11stoL065/ae065.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[landscape]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=10mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	{\bf Limits of fractional rational functions I -- behavior at infinity}
+	\vspace{0.5 cm}
+	
+	\renewcommand{\arraystretch}{3}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		& function term & numerator degree & denominator degree & case & $\lim\limits_{x\to\pm\infty}$ & polynomial division yields & asymptote / approximation function \\
+		\hline
+		a) & ${2x^2 -1 \over x+3}$ & Z=2 & N=1 & Z=N+1 & $\pm\infty$ & $f(x)=2x-6+{ 17\over x+3}$ & $y=2x-6$ \\
+		\hline
+		b) & ${x+3 \over x^2 -1}$ & & & & & & \\
+		\hline
+		c) & ${x^3 +4x\over 2x^2-10x}$ & & & & & & \\
+		\hline
+		d) & ${(x+1)^2 \over 2(x+1)}$ & & & & & & \\
+		\hline
+		e) & ${0.1x^3 \over x^2+2x+1}$ & & & & & & \\
+		\hline
+		f) & ${x(x+5) \over 3x^2 }$ & & & & & & \\
+		\hline
+		g) & ${x^2-3x+2 \over x^3-2x^2 }$ & & & & & & \\
+		\hline
+		h) & ${tx \over x+1 }$ & & & & & & \\
+		\hline
+		i) & & & & & & $f(x)= 3 + {2\over x-1}$ & \\
+		\hline
+		j) & & & & & & $f(x)= 0.5x +1 + {1\over x-2}$ & \\
+		\hline
+	\end{tabular}
+	
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			For the solution, please \href{https://www.okuyakl.de/math/m11ligrL070/le070.pdf}{click here} or scan the QR code.\\
+			Additional worksheets are available at
+			
+			\href{http://www.okuyakl.com}{www.okuyakl.com}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			\includegraphics[width=3 cm]{qre070}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+\end{document}

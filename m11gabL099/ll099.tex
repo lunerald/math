@@ -1,0 +1,82 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Aufgabe 1.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|}
+		\hline
+		$F(x)$  & ${1\over 3}x^3$ & ${1\over 6}x^6$ & ${1\over 4}x^4$ & $x$ & ${1\over 2}x^2$ & ${1\over 11}x^{11}$ & ${1\over 5}x^5$ \\
+		\hline
+		$f(x)$  & $x^2$ & $x^5$ & $x^3$ & $1$ & $x$ & $x^{10}$ & $x^4$  \\
+		\hline
+		$f'(x)$ & $2x$ & $5x^4$ & $3x^2$ & $0$ & $1$ & $10x^9$ & $4x^3$ \\	
+		\hline
+	\end{tabular}
+	\vspace{1 cm}
+	
+	\noindent{\bf Aufgabe 2.}\\
+	\begin{tabular}{|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|}
+		\hline
+		$F(x)$  & $x^3$ & $0,25x^2$ & ${1\over 40}x^4$ & ${-13\over 6}x^6$ & ${1\over 10}x^5$ & ${a \over 3}x^3$  & ${k\over 2}x^2$ \\
+		\hline
+		$f(x)$ & $3x^2$ & $ 0,5x $ & $0,1x^3$ & $-13x^5$ & ${1\over 2}x^4$ & $a\cdot x^2$ & $ {x\over k}$ \\
+		\hline
+		$f'(x)$ &$6x$ & $ 0,5$ & $0,3x^2$ & $-65x^4$ & $2x^3$ & $2ax$ & $1\over k$ \\	
+		\hline
+	\end{tabular}
+	\vspace{1 cm}
+	
+	\noindent{\bf Aufgabe 3.}\\
+	\begin{tabular}{|p{0.9 cm}|p{1.2 cm}|p{1.8 cm}|p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|p{2 cm}|p{3 cm}|}
+		\hline
+		$F(x)$  & ${2\over 3}x^3 +x$ & ${1\over 12}x^6 +{3\over 2}x^4$ & $x^4-{3\over 2}x^2$ & $x + {1\over 12}x^3$ & ${1\over 3}x^3+x^2$ & ${1\over 110}x^{11}+{a\over 5}x^5$ & $0,1x^5 + 0,5x^3 +10x$ \\
+		\hline
+		$f(x)$  & $2x^2+1$ & ${1\over 2}x^5+6x^3$ & $4x^3-3x$ & $1+{1\over 4}x^2$ & $x(x+2)$ & $0,1x^{10}+ax^4$ & $0,5 x^4+1,5x^2 +10$  \\
+		\hline
+		$f'(x)$ & $4x$ & $2,5x^4+18x^2$ & $12x^2-3$ & ${1\over 2}x$ & $2x+2$ & $x^9 + 4ax^3$ & $2x^3+ 3x$\\	
+		\hline
+	\end{tabular}
+	\vspace{1 cm}
+	
+	\noindent{\bf Aufgabe 4.}\\
+	\begin{tabular}{|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|p{1.6 cm}|}
+		\hline
+		$F(x)$  & $x^{-1}$ & $-{1\over x}$ & ${2\over 3} x^{3\over 2}$ & $ {3\over 4}x^{4\over 3}$ & $-{1\over 2}x^{-2}$ & $2\sqrt{x}$ & ${2\over 5}x^{5\over 2}$\\
+		\hline
+		$f(x)$  & $-x^{-2}$ & ${1\over x^2}$ & $x^{1\over2}$ & $\sqrt[3]{x}$ & $x^{-3}$ & ${1\over \sqrt{x}}$ & $\sqrt{x^3}$ \\
+		\hline
+		$f'(x)$ & $2\over x^3$ & $-{2\over x^3}$ & ${1\over 2 \sqrt{x}}$ &${1\over 3}x^{-{2\over 3}}$ & $-3x^{-4}$ & $-{1\over 2}x^{-{3\over 2}}$ & ${3\over 2}\sqrt{x}$\\	
+		\hline
+	\end{tabular}
+	\vspace{1 cm}
+	
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+		
+		Hier geht es zurück zum \href{https://www.okuyakl.de/math/m11gabL099/aa099.pdf}{Aufgabenblatt}
+	\end{center}
+	
+\end{document}
+

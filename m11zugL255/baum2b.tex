@@ -1,0 +1,103 @@
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\begin{document}
+\pagestyle{empty}
+
+
+% Set the overall layout of the tree
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=4cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=1.5cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [text width=4em, text centered]
+\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+
+\begin{tikzpicture}[grow=right]
+\node[bag] {Start}
+    child {
+        node[bag] {G}        
+            child {
+                node[end, label=right:
+                    {$G \qquad P(GG)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{1}{3}$}
+            }
+            child {
+                node[end, label=right:
+                    {$U \qquad P(GU)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{1}{3}$}
+            }
+            child {
+                node[end, label=right:
+                    {$V \qquad P(GV)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {$\frac{1}{3}$}
+                node[below]  {}
+            }
+            edge from parent 
+            node[above] {}
+            node[below]  {$\frac{1}{3}$}
+    }
+    child {
+        node[bag] {U}        
+        child {
+                node[end, label=right:
+                    {$G\qquad P(UG)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{1}{3}$}
+            }
+            child {
+                node[end, label=right:
+                    {$U\qquad P(UU)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{1}{3}$}
+            }
+            child {
+                node[end, label=right:
+                    {$V\qquad P(UV)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {$\frac{1}{3}$}
+                node[below]  {}
+            }
+        edge from parent         
+            node[above] {}
+            node[below]  {$\frac{1}{3}$}
+    }
+    child {
+        node[bag] {V}        
+        child {
+                node[end, label=right:
+                    {$G \qquad P(VG)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{1}{3}$}
+            }
+            child {
+                node[end, label=right:
+                    {$U \qquad P(VU)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{1}{3}$}
+            }
+            child {
+                node[end, label=right:
+                    {$V\qquad P(VV)=\frac{1}{3}\cdot\frac{1}{3}$}] {}
+                edge from parent
+                node[above] {$\frac{1}{3}$}
+                node[below]  {}
+            }
+        edge from parent         
+            node[above] {$\frac{1}{3}$}
+            node[below]  {}
+    };
+\end{tikzpicture}
+
+\end{document}

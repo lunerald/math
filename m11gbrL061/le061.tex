@@ -1,0 +1,195 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent
+	\fbox{
+		\begin{minipage}{0.48\textwidth}
+			\noindent{\bf Task 1.}\\
+			\begin{itemize}
+				\item numerator contains term $(x-2)$
+				\item denominator contains term $(x-3)^2$
+				\item numerator degree = denominator degree and the factors in front of the highest powers must add up to 3:
+			\end{itemize}
+			$$\Rightarrow \quad f(x)= {3x(x-2)\over (x-3)^2}$$
+		\end{minipage}
+	}
+	\hfill
+	\fbox{
+		\begin{minipage}{0.48\textwidth}
+			\noindent{\bf Task 2.}\\
+			$$
+			\renewcommand{\arraystretch}{2}
+			\begin{array}{rcccccl}
+				{f(x) -f(2) \over x-2} &=& {{1\over x}+3 - 3.5 \over x-2} &=& {{1\over x }-{ 1\over 2} \over x-2}\\
+				&=& {{2-x \over 2x} \over x-2} &=& -{1 \over 2x} \\
+				f'(2)&=& \lim\limits_{x \to 2} -{1 \over 2x} &=& -{1 \over 4}
+			\end{array}
+			$$
+		\end{minipage}
+	}
+	
+	\noindent
+	\fbox{
+		\begin{minipage}{0.48\textwidth}
+			\noindent{\bf Task 3. a)}\\
+			We set the denominator equal to zero:
+			$$
+			\renewcommand{\arraystretch}{2}
+			\begin{array}{rcll}
+				x^2-4 &=&0 \\
+				(x-2)(x+2) &=& 0
+			\end{array}
+			$$
+			We see two simple definition gaps in the factored form at $2$ and $-2$. The counter has no zero at these points, so these are two first-order poles (without VZW).
+			$$\mathbb{D}_f=\mathbb{R} \setminus \{-2;2\}$$
+			
+			\noindent{\bf Task 3. b)}\\
+			$$f(-x)= {(-x)^3 \over (-x)^2-4}= -{x^3 \over x^2-4}=-f(x) $$
+			The function is point symmetric.
+			
+			\noindent{\bf Task 3. c)}\\
+			Vertical asymptotes:
+			$$x=-2 \quad \textnormal{and} \quad x=2$$
+			numerator degree $>$ denominator degree; We perform polynomial division:
+			$$x^3:(x^2-4)= x +{4x \over x^2-4}$$
+			It follows that
+			$$y=x$$
+			is an oblique asymptote.
+		\end{minipage}
+	}
+	\hfill
+	\fbox{
+		\begin{minipage}{0.48\textwidth}
+			\noindent{\bf Task 3. d)}\\
+			We form the first derivative:
+			$$f'(x)={(x^2-4)\cdot 3x^2-x^3\cdot2x \over (x^2-4)^2} = {x^4-12x^2 \over (x^2-4)^2}$$
+			
+			\noindent{\bf Task 3. e)}\\
+			Point P:
+			$$f(4)={16\over 3} \quad \Rightarrow P(4|{16\over 3})$$
+			Slope m:
+			$$m=f'(4)={4\over 9} \quad \Rightarrow y=mx+t$$
+			y-intercept t:
+			$$\Rightarrow {16\over 3} = {4\over 9}\cdot 4 +t \quad \Rightarrow t= {32 \over 9}$$
+			Function term tangent:
+			$$y={4\over 9}x + {32 \over 9}$$
+			Cutting angle x-axis:
+			$$m=\tan(\alpha) \quad \Rightarrow \alpha=24.0^\circ$$
+			
+		\end{minipage}
+	}
+	
+	
+	\noindent
+	\fbox{
+		\begin{minipage}{0.48\textwidth}
+			\noindent{\bf Task 4. a) b)}\\
+			\begin{itemize}
+				\item Double zero:$x=0 \quad \Rightarrow x^2$ in the numerator
+				\item Definition gaps:$x=\pm 2 \quad \Rightarrow (x^2-4)$ in the denominator
+				\item Further asymptote: $y=2 \quad \Rightarrow $ numerator degree = denominator degree; Factor 2.
+			\end{itemize}
+			$$f(x)={2x^2 \over x^2-4}$$
+		\end{minipage}
+	}
+	\hfill
+	\fbox{
+		\begin{minipage}{0.48\textwidth}
+			
+			\noindent{\bf Task 4. c)}\\
+			$$f(-x)={2(-x)^2 \over (-x)^2-4}={2x^2 \over x^2-4}=f(x)$$
+			
+		\end{minipage}
+	}
+	
+	
+	
+	\noindent
+	\begin{minipage}{0.6\textwidth}
+		\noindent{\bf Task 5. a)}\\
+		Factoring the denominator yields:
+		$$4x^2(x^2+x-6)=4x^2(x+3)(x-2)$$
+		The definition set is therefore:
+		$$\mathbb{D}_f=\mathbb{R} \setminus \{-3; 0; 2\}$$
+		Zeros are zeros of the counter:
+		$$(x^2-9)=(x+3)(x-3)=0 \quad \Rightarrow x_1=3 \quad x_2=-3$$
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=6 cm]{fumf061}
+	\end{minipage}
+	\vspace{0.5 cm}
+	
+	\noindent
+	The linear factor $(x+3)$ appears in both the numerator and the denominator.
+	We shorten it and carry out the limit value analysis:
+	$$\lim\limits_{x\to -3} {x-3 \over 4x^2(x-2)}={-6 \over -180}={1\over 30}$$
+	This limit is bilateral and is a definitional gap that can be continuously reduced.
+	\vspace{0.5 cm}
+	
+	\noindent
+	\begin{minipage}{0.6\textwidth}
+		\noindent{\bf Task 6. a)}\\
+		We bring everything to a common denominator:
+		$${x^2-2x+1 \over x^2}=0 \quad \Rightarrow x^2-2x+1 = (x-1)^2=0$$
+		From this it follows that $x=1$ is a single, double zero.
+		$$\lim\limits_{x\to0+}{x^2-2x+1 \over x^2}="{1 \over +0}" = + \infty$$
+		$$\lim\limits_{x\to0-}{x^2-2x+1 \over x^2}="{1 \over +0}" = + \infty$$
+		
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\noindent{\bf Task 6. b)}\\
+		\includegraphics[width=7 cm]{seks061}
+	\end{minipage}
+	
+	\noindent
+	\begin{minipage}{0.6\textwidth}
+		\noindent{\bf Task 7. a)}\\
+		Zeroing the counter = zeroing
+		$$x^2+3x=0 \quad \Rightarrow x_1=0 \quad x_2=-3$$
+		Two simple zeros.\\
+		Zeroing the denominator = gaps in definition
+		$$4(x-1)=0 \quad \Rightarrow x=1$$
+		$$\mathbb{D}=\mathbb{R} \setminus \{1\}$$
+		$$\lim\limits_{x\to1-}{x^2+3x \over 4(x-1)}="{4 \over -0}" = - \infty$$
+		$$\lim\limits_{x\to1+}{x^2+3x \over 4(x-1)}="{4 \over +0}" = + \infty$$
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+		\noindent{\bf Task 7. b)}\\
+		\includegraphics[width=7 cm]{siebn061}
+		\end{minipage}
+		\vspace{0.5 cm}
+		
+		We find the oblique asymptote using polynomial division:
+		$$(x^2+3x):(4x-4)={1\over 4}x+1+ {1 \over x-1} \quad \Rightarrow y={1\over 4}x+1$$
+		
+		\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m11gbrL061/ae061.pdf}{task sheet}
+		\end{center}
+		
+	\end{document}

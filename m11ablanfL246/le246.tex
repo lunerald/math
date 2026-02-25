@@ -1,0 +1,120 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\title{m11ablanfL246}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent {\bf task 1. a)}\\
+	The function may not be differentiable at the point where the expression between the absolute lines becomes zero, i.e. at $x=1$.
+	
+	\noindent {\bf task 1. b)}\\
+	The following applies:
+	$$f(x)= \begin{cases} {1 \over (x-1) +1 } = {1\over x} & x \ge 1 \\
+		{1 \over -(x-1) + 1 } = { 1 \over 2 -x } & x <1
+	\end{cases}
+	$$
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{lrcl}
+		\rm\underline{Case \quad 1.\quad x \ge 1}\\
+		& \lim\limits_{x \to 1}\frac{{1\over x} - {1 \over 1}}{x-1}&=&
+		\lim\limits_{x \to 1}\frac{{1-x \over x}}{x-1} \\
+		& =\lim\limits_{x \to 1}-{1\over x}&=& -1
+	\end{array}
+	$$
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{lrcl}
+		\rm\underline{Case\quad  2.\quad x < 1}\\
+		&\lim\limits_{x \to 1}\frac{{1\over 2-x} - {1 \over 2-1}}{x-1}&=&
+		\lim\limits_{x \to 1}\frac{{1-2+x \over 2-x}}{x-1} \\
+		&=\lim\limits_{x \to 1}{1\over 2-x}&=& 1
+	\end{array}
+	$$
+	The left-hand value of the difference quotient does not agree with the right-hand one. It follows that the function is not differentiable at the point $x=1$.
+	
+	\noindent {\bf task 1. c)}\\
+	The function $f(x)=|x+3|$ is not differentiable at the point $x=-3$.
+	
+	\noindent {\bf task 2. a)}\\
+	The slope is zero at the points where the function is horizontal, i.e
+	$$f'(x)=0 \quad \textnormal{for} \quad x \in [4;6] \lor x = 8 $$
+	
+	\noindent {\bf task 2. b)}\\
+	The function is not differentiable where it has kinks, i.e. in
+	$$x \in \{ 4; 6\}$$
+	
+	\noindent {\bf task 3. a)}\\
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=6 cm]{reitan246}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		{\bf Task 3. b)}\\
+		$$
+		\begin{array}{rcl}
+			f'(x)&=& \lim\limits_{h \to 0}\frac{0.25(x+h)^2 - 0.25x^2}{h}\\
+			&=& \lim\limits_{h \to 0}\frac{0.25x^2 + 0.5xh + 0.25 h^2 - 0.25x^2}{h}\\
+			&=& \lim\limits_{h \to 0}\frac{h(0.5x +h)}{h}\\
+			&=& \lim\limits_{h \to 0} 0.5x + h = 0.5x\\
+		\end{array}
+		$$
+	\end{minipage}
+	
+	\begin{minipage}{0.5\textwidth}
+		\noindent {\bf task 3. c)}\\
+		$$
+		\begin{array}{|rcl|rcl|}
+			\hline
+			f'(-3)&=& -1.5 & f'(-1) &=& -0.5 \\
+			f'(0) &=& 0 & f'(1) &=& 0.5 \\
+			f'(3)&=& 1.5 & & & \\
+			\hline
+		\end{array}
+		$$
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\noindent {\bf task 3. d,e)}\\
+		\includegraphics[width=6 cm]{abrei246}
+	\end{minipage}
+	
+	\begin{minipage}{0.5\textwidth}
+		\noindent {\bf task 4. b)}\\
+		$$
+		f'(x)= \begin{cases} 1 & x \ge 0 \\
+			-1 & x < 0 \end{cases}
+		$$
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\noindent {\bf Task 4. a)}\\
+		\includegraphics[width=6 cm]{absab246}
+	\end{minipage}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m11ablanfL246/ae246.pdf}{task sheet}
+	\end{center}
+	
+	%-End
+\end{document}

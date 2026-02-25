@@ -1,0 +1,159 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1.}\\
+	Chain rule:
+	$$f'(x)= {1 \over 2} (5x^2+1)^{-{1 \over 2}} \cdot 10x$$
+	
+	\noindent {\bf Task 1. b)}\\
+	Product and chain rule:
+	$$g'(x)=ln(9-x^2) - x \cdot {2x \over 9-x^2}$$
+	
+	\noindent {\bf Task 2. a)}\\
+	The number of the logarithm must be greater than zero:
+	$$2x-3 > 0 \quad \Rightarrow \quad x > 1.5 $$
+	
+	$$ \mathbb{D}_f= [1.5; \infty [ $$
+	We examine this continuous function for limit values:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcl}
+		\lim\limits_{x\to 1.5}{\ln(2x-3)}&=& -\infty \\
+		\lim\limits_{x\to \infty}{\ln(2x-3)}&=& +\infty \\
+		\Rightarrow \mathbb{W}_f &=& \mathbb{R}
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 2. b)}\\
+	We first calculate the zero of the graph of f:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		\ln(2x-3)&=& 0 &| e^{(\dots)}\\
+		2x-3 &=& e^0=1 &| +3 \\
+		2x &=& 4 &| :2\\
+		x_0 &=& 2
+	\end{array}
+	$$
+	Then we derive the function:
+	$$ f'(x)={2 \over 2x-3}$$
+	A tangent satisfies the equation of the line
+	$$ y= m\cdot x + t $$
+	with
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcccl}
+		y &=& f(2) &=& 0 \\
+		m &=& f'(2)&=& {2 \over 4-3}=2 \\
+		y=mx+t &\Rightarrow & 0=2\cdot 2 +t & & |-4 \\
+		& & t &=& -4
+	\end{array}
+	$$
+	
+	The equation of the tangent is $$y=2x-4$$
+	
+	\noindent {\bf Task 2. c)}\\
+	The function is strictly monotonically increasing in its domain because:
+	$$f'(x)>0 \quad \forall \quad \textnormal{(for all)} \quad x \in \mathbb{D}_f$$
+	Reason: A fraction takes on the value zero when the numerator becomes zero. In term
+	$ f'(x)={2 \over 2x-3}$, however, the counter cannot become zero, no matter what you substitute for x.
+	The inverse function can be determined as follows:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		\ln(2x-3)&=& y &| e^{(\dots)}\\
+		2x-3 &=& e^y &| +3 \\
+		2x &=& e^y +3 &| :2\\
+		x &=& {e^y +3 \over 2} &| x\rightleftharpoons y\\
+		f^{-1}(x)&=& {e^x +3 \over 2}
+	\end{array}
+	$$
+	The definition set of an inverse function is equal to the set of values of the original function,
+	so $$\mathbb{D}_{f^{-1}}= \mathbb{R}$$
+	
+	\noindent {\bf Task 3. a)}\\
+	We derive $f(x)$ using the product and chain rule:
+	$$f'(x)=e^{1-x} + x \cdot e^{1-x} \cdot (-1) = (1-x) \cdot e^{1-x}$$
+	
+	\noindent {\bf Task 3. b)}\\
+	To investigate the monotonic behavior, we first set $f'(x)=0$:
+	
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		(1-x) \cdot e^{1-x} &=& 0 &| :e^{1-x} \quad e^{(\dots)} \quad \textnormal{can never become zero}\\
+		1-x &=& 0 &| +x \\
+		1 &=& x
+	\end{array}
+	$$
+	Around the point $x=1$ we examine the monotonicity behavior of the function using a sign table:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{r|c|c|c}
+		& x<1 & x=1 & x>1 \\
+		\hline
+		e^{1-x} & + & + & + \\
+		(1-x) & + & 0 & - \\
+		\hline
+		f'(x) & + & 0 & - \\
+		\hline
+		f(x) & \nearrow & \rightarrow & \searrow \\
+		& \textnormal{sms} & H & \textnormal{smf}
+	\end{array}
+	$$
+	
+	\noindent The function is strictly monotonically increasing for $x \in ]-\infty ; 1[$. \\
+	The function is strictly monotonically decreasing for $x \in ]1; \infty[$.\\
+	The high point at $x=1$ has the y coordinate:
+	$$y=f(1)=1 \quad \Rightarrow \quad H(1|1)$$
+	
+	\noindent {\bf Task 3. c)}\\
+	We derive the proposed antiderivative $F$ and compare it with $f$:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcl}
+		F'(x)&=& e^{1-x} - (1-x)\cdot e^{1-x}\\
+		&=& (1-(1-x))\cdot e^{1-x} \\
+		&=& x \cdot e^{1-x} = f(x)
+	\end{array}
+	$$
+	The zero of $F$ is at:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcl}
+		-e^{1-x}- x \cdot e^{1-x} &=& 0 \\
+		e^{1-x} (-1-x) &=& 0 \qquad| : e^{1-x}\\
+		(-1-x) &=& 0 \\
+		x &=& -1
+	\end{array}
+	$$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m11kdL062/ae062.pdf}{Task sheet}
+	\end{center}
+	
+	
+\end{document}

@@ -1,0 +1,81 @@
+
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{polynom}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=10mm, left=15mm, right=15mm, bottom=15mm,
+headsep=0mm, footskip=12mm}
+
+%Source: img_0174
+
+% Start the document
+\begin{document}
+%Titel
+{\bf Trainingsblatt Nullstellen }\\
+
+{ \bf Die folgenden Methoden werden für dieses Trainingsblatt benötigt:}\
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{lll}
+(BIN) & Ausnutzen einer binomischen Formel & $x^2-36 =(x-6)(x+6)$\\
+(LÖS) & Mitternachtsformel &
+ $ax^2+bx+c=0 \leadsto x_{1/2}=\frac{-b \pm \sqrt{b^2-4ac}}{2a}$\\
+(VIE) & Satz von Vieta & $x^2+3x+2=(x+a)(x+b)$\\
+& & $a+b =3;~a\cdot b=2$\\
+(RAT) & Raten, falls Nullstellen ganzzahlig & $x^3 +2x^2 -x-2=0; ~ x_1=1$ \\
+(SUB) & Substitution, um Grad zu verkleinern & $x^4-4x^2+4=0;~u=x^2 \leadsto u^2-4u+4=0$\\
+(AUS) & Ausklammern, falls möglich & $ 2x^3 +x^2 = x^2(2x-1)$\\
+(POL) & Polynomdivision durch bekannte LSG & $ (x^3 +2x^2 -x-2):(x-1)=\dots$
+\end{tabular}
+
+\begin{enumerate}[1.]
+%Aufgabe 1
+{\bf \item Zerlege in Linearfaktoren. Nenne die verwendete Methode, soweit sie nicht angegeben ist.}
+
+\begin{enumerate}[a)]
+\item $$f(x)=x^2+18x+77 \stackrel{(\textnormal{VIE})}{=} \rule{90 pt}{0.5 pt}$$
+\item $$ f(x)= 2x^2-14x \stackrel{(\rule{20 pt}{0.5 pt})}{=} \rule{90 pt}{0.5 pt}$$
+\item $$ f(x)= 2x^2-2x-{3\over 2}  \stackrel{(\textnormal{LÖS})}{\Rightarrow} x_1=\rule{30 pt}{0.5 pt};x_2= \rule{30 pt}{0.5 pt} \Rightarrow f(x)=\qquad \underline{(\qquad)}\cdot \underline{(\qquad)}$$
+\renewcommand{\baselinestretch}{2}\normalsize
+\item $f(x)=2x^3-9x^2+7x+6; \quad \textnormal{bekannte Nst: 3} \\
+(\rule{20 pt}{0.5 pt}):\quad  
+(2x^3-9x^2+7x+6):(x-3)=  \rule{90 pt}{0.5 pt} \stackrel{(\textnormal{LÖS})}{\Rightarrow} x_2=\rule{50 pt}{0.5 pt};\quad x_3=\rule{50 pt}{0.5 pt}\\
+\Rightarrow f(x)=\qquad (\rule{30 pt}{0.5 pt})\cdot (\rule{30 pt}{0.5 pt}) \cdot (\rule{30 pt}{0.5 pt})$
+\end{enumerate}
+
+{\bf \item Häufig müssen mehrere Methoden angewendet werden, um den Funktionsterm vollständig zu zerlegen. Nenne die verwendeten Methoden, soweit sie nicht angegeben sind.}
+
+\begin{enumerate}[a)]
+\renewcommand{\baselinestretch}{2}\normalsize
+\item $f(x) = x^4 -13x^2 +36 \quad (SUB): $
+\item $f(x)= 2x^4 + x^3 -10x^2  $
+\item $f(x)=x^3+x^2-102x+360 $ Alle Nullstellen sind ganzzahlig, eine davon lautet $-12$.
+\item $f(x)= 5x^6-30x^4-275x^2$
+\item Bekannte Nullstellen sind -2 und 2. $f(x)=x^5+6x^4+5x^3-24x^2-36x$
+\end{enumerate}
+\end{enumerate} 
+
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		Zur Lösung bitte \href{https://www.okuyakl.de/math/m11nstL174/ll174.pdf}{hier klicken} oder den QR-Code scannen.\\
+	Weitere Arbeitsblätter gibt es unter 
+	
+	\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=3 cm]{qr174}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+	\end{minipage}}
+	
+\end{document}%L Lösung ----------------------------------------------------------

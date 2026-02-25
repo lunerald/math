@@ -1,0 +1,78 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{polynomial}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=10mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=0mm, footskip=12mm}
+
+
+\begin{document}
+	%Title
+	{\bf Zeroing training sheet }\\
+	
+	{ \bf The following methods are required for this training sheet:}\
+	
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{lll}
+		(BIN) & Exploiting a binomial formula & $x^2-36 =(x-6)(x+6)$\\
+		(SOL) & midnight formula &
+		$ax^2+bx+c=0 \leadsto x_{1/2}=\frac{-b \pm \sqrt{b^2-4ac}}{2a}$\\
+		(VIE) & Vieta's theorem & $x^2+3x+2=(x+a)(x+b)$\\
+		& & $a+b =3;~a\cdot b=2$\\
+		(GUE) & guess if zeros are integer & $x^3 +2x^2 -x-2=0; ~ x_1=1$ \\
+		(SUB) & substitution to reduce degrees & $x^4-4x^2+4=0;~u=x^2 \leadsto u^2-4u+4=0$\\
+		(EXC) & exclude if possible & $ 2x^3 +x^2 = x^2(2x-1)$\\
+		(POL) & polynomial division by known LSG & $ (x^3 +2x^2 -x-2):(x-1)=\dots$
+	\end{tabular}
+	
+	\begin{enumerate}[1.]
+		%Task 1
+		{\bf \item Decompose into linear factors. Cite the method used if not specified.}
+		
+		\begin{enumerate}[a)]
+			\item $$f(x)=x^2+18x+77 \stackrel{(\textnormal{VIE})}{=} \rule{90 pt}{0.5 pt}$$
+			\item $$ f(x)= 2x^2-14x \stackrel{(\rule{20 pt}{0.5 pt})}{=} \rule{90 pt}{0.5 pt}$$
+			\item $$ f(x)= 2x^2-2x-{3\over 2} \stackrel{(\textnormal{SOL})}{\Rightarrow} x_1=\rule{30 pt}{0.5 pt};x_2 = \rule{30 pt}{0.5 pt} \Rightarrow f(x)=\qquad \underline{(\qquad)}\cdot \underline{(\qquad)}$$
+			\renewcommand{\baselinestretch}{2}\normalsize
+			\item $f(x)=2x^3-9x^2+7x+6; \quad \textnormal{known ext: 3} \\
+			(\rule{20 pt}{0.5 pt}):\quad
+			(2x^3-9x^2+7x+6):(x-3)= \rule{90 pt}{0.5 pt} \stackrel{(\textnormal{SOL})}{\Rightarrow} x_2=\rule{ 50 pt}{0.5 pt};\quad x_3=\rule{50 pt}{0.5 pt}\\
+			\Rightarrow f(x)=\qquad (\rule{30 pt}{0.5 pt})\cdot (\rule{30 pt}{0.5 pt}) \cdot (\rule{30 pt}{0.5 pt})$
+		\end{enumerate}
+		
+		{\bf \item Often several methods must be used to fully decompose the function term. Mention the methods used if not specified.}
+		
+		\begin{enumerate}[a)]
+			\renewcommand{\baselinestretch}{2}\normalsize
+			\item $f(x) = x^4 -13x^2 +36 \quad (SUB): $
+			\item $f(x)= 2x^4 + x^3 -10x^2 $
+			\item $f(x)=x^3+x^2-102x+360 $ All zeros are integers, one of them is $-12$.
+			\item $f(x)= 5x^6-30x^4-275x^2$
+			\item Known zeros are -2 and 2. $f(x)=x^5+6x^4+5x^3-24x^2-36x$
+		\end{enumerate}
+	\end{enumerate}
+	
+	\fbox{
+		\begin{minipage}{0.5\textwidth}
+			For the solution, please \href{https://www.okuyakl.de/math/m11nstL174/le174.pdf}{click here} or scan the QR code.\\
+			Additional worksheets are available at
+			
+			\href{http://www.okuyakl.com}{www.okuyakl.com}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+			\includegraphics[width=3 cm]{qre174}
+			\includegraphics[width=2 cm]{../../viecher/afanticon1}
+			
+	\end{minipage}}
+	
+\end{document}

@@ -1,0 +1,62 @@
+%\documentclass{article}
+%\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage{tikz}
+%\usetikzlibrary{trees}
+
+
+%\begin{document}
+% Set the overall layout of the tree
+\tikzstyle{level 1}=[level distance=2cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=2cm, sibling distance=2cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [text width=4em, text centered]
+\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+
+% The sloped option gives rotated edge labels. Personally
+% I find sloped labels a bit difficult to read. Remove the sloped options
+% to get horizontal labels. 
+\begin{tikzpicture}[grow=right]
+\node[bag] {Start}
+    child {
+        node[bag] {6}        
+            child {
+                node[end, label=right: {$6 \qquad P(66)=\frac{2}{7}\cdot\frac{2}{7}$}]{}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{2}{7}$}
+            }
+            child {
+                node[end, label=right:
+                    {$\bar{6}\qquad P(6\bar{6})=\frac{2}{7}\cdot\frac{5}{7}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{5}{7}$}
+            }
+            edge from parent 
+            node[above] {}
+            node[below]  {$\frac{2}{7}$}
+    }
+    child {
+        node[bag] {$\bar{6}$}        
+        child {
+                node[end, label=right:
+                    {$6 \qquad P(\bar{6}6)=\frac{5}{7}\cdot\frac{2}{7}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{2}{7}$}
+            }
+            child {
+                node[end, label=right:
+                    {$\bar{6} \qquad P(\bar{6}\bar{6})=\frac{5}{7}\cdot\frac{5}{7}$}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{5}{7}$}
+            }
+        edge from parent         
+            node[above] {}
+            node[below]  {$\frac{5}{7}$}
+    };
+\end{tikzpicture}
+%\end{document}

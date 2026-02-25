@@ -1,0 +1,160 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1.}\\
+Kettenregel: 
+$$f'(x)= {1 \over 2} (5x^2+1)^{-{1 \over 2}} \cdot 10x$$
+
+\noindent {\bf Aufgabe 1. b)}\\
+Produkt- und Kettenregel:
+$$g'(x)=ln(9-x^2) - x \cdot {2x \over 9-x^2}$$
+
+\noindent {\bf Aufgabe 2. a)}\\
+Der Numerus des Logarithmus muss größer als Null sein:
+$$2x-3 > 0 \quad \Rightarrow \quad x > 1,5 $$
+
+$$ \mathbb{D}_f= [1,5; \infty [  $$
+Diese stetige Funktion untersuchen wir auf Grenzwerte:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcl}
+\lim\limits_{x\to 1,5}{\ln(2x-3)}&=& -\infty \\
+\lim\limits_{x\to \infty}{\ln(2x-3)}&=& +\infty \\ 
+\Rightarrow \mathbb{W}_f &=& \mathbb{R}
+\end{array}
+$$
+
+\noindent {\bf Aufgabe 2. b)}\\
+Wir berechnen zuerst die Nullstelle des Graphen von f:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcll}
+\ln(2x-3)&=& 0 &| e^{(\dots)}\\
+   2x-3  &=& e^0=1  &| +3 \\ 
+    2x   &=& 4      &| :2 \\
+    x_0  &=& 2
+\end{array}
+$$
+Dann leiten wir die Funktion ab: 
+$$ f'(x)={2 \over 2x-3}$$ 
+Eine Tangente erfüllt die Geradengleichung 
+$$ y= m\cdot x + t $$
+mit  
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcccl}
+       y &=& f(2) &=&  0 \\
+       m &=& f'(2)&=& {2 \over 4-3}=2 \\ 
+y=mx+t &\Rightarrow & 0=2\cdot 2 +t & & |-4 \\
+ & & t &=& -4 
+\end{array}
+$$
+
+Die Gleichung der Tangente ist $$y=2x-4$$
+
+\noindent {\bf Aufgabe 2. c)}\\
+Die Funktion ist in ihrem Definitionsbereich streng monoton steigend, weil gilt: 
+$$f'(x)>0 \quad \forall \quad \textnormal{(für alle)} \quad x \in \mathbb{D}_f$$
+Begründung: Ein Bruch nimmt den Wert Null an, wenn der Zähler null wird. Im Term 
+$ f'(x)={2 \over 2x-3}$ kann der Zähler jedoch nicht null werden, egal, was man für x einsetzt.
+Die Umkehrfunktion lässt sich wie folgt bestimmen:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcll}
+\ln(2x-3)&=& y      &| e^{(\dots)}\\
+   2x-3  &=& e^y    &| +3 \\ 
+    2x   &=& e^y +3 &| :2 \\
+      x  &=& {e^y +3 \over 2} &| x\rightleftharpoons y\\
+f^{-1}(x)&=& {e^x +3 \over 2}
+\end{array}
+$$
+Die Definitionsmenge einer Umkehrfunktion ist gleich der Wertemenge der ursprünglichen Funktion,
+also $$\mathbb{D}_{f^{-1}}= \mathbb{R}$$
+
+\noindent {\bf Aufgabe 3. a)}\\
+Wir leiten $f(x)$ mit der Produkt- und Kettenregel ab:
+$$f'(x)=e^{1-x} + x \cdot e^{1-x} \cdot (-1) = (1-x) \cdot e^{1-x}$$
+
+\noindent {\bf Aufgabe 3. b)}\\
+Für die Untersuchung des Monotonieverhaltens setzen wir zunächst $f'(x)=0$:
+
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcll}
+(1-x) \cdot e^{1-x} &=& 0   &| :e^{1-x} \quad e^{(\dots)} \quad \textnormal{kann nie null werden}\\
+               1-x  &=& 0   &| +x \\ 
+                1   &=& x 
+\end{array}
+$$
+Um die Stelle $x=1$ untersuchen wir das Monotonieverhalten der Funktion mittels Vorzeichentabelle:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{r|c|c|c}
+        & x<1 & x=1 & x>1 \\
+\hline 
+e^{1-x} &  +  &  +  &  +  \\    
+(1-x)   &  +  &  0  &  -  \\
+\hline 
+f'(x)   &  +  &  0  &  -  \\
+\hline 
+f(x)    & \nearrow & \rightarrow & \searrow \\
+        &  \textnormal{sms} & H  &  \textnormal{smf}     
+\end{array}
+$$
+
+\noindent Die Funktion ist streng monoton steigend für $x \in ]-\infty ; 1[$. \\
+Die Funktion ist streng monoton fallend für $x \in ]1; \infty[$.\\
+Der Hochpunkt an der Stelle $x=1$ hat die y-Koordinate:
+$$y=f(1)=1 \quad \Rightarrow \quad H(1|1)$$ 
+
+\noindent {\bf Aufgabe 3. c)}\\
+Wir leiten die vorgeschlagene Stammfunktion $F$ ab und vergleichen sie mit $f$:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcl}
+F'(x)&=& e^{1-x} - (1-x)\cdot e^{1-x}\\
+     &=& (1-(1-x))\cdot e^{1-x} \\
+     &=& x \cdot e^{1-x} = f(x)
+\end{array}
+$$
+Die Nullstelle von $F$ ist bei:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcl}
+-e^{1-x}- x \cdot e^{1-x} &=& 0 \\
+           e^{1-x} (-1-x) &=& 0 \qquad| : e^{1-x}\\
+                   (-1-x) &=& 0 \\
+                      x   &=& -1
+\end{array}
+$$
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m11kdL062/aa062.pdf}{Aufgabenblatt}
+\end{center}
+
+
+\end{document}
+

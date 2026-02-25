@@ -1,0 +1,187 @@
+\documentclass[landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+headsep=10mm, footskip=12mm}
+
+\title{m11zugL255}
+
+\begin{document}
+\noindent{\bf Wahrscheinlichkeitsverteilung einer Zufallsgröße}
+\begin{enumerate}
+{\bf \item Aus einer Urne mit 25 Kugeln, die von 1 bis 25 durchnummeriert sind, wird zufällig eine Kugel gezogen.} Die Zufallsgröße X ordnet jeder Kugel die Quersumme $x_i$ der Zahl auf der Kugel zu.
+\begin{enumerate}
+\item Vervollständigen Sie die Tabelle
+\noindent
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|p{2 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|}
+\hline
+\textnormal{Ergebnisse} & & 2; 11; 20 & & & & & & & & \\
+\hline
+$x_i$ & & 2 & & & & & & & & \\
+\hline
+$P(X=x_i)$ & & $3\over 25$ & & & & & & & & \\
+\hline
+\end{array}
+$$
+\item Zeichnen Sie sowohl das Stabdiagramm der Verteilung von X als auch den Graphen der zu X gehörenden kumulativen Verteilungsfunktion F.
+
+\setlength{\unitlength}{0.5 cm}
+\begin{picture}(14,5)
+\put(1,1){\vector(1,0){11}}
+\put(1,1){\vector(0,1){4}}
+
+\put(0.8,0.2){0}
+\put(1.8,0.2){1}
+\put(2.8,0.2){2}
+\put(3.8,0.2){3}
+\put(4.8,0.2){4}
+\put(5.8,0.2){5}
+\put(6.8,0.2){6}
+\put(7.8,0.2){7}
+\put(8.8,0.2){8}
+\put(9.8,0.2){9}
+\put(10.6,0.2){10}
+\put(11.5,1.2){$x_i$}
+
+\put(-0.6,1.7){0,04 --}
+\put(-0.6,2.7){0,08 --}
+\put(-0.6,3.7){0,12 --}
+\put(1.2,4.5){$P(X=x_i)$}
+\end{picture}
+\hspace{2 cm}
+\begin{picture}(14,13)
+\put(1,1){\vector(1,0){11}}
+\put(1,1){\vector(0,1){11}}
+
+\put(0.8,0.2){0}
+\put(1.8,0.2){1}
+\put(2.8,0.2){2}
+\put(3.8,0.2){3}
+\put(4.8,0.2){4}
+\put(5.8,0.2){5}
+\put(6.8,0.2){6}
+\put(7.8,0.2){7}
+\put(8.8,0.2){8}
+\put(9.8,0.2){9}
+\put(10.6,0.2){10}
+\put(11.5,1.2){$x_i$}
+
+\put(-0.4,1.7){0,1 --}
+\put(-0.4,2.7){0,2 --}
+\put(-0.4,3.7){0,3 --}
+\put(-0.4,4.7){0,4 --}
+\put(-0.4,5.7){0,5 --}
+\put(-0.4,6.7){0,6 --}
+\put(-0.4,7.7){0,7 --}
+\put(-0.4,8.7){0,8 --}
+\put(-0.4,9.7){0,9 --}
+\put(-0.4,10.7){1,0 --}
+\put(1.2,11.5){$P(X \le x_i)$}
+\end{picture}
+\vspace{1.5 cm}
+ 
+\item Beschreiben Sie die Bedeutung der angegebenen Wahrscheinlichkeit und bestimmen Sie anschließend den Wert davon.
+$$P(X=7) \qquad P(X \le 4) \qquad P(X<6) \qquad P(5<X\le 9)$$
+\end{enumerate}  
+
+\newpage
+{\bf \item Vervollständigen Sie die Tabelle der zur Zufallsgröße X gehörenden Wahrscheinlichkeitsverteilung.}
+\begin{enumerate}
+\begin{minipage}{0.5\textwidth}
+\item Ein Würfel ist so ,,gezinkt", dass die Wahrscheinlichkeit für eine Sechs doppelt so hoch ist wie die für die anderen fünf gleich wahrscheinlichen Augenzahlen. Beim zweimaligen Wurf ordnet die Zufallsgröße X jedem Ergebnis die Anzahl der geworfenen Sechsen zu.  
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|c|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|}
+\hline
+x_i &  & & \\
+\hline
+P(X=x_i) & & & \\
+\hline
+\end{array}
+$$
+\end{minipage}
+
+\begin{minipage}{0.5\textwidth}
+{\bf\item Bei einem Glücksspiel bekommt man drei Punkte für ein gewonnenes Spiel, einen Punkt für ein Unentschieden, keinen Punkt für ein verlorenes Spiel.} Jeder Spielausgang ist gleich wahrscheinlich. Bei zweimaliger Durchführung des Spiels ordnet X jedem Ergebnis die insgesamt erreichte Punktzahl zu. 
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|c|p{1 cm}|p{1 cm}|p{1 cm}|p{1 cm}|p{1 cm}|p{1 cm}|}
+\hline
+x_i &  & & & & & \\
+\hline
+P(X=x_i) & & & & & &\\
+\hline
+\end{array}
+$$
+\end{minipage}
+
+\begin{minipage}{0.6\textwidth}
+{\bf \item Ein Kasten enthält zehn Zettel. Auf einem Zettel steht ein A, auf drei Zetteln ein B und auf den sechs übrigen steht ein C.} Ein Spieler zieht zufällig zwei Zettel ohne Zurücklegen. Ist das A dabei, bekommt er \EUR{2}, Wenn er zweimal den gleichen Buchstaben zieht, erhält er \EUR{1}. In allen anderen Fällen muss er \EUR{2,50} zahlen. X ordet jedem Ergebnis den Gewinn in \EUR{} zu.
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|c|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+\hline
+x_i & & & \\
+\hline
+P(X=x_i) & & &\\
+\hline
+\end{array}
+$$
+\end{minipage}
+ 
+\begin{minipage}{0.5\textwidth}
+{\bf \item Eine Basketballspielerin wirft drei Freiwürfe hintereinander.} Gelingt ein Wurf, so ändert sich ihre Trefferwahrscheinlichkeit beim direkt folgenden Wurf nicht. Gelingt ein Wurf jedoch nicht, so sinkt die Trefferwahrscheinlichkeit beim darauffolgenden Wurf um 8 \%. Erfahrungsgemäß erziehlt sie den ersten Korb mit einer Wahrscheinlichkeit von 88 \%. X ordnet jedem Ergebnis die Anzahl der erzielten Körbe zu.
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|c|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|}
+\hline
+x_i & & & &\\
+\hline
+P(X=x_i) & & & &\\
+ & & & & \\
+\hline
+\end{array}
+$$
+\end{minipage}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\fbox{
+	\begin{minipage}{0.5\textwidth}
+		Zur Lösung bitte \href{https://www.okuyakl.de/math/m11zugL255/ll255.pdf}{hier klicken} oder den QR-Code scannen.\\
+	Weitere Arbeitsblätter gibt es unter 
+	
+	\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=3 cm]{qr255}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+	\end{minipage}}
+\end{document}%L Lösung -------------------------------------------------------

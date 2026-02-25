@@ -1,0 +1,208 @@
+\documentclass[landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+headsep=10mm, footskip=12mm}
+
+\title{m11zugL255}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. a)}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|p{2 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|}
+\hline
+\textnormal{Ergebnisse} &1; 10 & 2; 11; 20 & 3; 12; 21 & 4; 13; 22 & 5; 14 ; 23 & 6; 15; 24 & 7; 16; 25 & 8; 17 & 9; 18 & 19\\
+\hline
+$x_i$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+\hline
+$P(X=x_i)$ & $2\over 25$ & $3\over 25$ & $3\over 25$ &$3\over 25$ & $3\over 25$ & $3\over 25$ & $3\over 25$ & $2\over 25$ & $2\over 25$& $1\over 25$\\
+\hline
+\end{array}
+$$
+\noindent{\bf Aufgabe 1. b)}
+
+\setlength{\unitlength}{0.5 cm}
+\begin{picture}(14,5)
+\put(1,1){\vector(1,0){11}}
+\put(1,1){\vector(0,1){4}}
+
+\put(0.8,0.2){0}
+\put(1.8,0.2){1}
+\put(2.8,0.2){2}
+\put(3.8,0.2){3}
+\put(4.8,0.2){4}
+\put(5.8,0.2){5}
+\put(6.8,0.2){6}
+\put(7.8,0.2){7}
+\put(8.8,0.2){8}
+\put(9.8,0.2){9}
+\put(10.6,0.2){10}
+\put(11.5,1.2){$x_i$}
+
+\put(-0.6,1.7){0,04 --}
+\put(-0.6,2.7){0,08 --}
+\put(-0.6,3.7){0,12 --}
+\put(1.2,4.5){$P(X=x_i)$}
+
+\put(2,1){\line(0,1){2}}
+\put(3,1){\line(0,1){3}}
+\put(4,1){\line(0,1){3}}
+\put(5,1){\line(0,1){3}}
+\put(6,1){\line(0,1){3}}
+\put(7,1){\line(0,1){3}}
+\put(8,1){\line(0,1){3}}
+\put(9,1){\line(0,1){2}}
+\put(10,1){\line(0,1){2}}
+\put(11,1){\line(0,1){1}}
+\end{picture}
+\hspace{2 cm}
+\begin{picture}(14,13)
+\put(1,1){\vector(1,0){11}}
+\put(1,1){\vector(0,1){11}}
+
+\put(0.8,0.2){0}
+\put(1.8,0.2){1}
+\put(2.8,0.2){2}
+\put(3.8,0.2){3}
+\put(4.8,0.2){4}
+\put(5.8,0.2){5}
+\put(6.8,0.2){6}
+\put(7.8,0.2){7}
+\put(8.8,0.2){8}
+\put(9.8,0.2){9}
+\put(10.6,0.2){10}
+\put(11.5,1.2){$x_i$}
+
+\put(-0.4,1.7){0,1 --}
+\put(-0.4,2.7){0,2 --}
+\put(-0.4,3.7){0,3 --}
+\put(-0.4,4.7){0,4 --}
+\put(-0.4,5.7){0,5 --}
+\put(-0.4,6.7){0,6 --}
+\put(-0.4,7.7){0,7 --}
+\put(-0.4,8.7){0,8 --}
+\put(-0.4,9.7){0,9 --}
+\put(-0.4,10.7){1,0 --}
+\put(1.2,11.5){$P(X \le x_i)$}
+
+\put(2,1.8){\line(1,0){1}}
+\put(2,1.8){\circle*{0.3}}
+\put(3,3){\line(1,0){1}}
+\put(3,3){\circle*{0.3}}
+\put(4,4.2){\line(1,0){1}}
+\put(4,4.2){\circle*{0.3}}
+\put(5,5.4){\line(1,0){1}}
+\put(5,5.4){\circle*{0.3}}
+\put(6,6.6){\line(1,0){1}}
+\put(6,6.6){\circle*{0.3}}
+\put(7,7.8){\line(1,0){1}}
+\put(7,7.8){\circle*{0.3}}
+\put(8,9){\line(1,0){1}}
+\put(8,9){\circle*{0.3}}
+\put(9,9.8){\line(1,0){1}}
+\put(9,9.8){\circle*{0.3}}
+\put(10,10.6){\line(1,0){1}}
+\put(10,10.6){\circle*{0.3}}
+\put(11,11){\line(1,0){1}}
+\put(11,11){\circle*{0.3}}
+\end{picture}
+
+\noindent{\bf Aufgabe 1. c)}
+$P(X=7)$ ist die Wahrscheinlichkeit, dass die Quersumme der Zahl auf der gezogenen Kugel gleich 7 ist.
+Es gilt:
+$$P(X=7)={3\over 25}$$
+$P(X\le 4)$ ist die Wahrscheinlichkeit, dass die Quersumme der Zahl auf der gezogenen Kugel gleich 4 oder weniger ist.
+Es gilt:
+$$P(X\le 4)=P(X=1)+P(X=2)+P(X=3)+P(X=4)={11\over 25}$$
+Diesen Wert kann man auch aus dem Diagramm der kumulativen Verteilungsfunktion ablesen.\\
+$P(X < 6)$ ist die Wahrscheinlichkeit, dass die Quersumme der Zahl auf der gezogenen Kugel kleiner als 6 ist.
+Es gilt:
+$$P(X< 6)=P(X=1)+P(X=2)+P(X=3)+P(X=4)+P(X=5)={14\over 25}$$
+Diesen Wert kann man auch aus dem Diagramm der kumulativen Verteilungsfunktion ablesen.\\
+$P(5 < X \le 9)$ ist die Wahrscheinlichkeit, dass die Quersumme der Zahl auf der gezogenen Kugel größer als 5, aber höchstens 9 ist.
+Es gilt:
+$$P(5 < X \le 9)=P(X=6)+P(X=7)+P(X=8)+P(X=9)={10\over 25}$$
+
+\begin{minipage}{0.3\textwidth}
+\noindent{\bf Aufgabe 2. a)}
+\input{baum2a.tex}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|c|c|c|c|}
+\hline
+x_i & 0 & 1 & 2 \\
+\hline
+P(X=x_i) & {25\over 49}& {20 \over 49} & {4 \over 49} \\
+\hline
+\end{array}
+$$
+\end{minipage}
+\begin{minipage}{0.3\textwidth}
+
+{\bf Aufgabe 2. b)}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|c|c|c|c|c|c|c|}
+\hline
+x_i & 0 & 1 & 2 & 3 & 4 & 6 \\
+\hline
+P(X=x_i) & {1\over 9} & {2\over 9}& {1\over 9}& {1\over 9}& {2\over 9}& {1\over 9}\\
+\hline
+\end{array}
+$$
+
+{\bf Aufgabe 2. c)}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|c|c|c|c|}
+\hline
+x_i & -2,50 & 1 & 2 \\
+\hline
+P(X=x_i) & 0,4 & 0,4 & {1 \over 5} \\
+\hline
+\end{array}
+$$
+\end{minipage}
+\begin{minipage}{0.3\textwidth}
+\noindent{\bf Aufgabe 2. d)}\\
+\includegraphics[width=6 cm]{baum2d}
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{|c|c|c|c|c|}
+\hline
+x_i & 0 & 1 & 2 & 3\\
+\hline
+P(X=x_i) & 0,0067 & 0,0576 & 0,254 & 0,681\\
+\hline
+\end{array}
+$$
+\end{minipage}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m11zugL255/aa255.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}

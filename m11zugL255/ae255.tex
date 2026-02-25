@@ -1,0 +1,187 @@
+\documentclass[landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\title{m11zugL255}
+
+\begin{document}
+	\noindent{\bf probability distribution of a random variable}
+	\begin{enumerate}
+		{\bf \item A ball is randomly drawn from an urn with 25 balls numbered from 1 to 25.} The random variable X assigns to each ball the cross sum $x_i$ of the number on the ball.
+		\begin{enumerate}
+			\item Complete the table
+			\noindent
+			$$
+			\renewcommand{\arraystretch}{2}
+			\begin{array}{|p{2 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|p {1.8 cm}|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|}
+				\hline
+				\textnormal{Results} & & 2; 11; 20 & & & & & & & & \\
+				\hline
+				$x_i$ & & 2 & & & & & & & & \\
+				\hline
+				$P(X=x_i)$ & & $3\over 25$ & & & & & & & & \\
+				\hline
+			\end{array}
+			$$
+			\item Draw both the bar graph of the distribution of X and the graph of the cumulative distribution function F corresponding to X.
+			
+			\setlength{\unitlength}{0.5 cm}
+			\begin{picture}(14,5)
+				\put(1,1){\vector(1,0){11}}
+				\put(1,1){\vector(0,1){4}}
+				
+				\put(0.8,0.2){0}
+				\put(1.8,0.2){1}
+				\put(2.8,0.2){2}
+				\put(3.8,0.2){3}
+				\put(4.8,0.2){4}
+				\put(5.8,0.2){5}
+				\put(6.8,0.2){6}
+				\put(7.8,0.2){7}
+				\put(8.8,0.2){8}
+				\put(9.8,0.2){9}
+				\put(10.6,0.2){10}
+				\put(11.5,1.2){$x_i$}
+				
+				\put(-0.6,1.7){0.04 --}
+				\put(-0.6,2.7){0.08 --}
+				\put(-0.6,3.7){0.12 --}
+				\put(1.2,4.5){$P(X=x_i)$}
+			\end{picture}
+			\hspace{2cm}
+			\begin{picture}(14,13)
+				\put(1,1){\vector(1,0){11}}
+				\put(1,1){\vector(0,1){11}}
+				
+				\put(0.8,0.2){0}
+				\put(1.8,0.2){1}
+				\put(2.8,0.2){2}
+				\put(3.8,0.2){3}
+				\put(4.8,0.2){4}
+				\put(5.8,0.2){5}
+				\put(6.8,0.2){6}
+				\put(7.8,0.2){7}
+				\put(8.8,0.2){8}
+				\put(9.8,0.2){9}
+				\put(10.6,0.2){10}
+				\put(11.5,1.2){$x_i$}
+				
+				\put(-0.4,1.7){0,1 --}
+				\put(-0.4,2.7){0,2 --}
+				\put(-0.4,3.7){0,3 --}
+				\put(-0.4,4.7){0,4 --}
+				\put(-0.4,5.7){0.5 --}
+				\put(-0.4,6.7){0.6 --}
+				\put(-0.4,7.7){0.7 --}
+				\put(-0.4,8.7){0.8 --}
+				\put(-0.4,9.7){0,9 --}
+				\put(-0.4,10.7){1,0 --}
+				\put(1.2,11.5){$P(X \le x_i)$}
+			\end{picture}
+			\vspace{1.5 cm}
+			
+			\item Describe the meaning of the given probability and then determine the value of it.
+			$$P(X=7) \qquad P(X \le 4) \qquad P(X<6) \qquad P(5<X\le 9)$$
+		\end{enumerate}
+		
+		\newpage
+		{\bf \item Complete the table of the probability distribution associated with the random variable X.}
+		\begin{enumerate}
+			\begin{minipage}{0.5\textwidth}
+				\item A die is "marked" in such a way that the probability of a six being twice as high as the other five equally likely numbers. When thrown twice, the random variable X assigns the number of sixes thrown to each result.
+			\end{minipage}
+			\begin{minipage}{0.5\textwidth}
+				$$
+				\renewcommand{\arraystretch}{2}
+				\begin{array}{|c|p{1.8 cm}|p{1.8 cm}|p{1.8 cm}|}
+					\hline
+					x_i & & & \\
+					\hline
+					P(X=x_i) & & & \\
+					\hline
+				\end{array}
+				$$
+			\end{minipage}
+			
+			\begin{minipage}{0.5\textwidth}
+				{\bf\item In a game of chance you get three points for a game won, one point for a draw, and no point for a game lost.} Every game outcome is equally likely. If the game is played twice, X assigns the total number of points achieved to each result.
+			\end{minipage}
+			\begin{minipage}{0.5\textwidth}
+				$$
+				\renewcommand{\arraystretch}{2}
+				\begin{array}{|c|p{1 cm}|p{1 cm}|p{1 cm}|p{1 cm}|p{1 cm}|p{1 cm}|}
+					\hline
+					x_i & & & & & & \\
+					\hline
+					P(X=x_i) & & & & & &\\
+					\hline
+				\end{array}
+				$$
+			\end{minipage}
+			
+			\begin{minipage}{0.6\textwidth}
+				{\bf \item A box contains ten pieces of paper. One piece of paper has an A on it, three pieces of paper have a B on them, and the remaining six have a C on them.} A player randomly draws two pieces of paper without replacing them. If the A is there, he gets \EUR{2}. If he draws the same letter twice, he gets \EUR{1}. In all other cases he has to pay \EUR{2.50}. X assigns the profit in \EUR{} to each result.
+			\end{minipage}
+			\begin{minipage}{0.4\textwidth}
+				$$
+				\renewcommand{\arraystretch}{2}
+				\begin{array}{|c|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+					\hline
+					x_i & & & \\
+					\hline
+					P(X=x_i) & & &\\
+					\hline
+				\end{array}
+				$$
+			\end{minipage}
+			
+			\begin{minipage}{0.5\textwidth}
+				{\bf \item A basketball player throws three free throws in a row.} If one throw is successful, her probability of hitting the next throw does not change. However, if a throw is unsuccessful, the probability of hitting the next throw decreases by 8%. Experience shows that she scores the first basket with a probability of 88%. X assigns the number of baskets scored to each result.
+			\end{minipage}
+			\begin{minipage}{0.5\textwidth}
+				$$
+				\renewcommand{\arraystretch}{2}
+				\begin{array}{|c|p{2 cm}|p{2 cm}|p{2 cm}|p{2 cm}|}
+					\hline
+					x_i & & & &\\
+					\hline
+					P(X=x_i) & & & &\\
+					& & & & \\
+					\hline
+					\end{array}
+					$$
+				\end{minipage}
+			
+		\end{enumerate}
+	
+\end{enumerate}
+
+\fbox{
+\begin{minipage}{0.5\textwidth}
+For the solution, please \href{https://www.okuyakl.de/math/m11zugL255/le255.pdf}{click here} or scan the QR code.\\
+Additional worksheets are available at
+
+\href{http://www.okuyakl.com}{www.okuyakl.com}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+\includegraphics[width=3 cm]{qre255}
+\includegraphics[width=2 cm]{../../viecher/afanticon1}
+
+\end{minipage}}
+\end{document}
