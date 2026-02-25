@@ -1,0 +1,163 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1.}\\
+	$$\overrightarrow{AB} =\left( \begin{array}{c} 2.5 - (-2) \\ -3-3 \end{array}\right)= \left( \begin{array} {c} 4.5 \\ -6 \end{array}\right)$$
+	$$\overrightarrow{AC} =\left( \begin{array}{c} 6 - (-2) \\ 7.5-3 \end{array}\right)= \left( \begin{array}{ c} 8 \\ 4.5 \end{array}\right)$$
+	We calculate the area using the determinant:
+	$$A = {1 \over 2}|\overrightarrow{AB} \times \overrightarrow{AB}| ={1 \over 2} \left| \begin{array}{cc} 4.5 & 8 \\ -6 & 4.5 \end{array}\right|= {1 \over 2} \cdot | 20.25 + 48 | = 34.125~{\rm AU} $$
+	
+	\noindent {\bf Task 2. a)}
+	
+	First we calculate $\overrightarrow{AC}$ and $\overrightarrow{AD}$:
+	
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		\overrightarrow{AC}&={ 10-2 \choose 7-3} &= {8 \choose 4} \\
+		\overrightarrow{AD}&={ x-2 \choose -0.5x+5-3} &= {x-2 \choose -0.5x+2}
+	\end{array}
+	$$
+	
+	Then we set up the determinant:
+	
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		A(x)= \left| \begin{array}{cc} 8 & x-2 \\ 4 & -0.5x+2 \end{array} \right|
+		&=& 8 \cdot (-0.5x+2) - 4(x-2)\\
+		A(x)&=&-4x +16 -4x + 8 = (-8x+24) ~{\rm AU}
+	\end{array}
+	$$
+	
+	\noindent {\bf task 2. b)}
+	
+	We equate:
+	
+	$$
+	\begin{array}{rcl}
+		A(x)= -8x+24&=& 16\\
+		x&=& 1
+	\end{array}
+	$$
+	The coordinates are therefore $D(1|4,5)$
+	
+	\noindent {\bf Task 3.}
+	
+	Determination of $\overrightarrow{AB}$ and $\overrightarrow{AC}$:
+	
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		\overrightarrow{AB}&={ x_B-2 \choose 4-2} &= {x_B -2 \choose 2} \\
+		\overrightarrow{AC}&={ 10-2 \choose 8-2} &= {8 \choose 6}
+	\end{array}
+	$$
+	
+	Determination of $x_B$ using the determinant:
+	
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		{1 \over 2} \left| \begin{array}{cc} x_B-2&8 \\ 2&6 \end{array} \right|&=& {1 \over 2} \cdot (6( x_B-2) - 16) \\
+		3 x_B - 6 - 8 &=& 19 \\
+		3 x_B &=& 33 \\
+		x_B &=& 11
+	\end{array}
+	$$
+	
+	\fbox{
+		\begin{minipage}{0.4\textwidth}
+			\noindent{\bf Task 4. a)}\\
+			\includegraphics[width=7 cm]{drck256}
+		\end{minipage}
+	}
+	\hfill
+	\fbox{
+		\begin{minipage}{0.55\textwidth}
+			\noindent{\bf Task 4. b)}\\
+			Area = base times height :2, base = 2x-(-x+3);\\
+			Height = 6-x.
+			$$A= {1 \over 2} \cdot (3x-3) \cdot (6-x) $$
+			$$= {1\over 2} (-3x^2 + 18x +3x -18) = -1.5x^2 + 10.5x -9 \quad {\rm AU} $$
+			
+			\noindent{\bf Task 4. c)}\\
+			Square addition:
+			$$
+			\renewcommand{\arraystretch}{2}
+			\begin{array}{rcl}
+				A(x) &=& -1.5(x^2 - 7x + 3.5^2-3.5^2)-9 \\
+				&=& -1.5[(x-3.5)^2 -12.25]-9 \\
+				&=& -1.5(x-3.5)^2 +9.375 \\
+				\hline
+				A_{max}&=& 9.375 \quad \textnormal{for} \quad x=3.5
+			\end{array}
+			$$
+		\end{minipage}
+	}
+	
+	\noindent {\bf Task 5. a)}
+	The area of a rectangle is $A=\overline{OB_n} \cdot \overline{B_nC_n}$
+	With $\overline{OB_n}=x$ and $\overline{B_nC_n}=-0.4x+4.9$ we get:
+	$$A = x \cdot (-0.4x+4.9)= -0.4x^2 +4.9x$$
+	
+	\noindent {\bf Task 5. b)}
+	Determination of extreme values using quadratic completion provides:
+	$$A_{max}= 15.01 \qquad \textnormal{for} \qquad x=6.125$$
+	
+	\noindent {\bf Task 5. c)}
+	The following applies to the corner point $C_2$ of the square $OB_2C_2D_2$: x and y coordinates are the same. We solve:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		
+		x&=&-0.4x+ 4.9 & |+ 0.4x \\
+		1.4x &=& 4.9 & |:1.4 \\
+		x &=& 3.5 &\Rightarrow \quad C_2(3.5|3.5)
+	\end{array}
+	$$
+	
+	\noindent {\bf Task 5. d)}
+	The side length of the new square is $x-3.5$
+	The following applies to the corner point $C_3$ of the square $B_2EC_3F$:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		
+		x-3.5 &=& -0.4x +4.9 \\
+		1.4 x &=& 8.4 \\
+		x &=& 6 & \Rightarrow \quad C_3(6|2.5)
+	\end{array}
+	$$
+	The new square therefore has a side length of 2.5.
+	
+	\includegraphics[width=6 cm]{quger038}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m9kodiL038/ae038.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

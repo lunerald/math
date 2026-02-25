@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. a)}\\
+	The relative frequency is:
+	$$h(3)={8\over 40} = { 1 \over 5}$$
+	
+	\noindent{\bf Task 1. b)}\\
+	$$H(4)= 40 \cdot 0.125 = 5 $$
+	The number 4 was thrown 5 times.
+	
+	\noindent{\bf Task 1. c)}\\
+	The absolute frequency of 6 is:
+	$$H(6)=40-(7+4+8+5+6)=10$$
+	
+	\noindent{\bf Task 1. d)}\\
+	We add the frequencies:
+	$$H(X\le 3)=H(1)+H(2)+H(3)= 7+4+8=19$$
+	
+	\noindent{\bf Task 2.}\\
+	\begin{itemize}
+		\item For $\Omega_1$ and $\Omega_3$ there is a Laplace experiment because each sub-event is equally probable.
+		\item There is no Laplace experiment for $\Omega_2$ because the probability of getting a 6 is not the same as the probability of not getting a 6.
+	\end{itemize}
+	
+	\noindent{\bf Task 3.}\\
+	\begin{itemize}
+		\item $$p(A)={1 \over 6}$$
+		\item $$B=\{2;4;6\} \qquad p(B)={1 \over 2}$$
+		\item $$C=\{2;1\} \qquad p(C)={1 \over 3}$$
+	\end{itemize}
+	
+	\noindent{\bf Task 4.}\\
+	The result space is:
+	$$\Omega=\{WW; MM; MW; WM\}$$
+	All elements have the same probability $p={1 \over 4}$. The event set E= "at least one boy" consists of three elements, so the probability of this is:$p(E)={3 \over 4}$
+	
+	\noindent{\bf Task 5.}\\
+	The event set is:
+	$$E=\{55; 56; 65; 66\}$$
+	Each element has probability $p={1 \over 36}$, so is
+	$$p(E)={4 \over 36}={1 \over 9}$$
+	
+	
+	\noindent
+	\begin{minipage}{0.4\textwidth}
+		\noindent{\bf Task 6. a)}\\
+		\includegraphics[width=7 cm]{bauzw059}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.6\textwidth}
+		\noindent{\bf Task 6. b)}\\
+		$$\Omega=\{WWW; WWZ; WZW; WZZ; ZWW; ZWZ; ZZW; ZZZ \}$$
+		
+	\end{minipage}
+	
+	\noindent{\bf Task 6. c}\\
+	\begin{itemize}
+		\item $$A=\{WWW; ZZZ\}; \qquad p(A)= {1 \over 4}$$
+		\item $$B=\{ZWW; WZW; WWZ\}; \qquad p(B)= {3 \over 8}$$
+		\item $$C=\Omega- \{ZZZ\} \qquad p(C)= {7 \over 8}$$
+		\item $$D=\{WWW; ZWZ; WWZ; ZWW\}; \qquad p(D)= {1 \over 2}$$
+		\item $$A=\{ZWZ\}; \qquad p(E)= {1 \over 8}$$
+	\end{itemize}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m9zufL059/ae059.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

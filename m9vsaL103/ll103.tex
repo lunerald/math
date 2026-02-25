@@ -1,0 +1,104 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{colortbl}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\begin{enumerate}[1.]
+
+		
+{\bf \item Berechne die fehlenden Größen}
+
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|>{\columncolor[gray]{.8}}p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|p{1.3 cm}|}
+		\hline
+		\rowcolor[gray]{.8}	&$a$ &$b$ &$c$ &$d$ &$e$ & $f$ & $x$ & $y$ & $z$ \\
+		\hline
+		a) & $\SI{2,0}{\meter}$ & $\SI{1,0}{\meter}$ & $\SI{2,4}{\meter}$ & $\SI{1,2}{\meter}$ & $\SI{6,0}{\meter}$ & $\SI{5,0}{\meter}$ & $\SI{2,7}{\meter}$ & $\SI{1,8}{\meter}$ & $\SI{5,4}{\meter}$ \\
+		\hline
+		b) & $\SI{40}{\centi\meter}$ & $\SI{30}{\centi\meter}$ & $\SI{32}{\centi\meter}$ & $\SI{24}{\centi\meter}$ & $\SI{16}{\centi\meter}$ & $\SI{20}{\centi\meter}$ & $\SI{56}{\centi\meter}$ & $\SI{35}{\centi\meter}$ & $\SI{17,5}{\centi\meter}$ \\
+		\hline
+		c) & $\SI{75}{\milli\meter}$ & $\SI{50}{\milli\meter}$ & $\SI{90}{\milli\meter}$ & $\SI{60}{\milli\meter}$ & $\SI{42}{\milli\meter}$ & $\SI{35}{\milli\meter}$ & $\SI{70}{\milli\meter}$ & $\SI{42}{\milli\meter}$ & $\SI{29,4}{\milli\meter}$ \\
+		\hline
+		
+	\end{tabular}
+
+
+	{\bf \item Aufgabe}
+
+
+\begin{minipage}{0.6\textwidth}
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{|>{\columncolor[gray]{.8}}p{2.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+			\hline
+			\rowcolor[gray]{.8}	&a) &b) &c) &d) \\
+			\hline
+			Steigung p \% & 5\% & 20\% & 2\% & 12\% \\
+			\hline
+			Strecke &$\SI{4}{\kilo\meter}$ &$\SI{0,4}{\kilo\meter}$ &$\SI{9}{\kilo\meter}$ &$\SI{3500}{\meter}$ \\
+			\hline
+			Höhenunterschied & $\SI{200}{\meter}$ &$\SI{80}{\meter}$ &$\SI{180}{\meter}$ &$\SI{420}{\meter}$ \\
+			\hline
+		\end{tabular}
+\end{minipage}
+\vspace{0.4 cm}
+
+
+	{\bf \item  Aufgabe}
+	\begin{enumerate}[a)]
+		\item Weil beide Himmelskörper gleich groß erscheinen, kann man für ihr wahres Größenverhältnis ihre jeweiligen Entfernungen ins Verhältnis setzen:
+		 $$ r= {\SI{150e6}{\kilo\meter}\over \SI{384e3}{\kilo\meter}}=391$$
+		 Die Sonne hat den 391-fachen Durchmesser des Mondes.
+		\item Monddurchmesser: $$ d={\SI{1,4e6}{\kilo\meter}\over 391}=\SI{3580}{\kilo\meter}$$
+	\end{enumerate}  
+
+
+	{\bf \item Aufgabe}
+	\begin{enumerate}[a)]
+		\item Armlänge $\approx \SI{70}{\centi\meter}$\\
+		     Handbreite $\approx \SI{10}{\centi\meter}$.\\
+		     Entfernung: $$d={\SI{70}{\centi\meter} \over \SI{10}{\centi\meter}}\cdot \SI{1731}{\meter}=\SI{12}{\kilo\meter}$$
+		\item  $$h=\SI{8000}{\meter}\cdot 0,05=\SI{400}{\meter}$$ 
+	\end{enumerate} 
+
+
+
+
+{\bf \item Aufgabe}
+
+\begin{enumerate}[a)]
+	\item  $$h={\SI{21}{\centi\meter} \over \SI{70}{\centi\meter}}\cdot \SI{30}{\meter}=\SI{9}{\meter}$$ 
+    \item $$b={\SI{70}{\centi\meter} \over \SI{7}{\centi\meter}}\cdot \SI{9}{\meter}=\SI{90}{\meter}$$
+\end{enumerate} 
+ 
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m9vsaL103/aa103.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{enumerate}
+\end{document}
+

@@ -1,0 +1,261 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large Solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	
+	\begin{minipage}{0.4\textwidth}
+		\noindent{\bf Task 1. a)}\\
+		The parabola has the general form\\ $y=0.5x^2+ bx +c$.\\ We insert the two points:
+		$$
+		\renewcommand{\arraystretch}{2}
+		\begin{array}{rcll}
+			1 &=& 0.5 + b + c \\
+			0.5 &=& b + c \\
+			c &=& 0.5 - b & (I)\\
+			-2.5 &=& 0.5 \cdot 36 -6b +c \\
+			-20.5 &=& -6b + c & (II) \\
+			(I)~ \textnormal{in}~ (II):\\
+			-20.5 &=& -6b+ 0.5 -b \\
+			-21 &=& -7b & b= 3 \\
+			\textnormal{in}~(I):\\
+			c &=& -2.5
+		\end{array}
+		$$
+		The equation of the parabola $p_1$ is:
+		$$y=0.5x^2 + 3x - 2.5$$
+	\end{minipage}
+	\begin{minipage}{0.6\textwidth}
+		\noindent{\bf Task 1. b), e)}\\
+		\includegraphics[width=11 cm]{pdr039}
+	\end{minipage}
+	\vspace{1cm}
+	
+	
+	\begin{minipage}{0.45\textwidth}
+		\noindent{\bf Task 1. c)}\\
+		Calculation of the vertex coordinates with quadratic complementation:
+		$$
+		\renewcommand{\arraystretch}{2}
+		\begin{array}{rcl}
+			y &=& -0.25(x^2 + 9x)-2.5 \\
+			&=& -0.25[(x^2+2\cdot 4.5x + 4.5^2)-4.5^2]-2.5\\
+			&=& -0.25[(x+4.5)^2-20.25]-2.5 \\
+			&=& -0.25(x+4.5)^2+2.5625\\
+			&\Rightarrow& S(-4.5|2.5625)
+		\end{array}
+		$$
+	\end{minipage}
+	\hspace{1cm}
+	\begin{minipage}{0.45\textwidth}
+		\noindent{\bf Task 1. d)}\\
+		We calculate the intersection points by equating the two parabola terms:
+		$$
+		\renewcommand{\arraystretch}{2}
+		\begin{array}{rcll}
+			0.5x^2+3x-2.5 &=& -0.25x^2-2.25x-2.5 \\
+			0.75x^2+5.25x &=& 0 \\
+			x\cdot(0.75x+5.25) &=& 0 & x_1=0\\
+			0.75x_2&=&-5.25 \\
+			x_2 &=& -7
+		\end{array}
+		$$
+		Inserting into $p_1$ gives:
+		$$y_A= 0.5\cdot 49 -21 -2.5 = 1 \Rightarrow A(-7|1)$$
+		$$y_B= -2.5 \Rightarrow B(0|-2.5)$$
+	\end{minipage}
+	
+	\noindent{\bf Task 1. f)}\\
+	The triangles are spanned by the vectors $\overrightarrow{AB}$ and $\overrightarrow{AC}$. These are:
+	$$\overrightarrow{AB}={x+7 \choose 0.5x^2+3x-3.5}$$
+	$$\overrightarrow{AC}={7 \choose -3.5}$$
+	This gives us the area of the triangle using the determinant:
+	$$A_D={1 \over 2}|\overrightarrow{AB} \times \overrightarrow{AC}|={1 \over 2}
+	\left| \begin{array}{cc} x+7 & 7 \\
+		0.5x^2+3x-3.5 & -3.5 \end{array} \right|
+	={1 \over 2}(-3.5x - 24.5 -3.5x^2 - 21x + 24.5) = -1.75x^2-12.25x [FE]$$
+	
+	\noindent{\bf Task 1. g)}\\
+	To determine the extreme value, we complete the square:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		A_{max}&=&-1.75(x^2+7x)\\
+		&=& -1.75(x^2 + 7x +3.5^2-3.5^2)\\
+		&=& -1.75[(x+3.5)^2-12.25]\\
+		&=& -1.75(x+3.5)^2+21.44\\
+		A_{max}&=& 21.44 \quad \textnormal{for} \quad x=-3.5
+	\end{array}
+	$$
+	
+	\noindent{\bf Task 2. a)}\\
+	The rectangle has length $8-x$ and width $6+2x$. Length times width is area:
+	$$A_R=(8-x)(6+2x)=48-6x+16x-2x^2 =-2x^2 +10x+48$$
+	
+	\noindent{\bf Task 2. b)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		20 &=& -2x^2 +10x+48\\
+		0 &=& -2x^2 +10x+28 \\
+		x_{1/2} &=& {-10 \pm \sqrt{100 + 4\cdot 2 \cdot 28} \over -4}\\
+		x_{1/2} &=&{-10 \pm 18 \over -4 }\\
+		x_1 &=& 7\\
+		x_2 &=& -2
+	\end{array}
+	$$
+	For these two values, the area of the rectangle is $\SI{20}{\centi\meter^2}$.
+	
+	\noindent{\bf Task 3. a)}\\
+	The vertex form is obvious: the first three summands form a binomial formula:
+	$$y = (x^2-2ax+a^2)+0.5a-2 = (x-a)^2+0.5a-2 \quad \Rightarrow \quad S_a(a|0.5a-2)$$
+	If you don't see this right away, you can also complete the square.
+	
+	\begin{minipage}{0.3\textwidth}
+		\noindent{\bf Task 3. b)}\\
+		$$S_{-2}(-2|-3) $$
+		$$ S_{0}(0|-2) $$
+		$$S_{-3}(-3|-3.5)$$
+		
+		\noindent{\bf Task 3. c)}\\
+		The parameter representation of the carrier graph
+		the vertices are:
+		$${x \choose y} = {a \choose 0.5a-2}$$
+		And with $x=a$:
+		$$y= 0.5x-2$$
+		
+	\end{minipage}
+	\hspace{1cm}
+	\begin{minipage}{0.6\textwidth}
+		\includegraphics[width=10 cm]{pasch039}
+	\end{minipage}
+	
+	\noindent{\bf Task 3. d)}\\
+	We insert the point:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		62 &=& 64 - 8 \cdot 2a + a^2 +0.5 a -2 \\
+		0 &=& a^2 -15.5a \\
+		0 &=& a(a-15.5) & a_1 =0\\
+		0 &=& a-15.5 & a_2 = 15.5
+	\end{array}
+	$$
+	
+\noindent{\bf Task 3. e)}\\
+A normal parabola that opens upwards has the form:
+$$y=x^2 +bx +c$$
+We form two equations by substituting the two given points:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+	-0.75 &=& (-1.5)^2 - 1.5b +c \\
+	-3 &=& -1.5b+c &(I)\\
+	8 &=& 1 + b + c \\
+	7-b &=& c & (II) \\
+	II~\textnormal{in}~I\\
+	-3 &=& -1.5b +7-b \\
+	-10&=& -2.5b \\
+	b &=& 4 & c=3
+\end{array}
+$$
+So the equation of this parabola is:
+$$y=x^2 +4x+3$$
+If the parabola is to belong to the family, $4x=2ax$, i.e. $a=2$ must apply.
+The function term would then be:
+$$p_2:\quad y= x^2-2\cdot2x +2^2 + 0.5\cdot2 -2 = x^2 -4x + 3$$
+$\Rightarrow$ The parabola belongs to the group.
+
+\noindent{\bf Task 4. a)}\\
+To determine the vertex we add the square:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcl}
+	y&=& -1.5(x^2-4x)-4.5\\
+	&=& -1.5 [(x^2-4x+2^2)-2^2]-4.5 \\
+	&=& -1.5[(x-2)^2-4]-4.5\\
+	&=& -1.5(x-2)^2+6-4.5 \\
+	&=& -1.5(x-2)^2+1.5
+\end{array}
+$$
+The vertex is at $S(2|1,5)$; the set of values is $\mathbb{W}=]-\infty;1.5]$
+
+\noindent{\bf Task 4. b)}\\
+We compare the y-value of the point with the function value of the parabola at this point:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcl}
+	-25 &\stackrel{<}{>}& -1.5\cdot(-11)^2 +6\cdot(-11)-4.5 \\
+	-25 &\stackrel{<}{>}& -181.5 -66 -4.5 \\
+	-25 &>& -252
+\end{array}
+$$
+$\Rightarrow$ The function value is smaller, so the point is above the parabola.
+
+\noindent{\bf Task 5. a)}\\
+When mirroring on the x-axis, we multiply the $y$, i.e. the entire function term, by $-1$ and get:
+$$f'(x)=-4(x+1.5)^2+3$$
+During a subsequent reflection on the y-axis, we multiply the $x$ contained in the function term by $-1$ and get:
+$$f''(x)=-4(-x+1.5)^2+3 \quad \textnormal{or} \quad f''(x)=-4(x-1.5)^2 +3$$
+
+\noindent{\bf Task 6. a)}\\
+With the given vertex the parabola is of the form:
+$$g(x)=a(x-80)^2+31.25$$
+Here we insert the additional given point and get a:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcl}
+	20 &=& a(50-80)^2+31.25\\
+	-11.25 &=& 900 a\\
+	a&=&-{1 \over 80}\\
+	\Rightarrow \quad g(x)&=&-{1 \over 80}(x-80)^2+31.25
+\end{array}
+$$
+
+\noindent{\bf Task 6. b)}\\
+At the ground $y=0$; We calculate the zeros of the throwing parabola:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcl}
+	-{1 \over 80}(x-80)^2+31.25&=&0 \\
+	-{1 \over 80}(x-80)^2 &=& -31.25 \\
+	(x-80)^2 &=& 2500 \\
+	x-80 &=& \pm 50 \\
+	x_1 &=& 130 \\
+	(x_2 &=& 30)
+\end{array}
+$$
+The first solution is the x value you are looking for. The arrow flew $130~m-50~m=80~m$.
+
+\noindent{\bf Task 7.}\\
+If a parabola has zeros, the x-coordinate of its vertex is exactly the mean of the x-values of the zeros; here is $x_S$:
+$$x_S={-4.5+3.5 \over 2} = -0.5$$
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+	
+	Here you can go back to the \href{https://www.okuyakl.de/math/m9paraL039/ae039.pdf}{task sheet}
+\end{center}
+
+\end{document}

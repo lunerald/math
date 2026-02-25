@@ -1,0 +1,99 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. a)}\\
+$$
+\begin{array}{rcll}
+\sqrt{2}x \cdot x &=&  \SI{1}{\meter^2}\\
+x^2 &=& 2^{-0,5}\,\textnormal{m}^2 &| \sqrt{\quad}\\
+x &=& 2^{-0,25}\,\textnormal{m}\\
+x &=&\SI{0,84}{\meter}\\
+\end{array}$$
+Ist die Länge des A0- Blattes. Die Breite ist dann 
+$$2^{0,5} \cdot 2^{-0,25} =2^{0,25} = 1,19 \,\textnormal{m}$$
+
+\noindent{\bf Aufgabe 1. b)}\\
+\renewcommand{\arraystretch}{3}
+\begin{tabular}{|p{2.5 cm}|p{2.5 cm}|p{2.5 cm}|p{2.5 cm}|p{2.5 cm}|p{2.5 cm}|}
+	\hline
+	m	&A0 & A1 & A2 & A3 & A4 \\
+	\hline
+	Breite m &$2^{-0,25}=0,84$ &$2^{-0,75}=0,59$ &$2^{-1,25}=0,42$ &$2^{-1,75}=0,30$ &$2^{-2,25}=0,21$ \\
+	\hline
+	Länge m &$2^{0,25}=1,19$ &$2^{-0,25}=0,84$ &$2^{-0,75}=0,59$ &$2^{-1,25}=0,42$ &$2^{-1,75}=0,30$ \\
+	\hline
+	Flächeninhalt $\rm{m^2}$ &$2^{0}=1$ &$2^{-1}=0,5$ &$2^{-2}=0,25$ &$2^{-3}=0,125$ &$2^{-4}=0,0625$ \\
+	\hline
+\end{tabular}
+
+	\noindent{\bf Aufgabe 2.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{llllll}
+		a)\quad $a^{-2} $	& b)\quad $c^{-1} $ & c)\quad $b^2$ & d)\quad $32k^5n^{-5}$ & e)\quad $a$ & f)\quad $7x^{-3}$\\
+	\end{tabular}
+	
+	\noindent{\bf Aufgabe 3.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{lllll}
+		a)\quad ${b^2 \over a^6}$ & b)\quad ${u\over v}$ & c)\quad ${c^2\over d^4}$ & d)\quad ${1\over a+1}$ & e)\quad ${4b^2d^4\over a c^3}$ \\
+	\end{tabular}
+	
+	\noindent{\bf Aufgabe 4.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{llllll}
+		a)\quad ${k^3c\over d}$	& b)\quad ${1\over n^3}$ & c)\quad ${2a^4 \over c^2}  $& d)\quad ${p^2\over q^3}$ & e)\quad ${a^7bc}$& f)\quad ${w^4v^6\over z^2}$\\
+	\end{tabular}
+	
+	\noindent{\bf Aufgabe 5.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{llllll}
+		a)\quad ${a^{1\over 3}}$	& b)\quad $k^{1\over 2}$& c)\quad ${1 \over u^2v^2}$& d)\quad $(mn)^{-{2\over 5}} $& e)\quad $2cd^{-4} $& f)\quad $(kx)^3 $\\
+	\end{tabular}
+	
+	\noindent{\bf Aufgabe 6.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{llllll}
+		a)\quad $\sqrt{a^3}$	& b)\quad ${1\over\sqrt[7]{x}} $ & c)\quad ${1\over\sqrt{x}}$ & d)\quad ${1\over \sqrt{y}} $& e)\quad $\sqrt[4]{z} $& f)\quad $\sqrt{f}$\\
+	\end{tabular}
+
+	\noindent{\bf Aufgabe 7.}\\
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{llllll}
+	a)\quad $\sqrt{a} $	& b)\quad $2k $ & c)\quad $\sqrt{x}\over y $ & d)\quad $b^{3\over 2} $ & e)\quad $w^2\cdot \sqrt[3]{uv} $ & f)\quad $\sqrt{p\over q^7} $\\
+	g)\quad $m $ & h)\quad $5 \sqrt[4]{p} $ & i)\quad $x^2 $ & j)\quad $y $ & k)\quad $2n $ & l)\quad $x^{7\over 8} $ 
+\end{tabular}
+
+
+\noindent{\bf Aufgabe 7.}\\
+$$x^{2\over 3} \cdot x^{1\over 3}+x^{-{10\over 5}}=x + {1\over x^2}$$
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m9ptzL091/aa091.pdf}{Aufgabenblatt}
+\end{center}
+
+
+\end{document}
