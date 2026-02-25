@@ -1,0 +1,111 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent
+\begin{minipage}{0.5\textwidth}
+	\noindent{\bf Aufgabe 1. a)}\\
+	\includegraphics[width=7 cm]{tangent052}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+	\noindent{\bf Aufgabe 1. b)}\\
+	Die Ortslinie ist der Thaleskreis um $M$ durch $P$ und $A$.
+\end{minipage}
+
+\noindent{\bf Aufgabe 2.}\\
+Hierbei handelt es sich um zwei Parallelen, welche ein Paar bilden und von der Mittelparallelen $g$ den Abstand $\SI{8}{\centi\meter}$ haben:
+$$M=\{ P| d(P;g)=\SI{8}{\centi\meter}\}$$
+
+\noindent {\bf Aufgabe 3. a)}\\
+$$A=\{ P|d(P;M_1)>r_1 \land P| d(P;M_2)<r_2 \} $$
+
+\noindent {\bf Aufgabe 3. b)}\\
+$$B=\{ P|d(P;g)\ge d(P;h)\} $$
+
+\noindent {\bf Aufgabe 3. c)}\\
+Der Winkel zwischen $w_1$ und $w_2$ ist $\alpha + \beta$.
+Für die Winkel $\alpha$ und $\beta$ gilt:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcll}
+2\cdot \alpha + 2 \cdot \beta &=& 180^\circ & |:2 \\ 
+               \alpha + \beta &=& 90^\circ  
+
+\end{array}
+$$
+$w_1$ und $w_2$ schließen also einen rechten Winkel ein.
+
+\noindent {\bf Aufgabe 4. a)}\\
+$M_1$ sind zwei Ortslinien, und zwar die  Winkelhalbierenden von $g_1$ und $g_2$:
+$$M_1=\{P|d(P;g_1)=d(P;g_2)\}$$
+ 
+\noindent {\bf Aufgabe 4. b)}\\
+$M_2$ ist eine Ortslinie, die Mittelparallele zwischen $h_1$ und $h_2$:
+$$M_2=\{P|d(P;h_1)=d(P;h_2)\}$$
+
+\noindent {\bf Aufgabe 4. b)}\\
+$K$ ist ein Ortsbereich, nämlich das Innere der Kreises $k(M;r)$ um $M$ mit dem Radius $r$:  
+$$K=\{P|d(P;M)\le r\}$$
+
+\noindent {\bf Aufgabe 5.)}\\
+
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=5 cm]{papa160}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+P liegt auf einem Paar paralleler Geraden im Abstand von jeweils $\SI{1,5}{\centi\meter}$ von $g$
+\end{minipage}
+
+\noindent {\bf Aufgabe 6.a)}\\
+Die Punktmenge ist eine Ortslinie, weil der Abstand immer einen bestimmten Wert hat. 
+Sie beschreibt eine Kreislinie um $M$ mit dem Radius $\SI{2,8}{\centi\meter}$.
+  
+\noindent {\bf Aufgabe 6.b)}\\
+Diese Punktmenge ist ein Ortsbereich, denn der Abstand ist größer oder gleich $r_2$. Sie 
+beschreibt den Bereich außerhalb eines Kreises um $M$ mit dem Radius $r_2$.
+
+\noindent {\bf Aufgabe 7.)}\\
+\begin{minipage}{0.6\textwidth}
+\includegraphics[width=6 cm]{pum160}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+{\bf a)} P liegt innerhalb eines Thaleskreises zwischen $A$ und $C$\\
+{\bf b)} P' liegt auf und rechts neben der Mittelsenkrechten von $A$ und $B$. 
+\end{minipage}
+
+\noindent {\bf Aufgabe 8.)}\\
+$$G=\{ P| \SI{2}{\centi\meter} \le d(P;M) < \SI{4}{\centi\meter} \}$$
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m8ortL052/aa052.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+

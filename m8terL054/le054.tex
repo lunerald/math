@@ -1,0 +1,140 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 1. a)}\\
+		\includegraphics[width=7 cm]{reins054}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 1. b)}\\
+		$$\mathbb{G}=]0;12[$$
+		\noindent{\bf Task 1. c)}\\
+		$$U(x)=2 \cdot a + 2 \cdot b = 2 \cdot (12-x) + 2 \cdot (5+x)$$
+		$$ = 24 - 2x + 10 + 2x = \SI{34}{\centi\meter}$$
+		The scope always remains the same, it does not depend on $x$.
+	\end{minipage}
+	
+	\noindent{\bf Task 1. d)}\\
+	$$A(x)= a \cdot b = (12-x)\cdot (5+x) = -x^2 + 7x + 60$$
+	\noindent{\bf Task 1. e)}\\
+	Square complement gives:
+	$$T_{max}=\SI{72,25}{\centi\meter^2} \quad \textnormal{for} \quad x=3.5$$
+	
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 2. a)}\\
+		\includegraphics[width=7 cm]{rzwei054}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 2. b)}\\
+		$$\mathbb{G}=]0;6[$$
+		\noindent{\bf Task 2. c)}\\
+		$$U(x) = 2 \cdot (6-x) + 2 \cdot (8+2x)$$
+		$$ = 12 - 2x + 16 + 4x = (28 + 2x)~\SI{}{\centi\meter}$$
+	\end{minipage}
+	
+	\noindent{\bf Task 2. d)}\\
+	$$A(x)= (6-x)\cdot (8+2x) = -2x^2 + 4x + 48$$
+	\noindent{\bf Task 2. e)}\\
+	Square complement gives:
+	$$T_{max}=\SI{50}{\centi \meter^2} \quad \textnormal{for} \quad x=1$$
+	
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 3. a) b)}\\
+		\includegraphics[width=7 cm]{rdrei054}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		Perimeter square: $U_Q = 4 \cdot a = 4 \cdot \SI{8}{\centi\meter} = \SI{32}{\centi\meter} $\\
+		Area: $A_Q=a^2=(\SI{8}{\centi\meter})^2=\SI{64}{\centi\meter^2}$\\
+		\noindent{\bf Task 3. c)}\\
+		$$\mathbb{G}=]0;8[$$
+		\noindent{\bf Task 3. d)}\\
+		$$U(x) = 2 \cdot (8-x) + 2 \cdot (8+2x)$$
+		$$ = (32 + 2x)~\SI{}{\centi\meter}$$
+	\end{minipage}
+	
+	\noindent{\bf Task 3. e)}\\
+	$$A(x)= (8-x) \cdot (8+2x) = -2x^2 + 8x + 64$$
+	\noindent{\bf Task 3. f)}\\
+	Square complement gives:
+	$$T_{max}=\SI{72}{\centi \meter^2} \quad \textnormal{for} \quad x=2$$
+	\vspace{0.5 cm}
+	
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 4. a) b)}\\
+		\includegraphics[width=7 cm]{dvier054}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		Area: $A_D={1\over2}gh={1\over2}\SI{4}{\centi\meter}\cdot \SI{10}{\centi\meter}=\SI{20}{\centi \meter^2}$\\
+		\noindent{\bf Task 4. c)}\\
+		$$\mathbb{G}=]0;10[$$
+		\noindent{\bf Task 4. d)}\\
+		$$A(x)= {1\over2} (10-x) \cdot (4+2x) = -x^2 + 8x + 20$$
+		\noindent{\bf Task 4. e)}\\
+		Square complement gives:
+		$$T_{max}=\SI{36}{\centi \meter^2} \quad \textnormal{for} \quad x=4$$
+		
+	\end{minipage}
+	
+	\vspace{0.5 cm}
+	
+	
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 5. a) b)}\\
+		\includegraphics[width=7 cm]{rfunf054}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		Area: $A_Q={1\over2}ef={1\over2}\SI{8}{\centi\meter}\cdot \SI{6}{\centi\meter}=\SI{24}{\centi \meter^2}$\\
+		\noindent{\bf Task 5. c)}\\
+		$$\mathbb{G}=]0;4[$$
+		\noindent{\bf Task 5. d)}\\
+		$$A(x)= {1\over2} (8-2x) \cdot (6+2x) = -2x^2 + 2x + 24$$
+		\noindent{\bf Task 5. e)}\\
+		Square complement gives:
+		$$T_{max}=\SI{24,5}{\centi \meter^2} \quad \textnormal{for} \quad x={1\over2}$$
+		This diamond is a square.
+	\end{minipage}
+	
+	
+	
+	\vspace{0.5 cm}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m8terL054/ae054.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

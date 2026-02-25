@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	
+	
+	\renewcommand{\arraystretch}{2}
+	\begin{enumerate}[1.]
+		\item Fill in the blanks!
+		
+		\begin{tabular}{p{2.2 cm}p{2.2 cm}p{2.2 cm}p{2.2 cm}p{2.2 cm}p{2.2 cm}}
+			a) ${1\over 4} = {3 \over 12}$ &b) ${3 \over 9} = { 1 \over 3}$ &c) ${24 \over 32}= { 3 \over 4} $ &d) ${14 \over 16}= {7 \over 8}$ &e) ${60 \over 100}= {3 \over 5}$ &f) ${27 \over 33}= {9 \over 11 }$ \\
+			g) ${20 \over 50}= {2 \over 5}$ &h) ${2 \over 11}= { 8 \over 44}$ &i) ${36 \over 42}= {6 \over 7} $ &j) ${9 \over 10}= {99 \over 110}$ &k) ${45 \over 105}= {3 \over 7}$ &l) ${8 \over 12}= {6 \over 8 }$ \\
+		\end{tabular}
+		
+		\item How many are...
+		
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{p{3.2 cm}p{3.2 cm}p{3.2 cm}p{3.2 cm}}
+			a) $\SI{60}{\kilogram}$ &b) $\SI{600}{\kilogram}$ &c) \EUR{180} &d) $\SI{12}{\meter}$ \\
+		\end{tabular}
+		
+		\item How much is the whole thing?
+		
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{p{3.2 cm}p{3.2 cm}p{3.2 cm}p{3.2 cm}}
+			a)$\SI{88}{\centi\meter}$ &b) $\SI{120}{\kilogram}$ &c) \EUR{88} &d) $\SI{400}{\kilogram}$ \\
+		\end{tabular}
+		
+		\item Fill in the blanks:
+		
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{p{4.3 cm}p{4.3 cm}p{4.3 cm}}
+			a)${4 \over 5}$ of 200 is 160 &b) ${2 \over 9}$ of 180 is 40 &c) ${6 \over 8}$ of 32 is 24\\
+			d) ${9 \over 10}$ of 110 is 99 &e) ${8 \over 3}$ of 12 is 32 &f) ${5 \over 6}$ of 270 is 225\\
+			g) ${9 \over 2}$ of 10 is 45 &h) ${7 \over 20}$ of 400 is 140&i) ${1 \over 12}$ of 72 is 6
+		\end{tabular}
+	\end{enumerate}
+	
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m6bruL057/ae057.pdf}{task sheet}
+	\end{center}
+\end{document}
+
+\end{document}

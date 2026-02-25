@@ -1,0 +1,168 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{eurosym}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. a)}\\
+	Let the number of handballs be $x$. Then the number of soccer balls is $2x$ and that of volleyballs
+	$x+4$. The 12 tennis balls cost $12\cdot$ \EUR{6} = \EUR{72}. The total costs are:
+	$$
+	\begin{array}{rcl}
+		K(x)&=&(x\cdot 30+2x \cdot 35 +(x+4)\cdot 20 +72)\,\textnormal{\EUR{}}\\
+		&=& (30x +70x +20x + 80 + 72)\, \textnormal{\EUR{}}\\
+		&=& (120x + 152)\, \textnormal{\EUR{}}
+	\end{array}
+	$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. b)}\\
+	Now we set the variable x = 10:
+	$$K(10)=120\cdot 10 + 152 = \textnormal{\EUR{1352}}$$
+	The total cost of the balls is \EUR{1352}.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 2.}\\
+	Each width (=x), height (=2x), length (=4x) is processed four times. The string length $l$ is:
+	$$l=4x + 4\cdot 2x + 4 \cdot 4x = 28x$$
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 3. a) }\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rclll}
+		
+		\textnormal{1. day}&=&x~\SI{}{\kilo\meter} \\
+		\textnormal{2. Day}&=&2x~\SI{}{\kilo\meter} \\
+		\textnormal{1. day}&=&2x-15~\SI{}{\kilo\meter} \\
+		\hline
+		\textnormal{total}&=&x+2x+2x-15&=5x-15\\
+		\textnormal{b)}\quad 235 &=&x+2x+2x-15&=5x-15 &|+15\\
+		250 &=& 5x &|:5\\
+		50 &=& x
+	\end{array}
+	$$
+	
+	He drove $\SI{50}{\kilo\meter}$ on the first day.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 4. a)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		\textnormal{1. May}&=&\SI{100}{\gram} \\
+		\textnormal{15. May}&=& \SI{200}{\gram} \\
+		\textnormal{29. May}&=& \SI{400}{\gram} \\
+		\hline
+		14&\cdot &\SI{0,1}{\kilo\gram} \\
+		14&\cdot &\SI{0,2}{\kilo\gram} \\
+		3&\cdot &\SI{0,4}{\kilo\gram} \\
+		\hline
+		&=& 1.4+2.8+1.2&=\SI{5.4}{\kilo\gram} \\
+	\end{array}
+	$$
+	
+	On May 31st the dog gets $\SI{0.4}{\kilo\gram}$ food to eat.
+	b) She has opened 6 bags of food by then.
+	\newpage
+	
+	\noindent{\bf Task 5. a)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		\textnormal{2 adults}&=&2x \\
+		\textnormal{3 children}&=&3\cdot 0.5x\\
+		\textnormal{1 car}&=&9.50\\
+		\hline
+		20.70 &=& 3.5x+9.50 &|-9.50\\
+		11.20 &=&3.5x &|:3.5\\
+		3.20 &=&x
+	\end{array}
+	$$
+	
+	Ms. Jagmichel (1 adult) would have to pay \EUR{3.20}.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 5. b)}\\
+	$$2 \cdot 3.20 \cdot 0.75 = 4.80$$
+	The grandparents would still cost €4.80.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 6.}\\
+	\begin{center}
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{|c|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+			\hline
+			Speed in km/h & 20 & 50 & 80 & 100\\
+			\hline
+			Braking distance in m & 4 & 25 & 64 & 100 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 7. a)}\\
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcl}
+		
+		\textnormal{1. year}&=&12\cdot x \\
+		\textnormal{2. Year}&=&12\cdot (x+150)\\
+		\textnormal{3. Year}&=&12\cdot (x+300) +540\\
+		\hline
+		T(x)&=&36\cdot x + 12\cdot 150 +12\cdot 300 +540 \\
+		&=& 36x+5940\\
+	\end{array}
+	$$
+	\vspace{0.5 cm}
+	
+	
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 7. b)}\\
+		$$T(450)=36\cdot 450 + 5940 = 22140 $$
+		His total earnings will be \EUR{22140}.
+		\vspace{0.5 cm}
+		
+		\noindent{\bf Task 7. c)}\\
+		$$22410 : 36 = 615$$
+		His average earnings will be \EUR{615}.
+		\vspace{0.5 cm}
+		
+		\noindent{\bf Task 7. d)}\\
+		$$22410+3\cdot 120 = 22500$$
+		$$22500 : 36 = 625$$
+		His total earnings will then be \EUR{22500}.\\
+		His average earnings increase to \EUR{625}.
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\begin{center}
+			\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+			
+			Here you can go back to the \href{https://www.okuyakl.de/math/m7teaL118/ae118.pdf}{task sheet}
+		\end{center}
+		
+	\end{minipage}
+	
+\end{document}

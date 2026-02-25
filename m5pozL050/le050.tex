@@ -1,0 +1,91 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	
+	
+	\noindent{\bf Task 1.}\\
+	Prime numbers are: 2; 3; 5; 7; 11; 13; 17; 19
+	
+	\noindent{\bf Task 2.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{p{3 cm}p{3 cm}p{3 cm}p{3 cm}p{3 cm}}
+		a) $2^2\cdot 3$ & b) $2 \cdot 5^2$ & c) $2^3 \cdot 3^3$ & d) $2^3 \cdot 3^2$ & e) $2^3 \ cdot 5 \cdot 11$\\
+		f) $3^2 \cdot 17$ & g) $2\cdot 3 \cdot 7^2$ & h) $5^2\cdot 13$ & i) 101 & j) $3^2 \cdot 101$
+	\end{tabular}
+	
+	\noindent{\bf Task 3.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{p{5 cm}p{5 cm}p{5 cm}}
+		a) 24 & b) 36 & c) 20 \\
+		d) 72 & e) 70 & f) 187 \\
+		g) 24 & h) 84 & i) 72
+	\end{tabular}
+	
+	\noindent{\bf Task 4.}\\
+	\begin{tabular}{p{5 cm }p{5 cm}p{5 cm}}
+		a) 8 & b) 15 & c) 9 \\
+		d) 8 & e) 33 & f) 1 \\
+		g) 14 & h) 15 & i) 6
+	\end{tabular}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 5.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|p{1.1 cm}|p{1.1 cm}|p{1.1 cm}|p{1.1 cm}|p{1.1 cm}|p{1.1 cm}|p{1.1 cm}|p {1.1 cm}|p{1.1 cm}|p{1.1 cm}|p{1.1 cm}|}
+		\hline
+		$2^{10}$ & $2^9$ & $2^8$ & $2^7$ & $2^6$ & $2^5$ & $2^4$ & $2^3$ & $2^2$ & $2^1 $ & $2^0$ \\
+		\hline
+		1024 & 512 & 256 & 128 & 64 & 32 & 16 & 8 & 4 & 2 & 1 \\
+		\hline
+		
+	\end{tabular}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 6.}\\
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|p{1.8cm}||p{0.8 cm}|p{0.8 cm}|p{0.8 cm}|p{0.8 cm}|p{0.8 cm}|p{0.8 cm}| p{0.8 cm}|p{0.8 cm}|p{0.8 cm}|p{0.8 cm}||p{1.8 cm}|}
+		\hline
+		Decimal & $2^9$ & $2^8$ & $2^7$ & $2^6$ & $2^5$ & $2^4$ & $2^3$ & $2^2$ & $2^1$ & $2^0 $ & binary number\\
+		\hline
+		168 & & & 1 & 0 & 1 & 0 & 1 & 0 & 0& 0 & 10101000\\
+		\hline
+		24 & & & & & & & 1 & 1 & 0 & 0 & 1100\\
+		\hline
+		888 & 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 0 &1101111000\\
+		\hline
+		666 & 1 & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & 1010011010\\
+		\hline
+		1000 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 1111111000\\
+		\hline
+		8 & & & & & & & 1 & 0 & 0 & 0 & 1000\\
+		\hline
+		227 & & & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 11100011\\
+		\hline
+	\end{tabular}
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m5pozL050/ae050.pdf}{task sheet}
+	\end{center}
+\end{document}
+\end{document}

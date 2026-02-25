@@ -1,0 +1,97 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1. a)}\\
+	Points $U$ and $L$ have the same y-coordinate. So $[UL]$ is parallel to the x-axis and as long as the difference of the x-coordinates of $U$ and $L$, i.e
+	$$\overline{UL}=x_U-x_L=5-0=\SI{5}{\centi\meter}$$
+	The height of the trapezoid is the difference of the y coordinates of $U$ and $P$, so
+	$$h=y_U -y_P=3-(-2)=5$$
+	Because of parallelism, point $A$ must therefore have the same y-coordinate as $P$, so $A(x|-2)$. The length $\overline{PA}$ is therefore the difference of the x-coordinates of $A$ and $P$:
+	$$\overline{PA}= x-(-1.5)= x +1.5 \qquad (*)$$
+	To determine x we use the general formula for the trapezoidal area, solve it for $\overline{PA}$ and then substitute (*):
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		A_{Tr}&=&{1 \over 2}(\overline{PA}+\overline{UL})\cdot h & | \cdot 2 \\
+		2\cdot A_{Tr}&=& (\overline{PA}+\overline{UL}) \cdot h & | :H      \\
+		{2 \over h} \cdot A_{Tr}&=& \overline{PA}+\overline{UL} & | - \overline{UL} \\
+		{2 \over h} \cdot A_{Tr} -\overline{UL} &=& \overline{PA} & \textnormal{insert values}\\
+		{2 \over 5}\cdot 30 -5 &=& \overline{PA} & \\
+		7 &=& \overline{PA} & (*)\\
+		7 &=& x +1.5 & |-1.5\\
+		5.5 &=& x
+	\end{array}
+	$$
+	Thus $$A(5,5|-2)$$
+	
+	\includegraphics[width=7 cm]{paul004}
+	
+	\noindent {\bf task 1. b)}\\
+	The parallelogram has the same height again $h=\SI{5}{\centi\meter}$, but the new baseline $[PA']$. The formula for the area is now helpful again for determining x:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		A_{P}&=& \overline{PA'} \cdot h & |:h \\
+		{A_{P} \over h} &=& \overline{PA'} & (*)\\
+		{15 \over 5} &=& x +1.5 \\
+		1.5 &=& x & \Rightarrow A'(1.5|-2)
+	\end{array}
+	$$
+	The new parallelogram side is therefore $\SI{3}{\centi\meter}$ long. The point $U'$ is also 3 units of length to the right of L: $$U'(3|3)$$
+	
+	\noindent {\bf task 1. c)}\\
+	The designated area is a triangle with base $g=\SI{1.5}{\centi\meter}$ and height $h=\SI{5}{\centi\meter}$.
+	The area is calculated:
+	$$A_D={1 \over 2} \, g\cdot h = \SI{3.75}{\centi\meter^2}$$
+	Their share of the trapezoid area is:
+	$${A_D \over A_{Tr}}=\frac{\SI{3.75}{\centi \meter^2}}{\SI{30}{\centi \meter^2}}={1 \ over 8}$$
+	
+	\noindent{\bf Task 2.}\\
+	The area is a trapezoidal area minus a rectangle area $x \cdot 3x$:
+	The trapezoid has parallel sides $7x$ and $2y$; the height is $x+x+y$
+	$$A(x,y)={1 \over 2} \cdot ( 7x + 2y) \cdot (2x+y)-3x^2$$
+	
+	\noindent{\bf Task 3.}\\
+	We solve the formula for calculating the trapezoidal area for $g_2$ and then insert the values:
+	$$
+	\renewcommand{\arraystretch}{2}
+	\begin{array}{rcll}
+		A &=& {1\over 2}(g_1 +g_2) \cdot h &| \cdot 2 \\
+		2A &=& (g_1 +g_2) \cdot h &| :H \\
+		{2A \over h} &=& g_1+g_2 &|-g_1\\
+		{2A \over h} - g_1 &=& g_2 \\
+		{2 \cdot 30 \over 7.5} - 6.6 &=& g_1 \\
+		g_1 &=& \SI{1,4}{\centi\meter}
+	\end{array}
+	$$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m8traL056/ae056.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

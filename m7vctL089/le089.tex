@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Task 1.}\\
+	$$\overrightarrow{AJ}={7 \choose -6}; \quad \overrightarrow{HG}={-10 \choose 0}; \quad \overrightarrow{MF}={5\choose 5}; \quad \overrightarrow{PV}={1\choose -3}; \quad \overrightarrow{XT}={-2 \choose 3}; $$ $$\overrightarrow{DK}={-1\choose -4}; \quad \overrightarrow{SL}={5\choose 3}; \quad \overrightarrow{FL}={2\choose -4}; \quad \overrightarrow{QT}={-4 \choose -2}; \quad \overrightarrow{GC}={4\choose 3} $$
+	\noindent{\bf Task 2.}\\
+	Longest vector e.g.: $\overrightarrow{AX}$
+	Shortest vector e.g.: $\overrightarrow{UR}$
+	
+	\noindent{\bf Task 3.}\\
+	$$M_{AF}(-2|5); \quad M_{US}(-4|-4); \quad M_{WS}(-3|-5); \quad M_{KD}(-7.5|2); $$
+	\noindent{\bf Task 4.}\\
+	In both calculations we get the zero vector $\overrightarrow{0}={0 \choose 0}$. For every vector addition along a closed line, where we arrive back at the starting point, we get the zero vector
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m7vctL089/ae089.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

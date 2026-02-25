@@ -1,0 +1,51 @@
+
+\documentclass[landscape]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{amssymb}
+\usepackage[a4paper]{geometry}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\begin{minipage}{10 cm}
+\begin{enumerate}[a)]
+\item $T_{min}=-6$ für $x=4$
+\item $T_{min}= 6$ für $x=-3$
+\item $T_{min}=-2,25$ für $x=1,5$
+\item $T_{min}=-4$ für $x=2$
+\item $T_{min}=5$ für $x=5$
+\item $T_{min}=-4$ für $x=-1$
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{10 cm}
+\begin{enumerate}[a)]
+\item $T_{max}=5$ für $x=-2$
+\item $T_{min}=15$ für $x=-3$ 
+\item $T_{min}=-4,5$ für $x=3$
+\item $T_{max}=18$ für $x=-1,5$
+\item $T_{max}=0$ für $x=-3$
+\item $T_{min}=-8$ für $x=0$
+\end{enumerate}
+\end{minipage}
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m8querL001/aa001.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}

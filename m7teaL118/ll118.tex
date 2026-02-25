@@ -1,0 +1,169 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{eurosym}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. a)}\\
+Die Anzahl der Handbälle sei $x$. Dann ist die Anzahl der Fußbälle $2x$ und die der Volleybälle
+$x+4$. Die 12 Tennisbälle kosten 12 $\cdot$ \EUR{6} = \EUR{72}. Die Gesamtkosten sind:
+$$
+\begin{array}{rcl}
+K(x)&=&(x\cdot 30+2x \cdot 35 +(x+4)\cdot 20 +72)\,\textnormal{\EUR{}}\\
+&=& (30x +70x +20x + 80 + 72)\, \textnormal{\EUR{}}\\
+&=& (120x + 152)\, \textnormal{\EUR{}} 
+\end{array}
+$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. b)}\\
+Nun setzen wir die Variable x = 10:
+$$K(10)=120\cdot 10 + 152 = \textnormal{\EUR{1352}}$$
+Die Gesamtkosten für die Bälle belaufen sich auf \EUR{1352}.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 2.}\\
+	Jede Breite (=x), Höhe (=2x), Länge (=4x) wird viermal abgewickelt. Die Schnurlänge $l$ ist:
+	$$l=4x + 4\cdot 2x + 4 \cdot 4x = 28x$$
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 3. a) }\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rclll}
+
+\textnormal{1. Tag}&=&x~\SI{}{\kilo\meter}  \\
+\textnormal{2. Tag}&=&2x~\SI{}{\kilo\meter}  \\
+\textnormal{1. Tag}&=&2x-15~\SI{}{\kilo\meter}  \\
+\hline
+\textnormal{gesamt}&=&x+2x+2x-15&=5x-15\\
+\textnormal{b)}\quad 235 &=&x+2x+2x-15&=5x-15 &|+15\\
+250 &=& 5x &|:5\\
+50 &=& x
+\end{array}
+$$
+
+Er ist am ersten Tag $\SI{50}{\kilo\meter}$ gefahren.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 4. a)}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+\textnormal{1. Mai}&=&\SI{100}{\gram}  \\
+\textnormal{15. Mai}&=& \SI{200}{\gram} \\
+\textnormal{29. Mai}&=& \SI{400}{\gram} \\
+\hline
+14&\cdot &\SI{0,1}{\kilo\gram} \\
+14&\cdot &\SI{0,2}{\kilo\gram} \\
+3&\cdot &\SI{0,4}{\kilo\gram} \\
+\hline
+&=& 1,4+2,8+1,2&=\SI{5,4}{\kilo\gram} \\
+\end{array}
+$$
+
+Am 31. Mai bekommt der Hund $\SI{0,4}{\kilo\gram}$ Futter zu fressen.
+b) Sie hat bis dahin 6 Futtertüten angebrochen.
+\newpage
+
+\noindent{\bf Aufgabe 5. a)}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+\textnormal{2 Erwachsene}&=&2x \\
+\textnormal{3 Kinder}&=&3\cdot 0,5x\\
+\textnormal{1 Auto}&=&9,50\\
+\hline
+20,70 &=& 3,5x+9,50 &|-9,50\\
+11,20 &=&3,5x &|:3,5\\
+3,20 &=&x
+\end{array}
+$$
+
+Frau Jagmichel (1 Erwachsene) müsste \EUR{3,20} zahlen.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 5. b)}\\
+$$2 \cdot 3,20 \cdot 0,75 = 4,80$$
+Die Großeltern würden noch  \EUR{4,80} kosten.
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 6.}\\
+\begin{center}
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|c|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+		\hline
+		Geschwindigkeit in km/h & 20 & 50 & 80& 100\\
+		\hline
+		Bremsweg in  m	& 4 & 25 & 64 & 100 \\
+		\hline
+	\end{tabular}
+\end{center}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 7. a)}\\
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcl}
+
+\textnormal{1. Jahr}&=&12\cdot x \\
+\textnormal{2. Jahr}&=&12\cdot (x+150)\\
+\textnormal{3. Jahr}&=&12\cdot (x+300) +540\\
+\hline
+T(x)&=&36\cdot x + 12\cdot 150 +12\cdot 300 +540 \\
+&=& 36x+5940\\
+\end{array}
+$$
+\vspace{0.5 cm}
+
+
+\begin{minipage}{0.5\textwidth}
+	\noindent{\bf Aufgabe 7. b)}\\
+	$$T(450)=36\cdot 450 + 5940 = 22140 $$
+	Sein Gesamtverdienst wird \EUR{22140} betragen.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Aufgabe 7. c)}\\
+	$$22410 : 36 = 615$$
+	Sein Durchschnittsverdienst wird \EUR{615} sein.
+	\vspace{0.5 cm}
+	
+	\noindent{\bf Aufgabe 7. d)}\\
+	$$22410+3\cdot 120 = 22500$$
+	$$22500 : 36 = 625$$
+	Sein Gesamtverdienst wird dann \EUR{22500} betragen.\\
+	Sein Durchschnittsverdienst steigt auf \EUR{625}.
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m7teaL118/aa118.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{minipage}
+
+\end{document}
+

@@ -1,0 +1,110 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+	\begin{tikzpicture}(10,3)
+		\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+		\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+		\node at (6,.6) {\large solution sheet from \href{http://www.okuyakl.com}{www.okuyakl.com}};
+	\end{tikzpicture}
+	\vspace{0.5 cm}
+	
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 1. a)}\\
+		\includegraphics[width=7 cm]{tangent052}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		\noindent{\bf Task 1. b)}\\
+		The local line is the Thales circle around $M$ through $P$ and $A$.
+	\end{minipage}
+	
+	\noindent{\bf Task 2.}\\
+	These are two parallels that form a pair and are at a distance of $\SI{8}{\centi\meter}$ from the central parallel $g$:
+	$$M=\{ P| d(P;g)=\SI{8}{\centi\meter}\}$$
+	
+	\noindent {\bf task 3. a)}\\
+	$$A=\{ P|d(P;M_1)>r_1 \land P| d(P;M_2)<r_2 \} $$
+	
+	\noindent {\bf task 3. b)}\\
+	$$B=\{ P|d(P;g)\ge d(P;h)\} $$
+	
+	\noindent {\bf task 3. c)}\\
+	The angle between $w_1$ and $w_2$ is $\alpha + \beta$.
+	For the angles $\alpha$ and $\beta$ the following applies:
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{rcll}
+		2\cdot \alpha + 2 \cdot \beta &=& 180^\circ & |:2 \\
+		\alpha + \beta &=& 90^\circ
+		
+	\end{array}
+	$$
+	So $w_1$ and $w_2$ form a right angle.
+	
+	\noindent {\bf Task 4. a)}\\
+	$M_1$ are two locus lines, namely the bisectors of $g_1$ and $g_2$:
+	$$M_1=\{P|d(P;g_1)=d(P;g_2)\}$$
+	
+	\noindent {\bf task 4. b)}\\
+	$M_2$ is a local line, the central parallel between $h_1$ and $h_2$:
+	$$M_2=\{P|d(P;h_1)=d(P;h_2)\}$$
+	
+	\noindent {\bf task 4. b)}\\
+	$K$ is a spatial region, namely the interior of the circle $k(M;r)$ around $M$ with radius $r$:
+	$$K=\{P|d(P;M)\le r\}$$
+	
+	\noindent {\bf task 5.)}\\
+	
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=5 cm]{papa160}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\textwidth}
+		P lies on a pair of parallel lines at a distance of $\SI{1.5}{\centi\meter}$ from $g$
+	\end{minipage}
+	
+	\noindent {\bf task 6.a)}\\
+	The set of points is a location line because the distance always has a certain value.
+	It describes a circular line around $M$ with radius $\SI{2.8}{\centi\meter}$.
+	
+	\noindent {\bf Task 6.b)}\\
+	This point set is a spatial region because the distance is greater than or equal to $r_2$. She
+	describes the area outside a circle around $M$ with radius $r_2$.
+	
+	\noindent {\bf task 7.)}\\
+	\begin{minipage}{0.6\textwidth}
+		\includegraphics[width=6 cm]{pum160}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		{\bf a)} P lies within a Thales circle between $A$ and $C$\\
+		{\bf b)} P' lies on and to the right of the perpendicular bisector of $A$ and $B$.
+	\end{minipage}
+	
+	\noindent {\bf task 8.)}\\
+	$$G=\{ P| \SI{2}{\centi \meter} \le d(P;M) < \SI{4}{\centi \meter} \}$$
+	
+	\begin{center}
+		\includegraphics[width=7 cm]{../../viecher/eendcomic.pdf}
+		
+		Here you can go back to the \href{https://www.okuyakl.de/math/m8ortL052/ae052.pdf}{task sheet}
+	\end{center}
+	
+\end{document}

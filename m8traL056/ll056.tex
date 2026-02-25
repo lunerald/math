@@ -1,0 +1,98 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{icomma}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+
+\begin{document}
+\begin{tikzpicture}(10,3)
+	\draw[ultra thick](2,0) --(10,0) -- (10,1.3) --(2,1.3) -- (2,0);
+	\draw[fill=black](2,0)-- (0,.6) -- (2,.6) -- (2,0);
+	\node at (6,.6) {\large Lösungsblatt von \href{https://www.okuyakl.de}{www.okuyakl.de}};
+\end{tikzpicture}
+\vspace{0.5 cm}
+
+\noindent{\bf Aufgabe 1. a)}\\
+ Punkte $U$ und $L$ haben die gleiche y-Koordinate. Also ist $[UL]$ parallel zur x-Achse und so lang, wie die Differenz der x-Koordinaten von $U$ und $L$, also 
+$$\overline{UL}=x_U-x_L=5-0=\SI{5}{\centi\meter}$$
+Die Höhe des Trapezes ist die Differenz der y-Koordinaten von $U$ und $P$, also 
+$$h=y_U -y_P=3-(-2)=5$$
+Wegen der Parallelität muss der Punkt $A$ folglich die gleiche y-Koordinate wie $P$ besitzen, also ist $A(x|-2)$. Die Länge $\overline{PA}$ ist somit die Differenz der x-Koordinaten von $A$ und $P$:
+$$\overline{PA}= x-(-1,5)= x +1,5 \qquad (*)$$
+Zur Bestimmung von x benutzen wir die allgemeine Formel für die Trapezfläche, lösen sie nach $\overline{PA}$ auf und setzen dann (*) ein:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcll}
+A_{Tr}&=&{1 \over 2}(\overline{PA}+\overline{UL})\cdot h & | \cdot 2 \\
+2\cdot A_{Tr}&=& (\overline{PA}+\overline{UL}) \cdot h   & | :h      \\
+{2 \over h} \cdot A_{Tr}&=& \overline{PA}+\overline{UL}  & | - \overline{UL}  \\
+{2 \over h} \cdot A_{Tr} -\overline{UL} &=& \overline{PA}  & \textnormal{Werte einsetzen}\\
+{2 \over 5}\cdot 30 -5 &=& \overline{PA}  & \\
+                           7 &=& \overline{PA} & (*)\\
+                           7 &=& x +1,5 & |-1,5\\
+                         5,5 &=& x
+\end{array}
+$$  
+Somit ist $$A(5,5|-2)$$
+
+\includegraphics[width=7 cm]{paul004}
+
+\noindent {\bf Aufgabe 1. b)}\\
+Das Parallelogramm besitzt wieder dieselbe Höhe $h=\SI{5}{\centi\meter}$, aber die neue Grundlinie $[PA']$. Die Formel zum Flächeninhalt ist nun wieder hilfreich zur Bestimmung von x:
+$$
+\renewcommand{\arraystretch}{1.5}
+\begin{array}{rcll}
+A_{P}&=& \overline{PA'} \cdot h & |:h \\
+{A_{P} \over h} &=& \overline{PA'} & (*)\\
+{15 \over 5} &=& x +1,5 \\ 
+1,5 &=& x & \Rightarrow A'(1,5|-2)
+\end{array}
+$$
+Die neue Parallelogrammseite ist also $\SI{3}{\centi\meter}$ lang. Der Punkt $U'$ liegt ebenfalls 3 Längeneinheiten rechts neben L: $$U'(3|3)$$
+
+\noindent {\bf Aufgabe 1. c)}\\
+Die bezeichnete Fläche ist ein Dreieck mit der Grundseite $g=\SI{1,5}{\centi\meter}$ und der Höhe $h=\SI{5}{\centi\meter}$.
+Es errechnet sich die Fläche:
+$$A_D={1 \over 2} \, g\cdot h = \SI{3,75}{\centi\meter^2}$$
+Ihr Anteil an der Trapezfläche ist:
+$${A_D \over A_{Tr}}=\frac{\SI{3,75}{\centi\meter^2}}{\SI{30}{\centi\meter^2}}={1 \over 8}$$
+
+\noindent{\bf Aufgabe 2.}\\
+Der Flächeninhalt ist eine Trapezfläche minus eine Rechteckfläche $x \cdot 3x$:
+Das Trapez hat die parallelen Seiten $7x$ und $2y$; die Höhe ist $x+x+y$
+$$A(x,y)={1 \over 2} \cdot ( 7x + 2y) \cdot (2x+y)-3x^2$$
+
+\noindent{\bf Aufgabe 3.}\\
+Die Formel zur Berechnung der Trapezfläche lösen wir nach $g_2$ auf und setzen dann die Werte ein:
+$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{rcll}
+A &=& {1\over 2}(g_1 +g_2) \cdot h &| \cdot 2 \\
+2A &=& (g_1 +g_2) \cdot h &| :h \\
+{2A \over h} &=& g_1+g_2 &|-g_1\\
+{2A \over h} - g_1 &=& g_2 \\
+{2 \cdot 30 \over 7,5} - 6,6 &=& g_1 \\
+g_1 &=& \SI{1,4}{\centi\meter} 
+\end{array}
+$$
+
+\begin{center}
+	\includegraphics[width=7 cm]{../../viecher/endcomic.pdf}
+	
+	Hier geht es zurück zum \href{https://www.okuyakl.de/math/m8traL056/aa056.pdf}{Aufgabenblatt}
+\end{center}
+
+\end{document}
+
