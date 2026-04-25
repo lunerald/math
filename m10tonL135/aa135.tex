@@ -1,0 +1,324 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{icomma}
+\usepackage{colortbl}
+\usepackage{musixtex}
+\usepackage{siunitx}
+\sisetup{locale=DE} 
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm,
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue}
+\begin{document}
+
+{\bf Die Tonleiter, mathematisch gesehen}
+\begin{enumerate}[1.]
+{\bf \item Fülle die Tabelle mit Hilfe der Formel $y =440 \cdot 2^{\frac{x}{12}}$ }  aus.
+ Hierbei ist x die Anzahl der Halbtonschritte und y die Frequenz.
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+	\hline
+	\rowcolor[gray]{.8}	 Ton &  a, & c & c\# & d & d\# & e & f\\
+	\hline
+	 x & -12  & -9  &  -8 &-7 & -6& -5 &  -4 \\
+	\hline 
+	 y in Hz &  & & & & & & \\ 
+	 \hline
+\end{tabular}
+
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|}
+	\hline
+	\rowcolor[gray]{.8}	 Ton &  f\#  & g & g\# & a & a\# & h & c' & a'\\
+	\hline
+	x & -3  & -2 &  -1 & 0 & 1 & 2 &  3 & 12 \\
+	\hline 
+	y in Hz &  & & & 440 & & & &\\ 
+	\hline
+\end{tabular}
+
+
+{\bf \item  Stelle die Frequenzen über den Halbtonschritten} grafisch dar:\\
+a) mit linearer y-Achse\\
+\begin{center}
+\hspace{-0.4 cm}
+\includegraphics[width=15 cm]{expto01.png}	\\
+
+
+\begin{music}
+	\parindent10mm
+	\instrumentnumber{1}
+	\setstaffs1{1}
+	\startextract
+	\Notes 
+
+	\qa {a}
+	\hskip 1  cm
+	\qa c
+	\qa{^c}	
+	\qa d  
+	\qa{^d}
+	\qa e 
+	\qa f 
+	\qa{^f}
+	\qa {g'}
+	\qa{^a}	
+	\qa{a}
+	\qa b 
+	\qa {c'}
+	\hskip 2 cm
+	\qa{a''} 
+	\en
+	\endextract
+\end{music}
+
+b) mit logarithmischer y-Achse\\
+
+\hspace{-0.4 cm}
+\includegraphics[width=15 cm]{logto01.png}	\\
+\end{center}
+
+\begin{music}
+	\parindent10mm
+	\instrumentnumber{1}
+	\setstaffs1{1}
+	\startextract
+	\Notes 
+	\qa c
+	\qa{^c}	
+	\qa d  
+	\qa{^d}
+	\qa e 
+	\qa f 
+	\qa{^f}
+	\qa g 
+	\qa{^g}
+	\qa {'a} 
+	\qa{^a}
+	\qa b 
+	\qa {c'}
+	\en
+	\endextract
+\end{music}
+{\bf \item Fülle die Tabelle mit den musikalischen Intervallen aus}
+
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|}
+	\hline
+	\rowcolor[gray]{.8}	Name & Halbtonschritte &  Noten & $2^{x/12}$ & Frequenzverhältnis   \\
+	\hline
+     Prime & & 	 
+	  \begin{music}
+	  	\instrumentnumber{1}
+	  	\setstaffs1{1}
+	  	\startextract
+	  	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	  	\endextract
+	  \end{music}
+	  &  &\\
+	\hline
+	  kleine Sekunde & & 
+	  \begin{music}
+	  	\instrumentnumber{1}
+	  	\setstaffs1{1}
+	  	\startextract
+	  	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	  	\endextract
+	  \end{music}
+	  & & \\
+	\hline
+	 große Sekunde & & 
+	 \begin{music}
+	 	\instrumentnumber{1}
+	 	\setstaffs1{1}
+	 	\startextract
+	 	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	 	\endextract
+	 \end{music}
+	 & & \\
+	\hline
+	  kleine Terz & & 
+	  \begin{music}
+	  	\instrumentnumber{1}
+	  	\setstaffs1{1}
+	  	\startextract
+	  	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	  	\endextract
+	  \end{music}
+	  & & \\
+	\hline
+	 große Terz & &
+	 \begin{music}
+	 	\instrumentnumber{1}
+	 	\setstaffs1{1}
+	 	\startextract
+	 	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	 	\endextract
+	 \end{music}
+	  & & \\
+	\hline
+	 Quarte & & 
+	 \begin{music}
+	 	\instrumentnumber{1}
+	 	\setstaffs1{1}
+	 	\startextract
+	 	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	 	\endextract
+	 \end{music}
+	 & & \\
+	\hline
+\end{tabular}
+
+\vspace{1 cm}
+Frequenzverhältnisse:
+\quad\fbox{1 : 1}
+\quad\fbox{5:4}
+\quad\fbox{4:3}
+\quad\fbox{6:5}
+\quad\fbox{9:8}
+\quad\fbox{16:15}
+
+\newpage
+\begin{music}
+	\parindent10mm
+	\instrumentnumber{1}
+	\setstaffs1{1}
+	\startextract
+	\Notes 
+	\qa c
+	\qa{^c}	
+	\qa d  
+	\qa{^d}
+	\qa e 
+	\qa f 
+	\qa{^f}
+	\qa g 
+	\qa{^g}
+	\qa {'a} 
+	\qa{^a}
+	\qa b 
+	\qa {c'}
+	\en
+	\endextract
+\end{music}
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|}
+	\hline
+	\rowcolor[gray]{.8}	Name & Halbtonschritte &  Noten & $2^{x/12}$ & Frequenzverhältnis  \\
+	\hline
+	  Tritonus & & 
+	  \begin{music}
+	  	\instrumentnumber{1}
+	  	\setstaffs1{1}
+	  	\startextract
+	  	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	  	\endextract
+	  \end{music}
+	  & & \\
+	\hline
+	  Quinte & & 
+	  \begin{music}
+	  	\instrumentnumber{1}
+	  	\setstaffs1{1}
+	  	\startextract
+	  	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	  	\endextract
+	  \end{music}
+	  &  & \\
+	\hline
+	 kleine Sexte & & 
+	 \begin{music}
+	 	\instrumentnumber{1}
+	 	\setstaffs1{1}
+	 	\startextract
+	 	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	 	\endextract
+	 \end{music}
+	 & & \\
+	\hline
+	  große Sexte & & 
+	  \begin{music}
+	  	\instrumentnumber{1}
+	  	\setstaffs1{1}
+	  	\startextract
+	  	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	  	\endextract
+	  \end{music}
+	  & & \\
+	\hline
+	 kleine Septime & &
+	 \begin{music}
+	 	\instrumentnumber{1}
+	 	\setstaffs1{1}
+	 	\startextract
+	 	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	 	\endextract
+	 \end{music}
+	  & & \\
+	\hline
+	  große Septime & & 
+	  \begin{music}
+	  	\instrumentnumber{1}
+	  	\setstaffs1{1}
+	  	\startextract
+	  	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	  	\endextract
+	  \end{music}
+	  & & \\
+	\hline
+	  Oktave & & 
+	  \begin{music}
+	  	\instrumentnumber{1}
+	  	\setstaffs1{1}
+	  	\startextract
+	  	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm  \en
+	  	\endextract
+	  \end{music}
+	  & & \\
+	\hline
+\end{tabular}
+
+\vspace{1 cm}
+ Frequenzverhältnisse:
+	\quad \fbox{3:2}
+\quad \fbox{5:3}
+\quad \fbox{45:32}
+\quad \fbox{2:1}
+\quad \fbox{9:5}
+\quad \fbox{8:5}
+\quad \fbox{15:8}
+
+\vspace{1 cm}
+{\bf \item Um wieviel Prozent steigt die Frequenz bei \underbar{einem} Halbtonschritt?}
+\vspace{1 cm}
+{\bf \item Spiele die Intervalle auf einer Piano-App}.
+
+
+\end{enumerate} 
+
+\fbox{
+\begin{minipage}{0.5\textwidth}
+	Zur Lösung bitte \href{https://www.okuyakl.de/math/m10tonL135/ll135.pdf}{hier klicken} oder den QR-Code scannen.\\
+	Weitere Arbeitsblätter gibt es unter 
+	
+	\href{https://www.okuyakl.de}{www.okuyakl.de}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+	\includegraphics[width=3 cm]{qr135}
+	\includegraphics[width=2 cm]{../../viecher/afanticon1}
+	
+	\end{minipage}}
+	
+\end{document}

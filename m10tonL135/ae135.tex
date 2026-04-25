@@ -1,0 +1,362 @@
+\documentclass[a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{icomma}
+\usepackage{colortbl}
+\usepackage{musixtex}
+\usepackage{siunitx}
+\sisetup{locale=DE}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=15mm, right=15mm, bottom=15mm, 
+	headsep=10mm, footskip=12mm}
+\usepackage{href-ul}
+\hypersetup{ 
+	colorlinks=true, 
+	linkcolor=blue, 
+	urlcolor=blue}
+\begin{document}
+	
+{\bf The scale, mathematically seen}
+	
+	\begin{enumerate}[1.]
+	
+{\bf \item	Fill in the table using the formula $y = 440 \cdot 2^{\frac{x}{12}}$ }.
+
+Here, x is the number of semitones and y is the frequency.
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|} 
+	\hline 
+	\rowcolor[gray]{.8} tone & a, & c & c\# & d & d\# & e & f\\ 
+	\hline 
+	x & -12 & -9 & -8 &-7 & -6& -5 & -4 \\ 
+	\hline 
+	y in Hz & & & & & & & \\ 
+	\hline
+\end{tabular}
+
+
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|p{1.5 cm}|} 
+	\hline 
+	\rowcolor[gray]{.8} tone & f\# & g & g\# & a & a\# & h & c' & a'\\ 
+	\hline 
+	x & -3 & -2 & -1 & 0 & 1 & 2 & 3 & 12 \\ 
+	\hline 
+	y in Hz & & & & 440 & & & &\\ 
+	\hline
+\end{tabular}
+
+
+{\bf \item Graph the frequencies over the semitone steps}:\\
+{\bf a) with linear y-axis}\\
+\begin{center}
+	\vspace{-0.6 cm}
+	\includegraphics[width=15 cm]{expto01.png} \\
+	
+	
+	\begin{music} 
+		\parindent10mm 
+		\instrumentnumber{1} 
+		\setstaffs1{1} 
+		\startextract 
+		\Notes 
+		
+		\qa {a} 
+		\hskip 1 cm 
+		\qa c 
+		\qa{^c} 
+		\qa d 
+		\qa{^d} 
+		\qa e 
+		\qa f 
+		\qa{^f} 
+		\qa {g'} 
+		\qa{^a} 
+		\qa{a} 
+		\qa b 
+		\qa {c'} 
+		\hskip 2 cm 
+		\qa{a''} 
+		\en 
+		\endextract
+	\end{music}
+\end{center}
+{\bf	b) with logarithmic y-axis}\\
+	
+\begin{center}
+	\vspace{-0.5 cm}
+	\includegraphics[width=15 cm]{logto01.png} \\
+\end{center}
+
+\begin{music} 
+	\parindent10mm 
+	\instrumentnumber{1} 
+	\setstaffs1{1} 
+	\startextract 
+	\Notes 
+	\qa c 
+	\qa{^c} 
+	\qa d 
+	\qa{^d} 
+	\qa e 
+	\qa f 
+	\qa{^f} 
+	\qa g 
+	\qa{^g} 
+	\qa {'a}
+	\qa{^a}
+	\qa b
+	\qa {c'}
+	
+	\en
+	\endextract
+\end{music}
+{\bf \item Fill in the table with the musical intervals}
+
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|}
+	\hline
+	\rowcolor[gray]{.8} Name & Semitone Steps & Notes & $2^{x/12}$ & Frequency Ratio \\
+	
+	\hline
+	Prime & &
+	\begin{music}
+		\instrumentnumber{1}
+		\setstaffs1{1}
+		
+		\startextract
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en
+		
+		\endextract
+	\end{music}
+	
+	& &\\
+	
+	\hline
+	minor second & &
+	\begin{music}
+		\instrumentnumber{1}
+		\setstaffs1{1}
+		
+		\startextract
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en
+		\endextract
+	\end{music}
+	
+	& & \\
+	
+	\hline
+	major second & &
+	\begin{music}
+		\instrumentnumber{1}
+		\setstaffs1{1}
+		
+		\startextract
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en 
+		\endextract 
+	\end{music} 
+	& & \\ 
+	\hline 
+	minor third & & 
+	\begin{music} 
+		\instrumentnumber{1} 
+		\setstaffs1{1} 
+		\startextract 
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en 
+		\endextract 
+	\end{music} 
+	& & \\ 
+	\hline 
+	major third & & 
+	\begin{music} 
+		\instrumentnumber{1} 
+		\setstaffs1{1} 
+		\startextract 
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en 
+		\endextract
+	\end{music}
+	
+	& & \\
+	
+	\hline
+	Fourth & &
+	
+	\begin{music}
+		\instrumentnumber{1}
+		\setstaffs1{1}
+		
+		\startextract
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en
+		
+		\endextract
+	\end{music}
+	
+	& & \\
+	
+	\hline
+\end{tabular}
+
+\vspace{1 cm}
+Frequency ratios:
+\quad \fbox{1 : 1}
+\quad \fbox{5:4}
+\quad\fbox{4:3}
+\quad\fbox{6:5}
+\quad\fbox{9:8}
+\quad\fbox{16:15}
+
+\newpage
+\begin{music}
+	\parindent10mm
+	
+	\instrumentnumber{1} 
+	
+	\setstaffs1{1} 
+	\startextract 
+	\Notes 
+	\qa c 
+	\qa{^c} 
+	\qa d 
+	\qa{^d} 
+	\qa e 
+	\qa f 
+	\qa{^f} 
+	\qa g 
+	\qa{^g} 
+	\qa {'a} 
+	\qa{^a} 
+	\qa b 
+	\qa {c'} 
+	\en 
+	\endextract
+\end{music}
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|} 
+	\hline 
+	\rowcolor[gray]{.8} Name & Semitone Steps & Notes & $2^{x/12}$ & Frequency Ratio \\ 
+	\hline 
+	tritone & & 
+	\begin{music} 
+		\instrumentnumber{1} 
+		\setstaffs1{1} 
+		\startextract 
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en 
+		\endextract 
+	\end{music} 
+	& & \\ 
+	\hline 
+	fifth & & 
+	\begin{music} 
+		\instrumentnumber{1} 
+		\setstaffs1{1} 
+		\startextract 
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en 
+		\endextract 
+	\end{music} 
+	& & \\ 
+	\hline 
+	minor sixth & & 
+	\begin{music} 
+		\instrumentnumber{1} 
+		\setstaffs1{1} 
+		\startextract 
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en 
+		\endextract 
+	\end{music}
+	& & \\
+	
+	\hline
+	major sixth & &
+	
+	\begin{music}
+		\instrumentnumber{1}
+		\setstaffs1{1}
+		
+		\startextract
+		
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en
+		
+		\endextract
+	\end{music}
+	
+	& & \\
+	
+	\hline
+	minor seventh & &
+	
+	\begin{music}
+		
+		\instrumentnumber{1}
+		\setstaffs1{1}
+		
+		\startextract
+		
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en
+		
+		\endextract
+	\end{music}
+	
+	& & \\
+	
+	\hline
+	major seventh & &
+	
+	\begin{music} 
+		
+		\instrumentnumber{1} 
+		\setstaffs1{1} 
+		\startextract 
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en 
+		\endextract 
+	\end{music} 
+	& & \\ 
+	\hline 
+	octave & & 
+	\begin{music} 
+		\instrumentnumber{1} 
+		\setstaffs1{1} 
+		\startextract 
+		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en 
+		\endextract 
+	\end{music} 
+	& & \\ 
+	\hline
+	\end{tabular}
+	
+	\vspace{1 cm}
+	Frequency ratios:
+	\quad \fbox{3:2}
+	\quad \fbox{5:3}
+	\quad \fbox{45:32}
+	\quad \fbox{2:1}
+	\quad \fbox{9:5}
+	\quad \fbox{8:5}
+	\quad \fbox{15:8}
+	
+	\vspace{1 cm}
+	{\bf \item How many percent does the frequency increase by  \underbar{one} semitone step?}
+	\vspace{1 cm}
+	{\bf \item Play the intervals with a piano-app}.
+	
+	\end{enumerate} 
+	
+	\fbox{
+	\begin{minipage}{0.5\textwidth}
+		For the solution, please \href{https://www.okuyakl.de/math/m10tonL135/le135.pdf}{click here} or scan the QR-Code.\\
+		More worksheets are available at
+		
+		\href{https://www.okuyakl.de}{www.okuyakl.de}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\includegraphics[width=1.5 cm]{../../viecher/zwe03}
+		\includegraphics[width=3 cm]{qre135}
+		\includegraphics[width=2 cm]{../../viecher/afanticon1}
+		
+		\end{minipage}}
+		
+\end{document}
