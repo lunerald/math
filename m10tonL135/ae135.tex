@@ -118,9 +118,9 @@ Here, x is the number of semitones and y is the frequency.
 {\bf \item Fill in the table with the musical intervals}
 
 \renewcommand{\arraystretch}{1}
-\begin{tabular}{|>{\columncolor[gray]{.8}}p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|}
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{3 cm}|p{2.5 cm}|p{3 cm}|p{2.5 cm}|p{4 cm}|}
 	\hline
-	\rowcolor[gray]{.8} Name & Semitone Steps & Notes & $2^{x/12}$ & Frequency Ratio \\
+	\rowcolor[gray]{.8} Name & Semitone Steps & Notes & $2^{x/12}$ & $\approx$ Frequency Ratio *\\
 	
 	\hline
 	Prime & &
@@ -137,17 +137,16 @@ Here, x is the number of semitones and y is the frequency.
 	& &\\
 	
 	\hline
-	minor second & &
-	\begin{music}
-		\instrumentnumber{1}
-		\setstaffs1{1}
-		
-		\startextract
-		\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \hskip 1.2cm \en
-		\endextract
-	\end{music}
-	
-	& & \\
+	minor second & 1 &
+\begin{music}
+	\instrumentnumber{1}
+	\setstaffs1{1}
+	\startextract
+	\Notes \zcharnote{c}{\raisebox{-3ex}{C}} \qa c \qa{^c} \en
+	\endextract
+\end{music}
+
+& 1,059& 16:15 \\
 	
 	\hline
 	major second & &
@@ -200,14 +199,15 @@ Here, x is the number of semitones and y is the frequency.
 	\hline
 \end{tabular}
 
-\vspace{1 cm}
-Frequency ratios:
+\vspace{0.5 cm}
+
+	* There are differences between uniform and natural tuning. The approximate values for the frequency ratios are:
+
 \quad \fbox{1 : 1}
 \quad \fbox{5:4}
 \quad\fbox{4:3}
 \quad\fbox{6:5}
 \quad\fbox{9:8}
-\quad\fbox{16:15}
 
 \newpage
 \begin{music}
@@ -235,9 +235,9 @@ Frequency ratios:
 	\endextract
 \end{music}
 \renewcommand{\arraystretch}{1}
-\begin{tabular}{|>{\columncolor[gray]{.8}}p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|p{3 cm}|} 
+\begin{tabular}{|>{\columncolor[gray]{.8}}p{3 cm}|p{2.5 cm}|p{3 cm}|p{2.5 cm}|p{3 cm}|} 
 	\hline 
-	\rowcolor[gray]{.8} Name & Semitone Steps & Notes & $2^{x/12}$ & Frequency Ratio \\ 
+	\rowcolor[gray]{.8} Name & Semitone Steps & Notes & $2^{x/12}$ & $\approx$ Frequency Ratio *\\ 
 	\hline 
 	tritone & & 
 	\begin{music} 
@@ -327,8 +327,9 @@ Frequency ratios:
 	\hline
 	\end{tabular}
 	
-	\vspace{1 cm}
-	Frequency ratios:
+	\vspace{0.5 cm}
+	* There are differences between uniform and natural tuning. The approximate values for the frequency ratios are:
+
 	\quad \fbox{3:2}
 	\quad \fbox{5:3}
 	\quad \fbox{45:32}
@@ -338,9 +339,9 @@ Frequency ratios:
 	\quad \fbox{15:8}
 	
 	\vspace{1 cm}
-	{\bf \item How many percent does the frequency increase by  \underbar{one} semitone step?}
+	{\bf \item What does a semitone step have to do with $\sqrt[12]{2}$?}
 	\vspace{1 cm}
-	{\bf \item Play the intervals with a piano-app}.
+	{\bf \item Play the intervals with a piano-app. Which one is your favorite?}.
 	
 	\end{enumerate} 
 	
